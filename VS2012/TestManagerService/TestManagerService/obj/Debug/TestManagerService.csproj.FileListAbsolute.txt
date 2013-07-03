@@ -1,0 +1,5 @@
+C:\Projects\VS2012\TestManagerService\TestManagerService\bin\TestManagerService.dll
+C:\Projects\VS2012\TestManagerService\TestManagerService\bin\TestManagerService.pdb
+C:\Projects\VS2012\TestManagerService\TestManagerService\obj\Debug\TestManagerService.csprojResolveAssemblyReference.cache
+C:\Projects\VS2012\TestManagerService\TestManagerService\obj\Debug\TestManagerService.dll
+C:\Projects\VS2012\TestManagerService\TestManagerService\obj\Debug\TestManagerService.pdb

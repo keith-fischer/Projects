@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "limit": 50,
+    "next": null,
+    "offset": 0,
+    "previous": null,
+    "total_count": 1
+  },
+  "objects": [
+    {
+      "automation_id": "a5be4f399b1fc2e3f7951faca9b6445b",
+      "create_date": "2013-06-28T00:04:23",
+      "create_user_id": "d4fzehfbty2hhcuejug4sele2djo565m",
+      "estimated_time": "0:00:00",
+      "id": "a5be4f399b1fc2e3f7951faca9b6445b",
+      "last_run_date": null,
+      "last_run_status": "not run",
+      "last_run_user_id": "ffqhxq7wjgedq3bg66hyjukuiraib7hf",
+      "position_in_suite": 1,
+      "preconditions": "Automation Script TestID=XXXXXXXXXXXXXXXXXXXXXXX : Shopc
+art-TestTemplate_STE.xlsx<br>Automation servers: <br><font size=\"3\">Keith's de
+sk = DMSQAAUTO01-DT</font><br><font size=\"3\">Jeff's desk   = DMSQAAUTO02-DT</f
+ont><br>login: gcsqaauto01<br>PW: SqaAuto01!<br>Start all required services:<br>
+G:\\SWDev\\Private\\SQA Tests\\Automation\\Tools\\Selenium\\StartAutomationServe
+rs.bat<br>Selenium server succesfully started will look like the above cmd line
+window.<br>Three commandline windows for selenium server on three different port
+s<br><font size=\"3\">Selenium server on port 4444</font><br><font size=\"3\">Se
+lenium server on port 4445</font><br><font size=\"3\">Selenium server on port 44
+47</font><br><font size=\"3\">Node webservice running for Costguard and provisio
+ning helper services for end to end automation</font><br><font size=\"3\">IE=Int
+ernet Explorer, FF=Firefox,GC=Googlechrome, SF=Safari</font><br><font size=\"5\"
+><b>****testserver1*******</b></font><br><font size=\"3\">Internet Explorer Regr
+ession -  Run credit card for shopping cart with provisioning</font><br><font si
+ze=\"1\">G:\\SWDev\\Private\\SQA Tests\\Automation\\TestCases\\GCWeb\\testserver
+1\\BatchRun\\RegressionSMOKE_testserver1_IE_SrnSkip_STE.bat</font><br><font size
+=\"3\">Firefox Regression -  Run credit card for shopping cart with provisioning
+</font><br><font size=\"1\">G:\\SWDev\\Private\\SQA Tests\\Automation\\TestCases
+\\GCWeb\\testserver1\\BatchRun\\RegressionSMOKE_testserver1_FF_SrnSkip_STE.bat</
+font><br><font size=\"3\">Safari Regression -  Run credit card for shopping cart
+ with provisioning</font><br><font size=\"1\">G:\\SWDev\\Private\\SQA Tests\\Aut
+omation\\TestCases\\GCWeb\\testserver1\\BatchRun\\RegressionSMOKE_testserver1_SF
+_SrnSkip_STE.bat</font><br><font size=\"3\">GoogleChrome Regression -  Run credi
+t card for shopping cart with provisioning</font><br><font size=\"1\">G:\\SWDev\
+\Private\\SQA Tests\\Automation\\TestCases\\GCWeb\\testserver1\\BatchRun\\Regres
+sionSMOKE_testserver1_GC_SrnSkip_STE.bat</font><br><font size=\"3\">Internet Exp
+lorer Regression -  DON'T purchase  shopping cart items and NO provisioning</fon
+t><br><font size=\"1\">G:\\SWDev\\Private\\SQA Tests\\Automation\\TestCases\\GCW
+eb\\testserver1\\BatchRun\\RegressionSMOKE_testserver1_IE_SrnSkipNOCC_STE.bat</f
+ont><br><font size=\"3\">Firefox Regression -  DON'T purchase  shopping cart ite
+ms and NO provisioning</font><br><font size=\"1\">G:\\SWDev\\Private\\SQA Tests\
+\Automation\\TestCases\\GCWeb\\testserver1\\BatchRun\\RegressionSMOKE_testserver
+1_FF_SrnSkipNOCC_STE.bat</font><br><font size=\"3\">Safari Regression -  DON'T p
+urchase  shopping cart items and NO provisioning</font><br><font size=\"1\">G:\\
+SWDev\\Private\\SQA Tests\\Automation\\TestCases\\GCWeb\\testserver1\\BatchRun\\
+RegressionSMOKE_testserver1_SF_SrnSkipNOCC_STE.bat</font><br><font size=\"5\"><b
+>****prod****&gt;&gt;&gt;Real Credit Card Purchases&lt;&lt;&lt;&lt;&lt;</b></fon
+t><br><font size=\"1\">MEID of real devices in drawer need to be in the provisio
+ning list of the automation helper service(see Keith)</font><br><font size=\"3\"
+>Internet Explorer Regression -  Run credit card for shopping cart with provisio
+ning</font><br><font size=\"1\">G:\\SWDev\\Private\\SQA Tests\\Automation\\TestC
+ases\\GCWeb\\GC_Prod\\BatchRun\\RegressionSMOKE_prod_IE_SrnSkip_STE.bat</font><b
+r><font size=\"3\">Firefox Regression -  Run credit card for shopping cart with
+provisioning</font><br><font size=\"1\">G:\\SWDev\\Private\\SQA Tests\\Automatio
+n\\TestCases\\GCWeb\\GC_Prod\\BatchRun\\RegressionSMOKE_prod_FF_SrnSkip_STE.bat<
+/font><br><font size=\"3\">Safari Regression -  Run credit card for shopping car
+t with provisioning</font><br><font size=\"1\">G:\\SWDev\\Private\\SQA Tests\\Au
+tomation\\TestCases\\GCWeb\\GC_Prod\\BatchRun\\RegressionSMOKE_prod_SF_SrnSkip_S
+TE.bat</font><br><font size=\"3\">GoogleChrome Regression -  Run credit card for
+ shopping cart with provisioning</font><br><font size=\"1\">G:\\SWDev\\Private\\
+SQA Tests\\Automation\\TestCases\\GCWeb\\GC_Prod\\BatchRun\\RegressionSMOKE_prod
+_GC_SrnSkip_STE.bat</font><br><font size=\"3\"><b>&gt;&gt;&gt;&gt;Skips Purchase
+&lt;&lt;&lt; for just shopcart GUI tests on prod, NO credit card transaction</b>
+</font><br><font size=\"3\">Internet Explorer Regression -  DON'T purchase  shop
+ping cart items and NO provisioning</font><br><font size=\"1\">G:\\SWDev\\Privat
+e\\SQA Tests\\Automation\\TestCases\\GCWeb\\GC_Prod\\BatchRun\\RegressionSMOKE_p
+rod_IE_SrnSkipNOCC_STE.bat</font><br><font size=\"3\">Firefox Regression -  DON'
+T purchase  shopping cart items and NO provisioning</font><br><font size=\"1\">G
+:\\SWDev\\Private\\SQA Tests\\Automation\\TestCases\\GCWeb\\GC_Prod\\BatchRun\\R
+egressionSMOKE_prod_FF_SrnSkipNOCC_STE.bat</font>",
+      "priority": 2,
+      "resource_uri": "/api/v0/test/a5be4f399b1fc2e3f7951faca9b6445b/",
+      "rtl": false,
+      "softlink_of_test_id": null,
+      "status": "needs review",
+      "steps": [
+        {
+          "description": "Browser IE - Test Case - TestTemplate_STE..xlsx",
+          "expected": "Passed",
+          "id": "b4470c4c3a36b5b4735a2e29f717b3e0",
+          "position": 0,
+          "resource_uri": "/api/v0/step/b4470c4c3a36b5b4735a2e29f717b3e0/"
+        },
+        {
+          "description": "Browser FF - Test Case - TestTemplate_STE.xlsx",
+          "expected": "Passed",
+          "id": "4ef60a1a725ad38b9b3d0627cd2acf7d",
+          "position": 1,
+          "resource_uri": "/api/v0/step/4ef60a1a725ad38b9b3d0627cd2acf7d/"
+        },
+        {
+          "description": "Browser SF - Test Case - TestTemplate_STE.xlsx",
+          "expected": "Passed",
+          "id": "305b4b3ab7fb414fa2f2e954750b2810",
+          "position": 2,
+          "resource_uri": "/api/v0/step/305b4b3ab7fb414fa2f2e954750b2810/"
+        },
+        {
+          "description": "Browser GC - Test Case - TestTemplate_STE.xlsx",
+          "expected": "Passed",
+          "id": "bfa174d57128f1d54e11fc6ead760fe6",
+          "position": 3,
+          "resource_uri": "/api/v0/step/bfa174d57128f1d54e11fc6ead760fe6/"
+        }
+      ],
+      "suite": "Suite object",
+      "suite_id": "c17286a5ccdc47d600810bdcdf30efbf",
+      "summary": "TestTemplate_STE",
+      "test_category": null,
+      "update_date": "2013-06-28T20:06:51",
+      "update_user_id": "d4fzehfbty2hhcuejug4sele2djo565m"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+c:\users\keith.fischer\documents\visual studio 2010\Projects\TestStuffAPItest\TestStuffAPItest\bin\Debug\TestStuffAPItest.exe
+c:\users\keith.fischer\documents\visual studio 2010\Projects\TestStuffAPItest\TestStuffAPItest\bin\Debug\TestStuffAPItest.pdb
+c:\users\keith.fischer\documents\visual studio 2010\Projects\TestStuffAPItest\TestStuffAPItest\obj\x86\Debug\TestStuffAPItest.exe
+c:\users\keith.fischer\documents\visual studio 2010\Projects\TestStuffAPItest\TestStuffAPItest\obj\x86\Debug\TestStuffAPItest.pdb
+C:\Users\keith.fischer\documents\visual studio 2010\Projects\TestStuffAPItest\TestStuffAPItest\obj\x86\Debug\TestStuffAPItest.csprojResolveAssemblyReference.cache
+C:\Users\keith.fischer\documents\visual studio 2010\Projects\TestStuffAPItest\TestStuffAPItest\bin\Debug\httpRestClient.dll
+C:\Users\keith.fischer\documents\visual studio 2010\Projects\TestStuffAPItest\TestStuffAPItest\bin\Debug\RestSharp.dll
+C:\Users\keith.fischer\documents\visual studio 2010\Projects\TestStuffAPItest\TestStuffAPItest\bin\Debug\httpRestClient.pdb
+C:\Users\keith.fischer\documents\visual studio 2010\Projects\TestStuffAPItest\TestStuffAPItest\bin\Debug\RestSharp.pdb
+C:\Users\keith.fischer\documents\visual studio 2010\Projects\TestStuffAPItest\TestStuffAPItest\bin\Debug\RestSharp.xml
+C:\Users\keith.fischer\documents\visual studio 2010\Projects\TestStuffAPItest\TestStuffAPItest\bin\Debug\Newtonsoft.Json.dll
+C:\Users\keith.fischer\Documents\Visual Studio 2010\Projects\TestStuffAPItest\TestStuffAPItest\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\VS2010\TestStuffAPItest\TestStuffAPItest\obj\x86\Debug\TestStuffAPItest.exe
+C:\Projects\VS2010\TestStuffAPItest\TestStuffAPItest\obj\x86\Debug\TestStuffAPItest.pdb
+C:\Projects\VS2010\TestStuffAPItest\TestStuffAPItest\bin\Debug\TestStuffAPItest.exe
+C:\Projects\VS2010\TestStuffAPItest\TestStuffAPItest\bin\Debug\TestStuffAPItest.pdb
+C:\Projects\VS2010\TestStuffAPItest\TestStuffAPItest\bin\Debug\httpRestClient.dll
+C:\Projects\VS2010\TestStuffAPItest\TestStuffAPItest\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\VS2010\TestStuffAPItest\TestStuffAPItest\bin\Debug\RestSharp.dll
+C:\Projects\VS2010\TestStuffAPItest\TestStuffAPItest\bin\Debug\httpRestClient.pdb
+C:\Projects\VS2010\TestStuffAPItest\TestStuffAPItest\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\VS2010\TestStuffAPItest\TestStuffAPItest\bin\Debug\RestSharp.pdb
+C:\Projects\VS2010\TestStuffAPItest\TestStuffAPItest\bin\Debug\RestSharp.xml
+C:\Projects\VS2010\TestStuffAPItest\TestStuffAPItest\obj\x86\Debug\TestStuffAPItest.csprojResolveAssemblyReference.cache

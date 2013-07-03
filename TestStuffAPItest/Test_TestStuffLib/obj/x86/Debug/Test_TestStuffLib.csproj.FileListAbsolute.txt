@@ -1,0 +1,8 @@
+C:\Users\keith.fischer\documents\visual studio 2010\Projects\TestStuffAPItest\Test_TestStuffLib\bin\Debug\Test_TestStuffLib.exe
+C:\Users\keith.fischer\documents\visual studio 2010\Projects\TestStuffAPItest\Test_TestStuffLib\bin\Debug\Test_TestStuffLib.pdb
+C:\Users\keith.fischer\documents\visual studio 2010\Projects\TestStuffAPItest\Test_TestStuffLib\obj\x86\Debug\Test_TestStuffLib.exe
+C:\Users\keith.fischer\documents\visual studio 2010\Projects\TestStuffAPItest\Test_TestStuffLib\obj\x86\Debug\Test_TestStuffLib.pdb
+C:\Projects\VS2010\TestStuffAPItest\Test_TestStuffLib\bin\Debug\Test_TestStuffLib.exe
+C:\Projects\VS2010\TestStuffAPItest\Test_TestStuffLib\bin\Debug\Test_TestStuffLib.pdb
+C:\Projects\VS2010\TestStuffAPItest\Test_TestStuffLib\obj\x86\Debug\Test_TestStuffLib.exe
+C:\Projects\VS2010\TestStuffAPItest\Test_TestStuffLib\obj\x86\Debug\Test_TestStuffLib.pdb

@@ -1,0 +1,14 @@
+C:\Users\keith.fischer\documents\visual studio 2010\Projects\TestStuffAPItest\TestStuffLib\bin\Debug\TestStuffLib.dll
+C:\Users\keith.fischer\documents\visual studio 2010\Projects\TestStuffAPItest\TestStuffLib\bin\Debug\TestStuffLib.pdb
+C:\Users\keith.fischer\documents\visual studio 2010\Projects\TestStuffAPItest\TestStuffLib\obj\Debug\TestStuffLib.dll
+C:\Users\keith.fischer\documents\visual studio 2010\Projects\TestStuffAPItest\TestStuffLib\obj\Debug\TestStuffLib.pdb
+C:\Users\keith.fischer\Documents\Visual Studio 2010\Projects\TestStuffAPItest\TestStuffLib\bin\Debug\Newtonsoft.Json.dll
+C:\Users\keith.fischer\Documents\Visual Studio 2010\Projects\TestStuffAPItest\TestStuffLib\bin\Debug\Newtonsoft.Json.xml
+C:\Users\keith.fischer\Documents\Visual Studio 2010\Projects\TestStuffAPItest\TestStuffLib\obj\Debug\TestStuffLib.csprojResolveAssemblyReference.cache
+C:\Projects\VS2010\TestStuffAPItest\TestStuffLib\bin\Debug\TestStuffLib.dll
+C:\Projects\VS2010\TestStuffAPItest\TestStuffLib\bin\Debug\TestStuffLib.pdb
+C:\Projects\VS2010\TestStuffAPItest\TestStuffLib\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\VS2010\TestStuffAPItest\TestStuffLib\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\VS2010\TestStuffAPItest\TestStuffLib\obj\Debug\TestStuffLib.csprojResolveAssemblyReference.cache
+C:\Projects\VS2010\TestStuffAPItest\TestStuffLib\obj\Debug\TestStuffLib.dll
+C:\Projects\VS2010\TestStuffAPItest\TestStuffLib\obj\Debug\TestStuffLib.pdb
