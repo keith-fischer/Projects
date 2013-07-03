@@ -1,0 +1,41 @@
+17:03:15	Start Framework Environment
+17:03:15	getEnvironment
+17:03:15	SetVNCAppRegion
+17:03:15	SetApp
+17:03:15	SetAppRegionExitOnNull
+17:03:15	SetAppRegion
+17:03:19	SetAppRegion:Found X=1144,Y=48,W=496,H=914,CX=1392.0,CY=505.0,
+17:03:19	****Script Start *****
+17:03:24	ClickVerify::Home_Help.png:Home_Help_headHelp.png
+17:03:24	ClickHighlight:
+17:03:24	WaitHighlight:Home_Help.png
+17:03:24	IsFindImage:Home_Help.png
+17:03:30	IsFindImage:FOUND
+17:03:31	WaitHighlight:Found
+17:03:41	WaitHighlight:Home_Help_headHelp.png
+17:03:41	IsFindImage:Home_Help_headHelp.png
+17:03:47	IsFindImage:FOUND
+17:03:48	WaitHighlight:Found
+17:03:48	ClickVerify:Found
+17:03:48	ClickVerify::Home_Help_gettingStarted.png:Home_Help_head-GetStarted.png
+17:03:48	ClickHighlight:
+17:03:48	WaitHighlight:Home_Help_gettingStarted.png
+17:03:48	IsFindImage:Home_Help_gettingStarted.png
+17:03:54	IsFindImage:FOUND
+17:03:55	WaitHighlight:Found
+17:04:05	WaitHighlight:Home_Help_head-GetStarted.png
+17:04:05	IsFindImage:Home_Help_head-GetStarted.png
+17:04:15	IsFindImage:NOT FOUND
+17:04:15	WaitHighlight:Not Found
+17:04:15	ClickVerify:0
+17:04:15	ClickHighlight:
+17:04:15	WaitHighlight:Home_Help_gettingStarted.png
+17:04:15	IsFindImage:Home_Help_gettingStarted.png
+17:04:26	IsFindImage:NOT FOUND
+17:04:26	WaitHighlight:Not Found
+17:04:26	WaitHighlight:Home_Help_head-GetStarted.png
+17:04:26	IsFindImage:Home_Help_head-GetStarted.png
+17:04:36	IsFindImage:NOT FOUND
+17:04:36	WaitHighlight:Not Found
+17:04:36	ClickVerify:1
+17:04:36	FAILED:ClickVerifyHome_Help_gettingStarted.png

@@ -1,0 +1,15 @@
+13:50:14	Start Framework Environment
+13:50:14	getEnvironment
+13:50:14	SetVNCAppRegion:Find HUAWEI
+13:50:14	SetApp
+13:50:14	SetAppRegionExitOnNull
+13:50:14	SetAppRegion: Find W=496 - H=914
+13:50:15	0 - SetAppRegion:Window Not Found
+13:50:24	SetVNCAppRegion: Found
+13:50:24	****Script Start *****
+13:50:24	
+-------------------------------------
+13:50:24	START: TestVoiceMail 
+13:50:24	ClickVerify::App_PeopleTab.png:Apps_PeopleTab.png
+13:50:24	WaitHighlight:App_PeopleTab.png
+13:50:24	IsFindImage:App_PeopleTab.png

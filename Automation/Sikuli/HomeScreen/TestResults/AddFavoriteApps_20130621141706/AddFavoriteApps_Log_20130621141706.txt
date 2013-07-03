@@ -1,0 +1,461 @@
+14:17:06	getEnvironment
+14:17:06	SetVNCAppRegion:Find HUAWEI
+14:17:06	SetApp
+14:17:06	SetAppRegionExitOnNull
+14:17:06	SetAppRegion: Find W=496 - H=914
+14:17:07	0 - SetAppRegion - W=107 - H=20
+14:17:10	1 - SetAppRegion - W=700 - H=20
+14:17:10	2 - SetAppRegion - W=496 - H=914
+14:17:16	SetAppRegion:Found by Size: X=-527,Y=33,W=496,H=914,CX=-279.0,CY=490.0,
+14:17:16	****Script Start *****
+14:17:16	TakeScreenShot: Test_Start.png
+14:17:16	switchAppVNC:
+14:17:16	ScreenShot:Test_Start.png:C:\Users\KEITH~1.FIS\AppData\Local\Temp\sikuli-6774560002110923936.png
+14:17:16	ScreenShot:path - C:\Automation\Sikuli\HomeScreen\TestResults\AddFavoriteApps_20130621141706\Test_Start.png
+14:17:16	ScreenShot:Moved - Test_Start.png
+14:17:16	
+-------------------------------------
+14:17:16	START: AddFavoriteApps
+14:17:16	ClickVerify::global_menu.png:Home_Favorites_Menu.png
+14:17:16	WaitHighlight:global_menu.png
+14:17:16	IsFindImage:global_menu.png
+14:17:16	IsFindImage:FOUND
+14:17:17	WaitHighlight:Found
+14:17:17	ClickVerify:Click
+14:17:17	ClickHighlight:
+14:17:18	*******ClickImage:M[-344,889 214x45]@S(1)[-1680,0 1680x1050] S:1.00 Center:-237,911
+14:17:19	WaitHighlight:Home_Favorites_Menu.png
+14:17:19	IsFindImage:Home_Favorites_Menu.png
+14:17:20	IsFindImage:FOUND
+14:17:21	WaitHighlight:Found
+14:17:21	ClickVerify:Found
+14:17:21	ClickVerify::Home_Favories_Menu_AddFavorites.png:AddFavoritesTitle.png
+14:17:21	WaitHighlight:Home_Favories_Menu_AddFavorites.png
+14:17:21	IsFindImage:Home_Favories_Menu_AddFavorites.png
+14:17:21	IsFindImage:FOUND
+14:17:22	WaitHighlight:Found
+14:17:22	ClickVerify:Click
+14:17:22	ClickHighlight:
+14:17:24	*******ClickImage:M[-497,789 202x143]@S(1)[-1680,0 1680x1050] S:1.00 Center:-396,860
+14:17:24	WaitHighlight:AddFavoritesTitle.png
+14:17:24	IsFindImage:AddFavoritesTitle.png
+14:17:25	IsFindImage:FOUND
+14:17:26	WaitHighlight:Found
+14:17:26	ClickVerify:Found
+14:17:26	ClickScrollVerify:app_nav-1.png:app_nav.png
+14:17:26	ClickScroll:app_nav-1.png
+14:17:26	FindScroll:app_nav-1.png
+14:17:26	switchAppVNC:
+14:17:26	WaitHighlight:app_nav-1.png
+14:17:26	IsFindImage:app_nav-1.png
+14:17:28	IsFindImage:NOT FOUND
+14:17:28	WaitHighlight:Not Found
+14:17:28	FindScroll: WheelDown0
+14:17:28	WheelDown:
+14:17:28	switchAppVNC:
+14:17:32	WaitHighlight:app_nav-1.png
+14:17:32	IsFindImage:app_nav-1.png
+14:17:33	IsFindImage:NOT FOUND
+14:17:33	WaitHighlight:Not Found
+14:17:33	WaitHighlight:app_nav-1.png
+14:17:33	IsFindImage:app_nav-1.png
+14:17:35	IsFindImage:NOT FOUND
+14:17:35	WaitHighlight:Not Found
+14:17:35	FindScroll: WheelDown1
+14:17:35	WheelDown:
+14:17:35	switchAppVNC:
+14:17:38	WaitHighlight:app_nav-1.png
+14:17:38	IsFindImage:app_nav-1.png
+14:17:40	IsFindImage:NOT FOUND
+14:17:40	WaitHighlight:Not Found
+14:17:40	WaitHighlight:app_nav-1.png
+14:17:40	IsFindImage:app_nav-1.png
+14:17:42	IsFindImage:NOT FOUND
+14:17:42	WaitHighlight:Not Found
+14:17:42	FindScroll: WheelDown2
+14:17:42	WheelDown:
+14:17:42	switchAppVNC:
+14:17:45	WaitHighlight:app_nav-1.png
+14:17:45	IsFindImage:app_nav-1.png
+14:17:46	IsFindImage:NOT FOUND
+14:17:46	WaitHighlight:Not Found
+14:17:46	WaitHighlight:app_nav-1.png
+14:17:46	IsFindImage:app_nav-1.png
+14:17:49	IsFindImage:NOT FOUND
+14:17:49	WaitHighlight:Not Found
+14:17:49	FindScroll: WheelDown3
+14:17:49	WheelDown:
+14:17:49	switchAppVNC:
+14:17:52	WaitHighlight:app_nav-1.png
+14:17:52	IsFindImage:app_nav-1.png
+14:17:53	IsFindImage:NOT FOUND
+14:17:53	WaitHighlight:Not Found
+14:17:53	WaitHighlight:app_nav-1.png
+14:17:53	IsFindImage:app_nav-1.png
+14:17:55	IsFindImage:NOT FOUND
+14:17:55	WaitHighlight:Not Found
+14:17:55	FindScroll: WheelDown4
+14:17:55	WheelDown:
+14:17:55	switchAppVNC:
+14:17:59	WaitHighlight:app_nav-1.png
+14:17:59	IsFindImage:app_nav-1.png
+14:18:00	IsFindImage:NOT FOUND
+14:18:00	WaitHighlight:Not Found
+14:18:00	FindScroll: Try Opposite direction
+14:18:00	WaitHighlight:app_nav-1.png
+14:18:00	IsFindImage:app_nav-1.png
+14:18:02	IsFindImage:NOT FOUND
+14:18:02	WaitHighlight:Not Found
+14:18:02	FindScroll: WheelUp0
+14:18:02	WheelUp:
+14:18:02	switchAppVNC:
+14:18:06	WaitHighlight:app_nav-1.png
+14:18:06	IsFindImage:app_nav-1.png
+14:18:06	IsFindImage:FOUND
+14:18:07	WaitHighlight:Found
+14:18:10	WaitHighlight:app_nav-1.png
+14:18:10	IsFindImage:app_nav-1.png
+14:18:10	IsFindImage:FOUND
+14:18:11	WaitHighlight:Found
+14:18:11	FindScroll: FOUND
+14:18:11	ClickHighlight:
+14:18:12	*******ClickImage:M[-505,249 463x77]@S(1)[-1680,0 1680x1050] S:0.94 Center:-274,287
+14:18:13	ClickScroll: Clicked
+14:18:13	ClickScrollVerify:Clicked
+14:18:13	WaitHighlight:app_nav.png
+14:18:13	IsFindImage:app_nav.png
+14:18:13	IsFindImage:FOUND
+14:18:14	WaitHighlight:Found
+14:18:14	ClickScrollVerify:Found
+14:18:14	ClickScrollVerify:app_calculator-1.png:app_calculator_checked.png
+14:18:14	ClickScroll:app_calculator-1.png
+14:18:14	FindScroll:app_calculator-1.png
+14:18:14	switchAppVNC:
+14:18:14	WaitHighlight:app_calculator-1.png
+14:18:14	IsFindImage:app_calculator-1.png
+14:18:16	IsFindImage:NOT FOUND
+14:18:16	WaitHighlight:Not Found
+14:18:16	FindScroll: WheelDown0
+14:18:16	WheelDown:
+14:18:16	switchAppVNC:
+14:18:20	WaitHighlight:app_calculator-1.png
+14:18:20	IsFindImage:app_calculator-1.png
+14:18:21	IsFindImage:NOT FOUND
+14:18:21	WaitHighlight:Not Found
+14:18:21	WaitHighlight:app_calculator-1.png
+14:18:21	IsFindImage:app_calculator-1.png
+14:18:23	IsFindImage:NOT FOUND
+14:18:23	WaitHighlight:Not Found
+14:18:23	FindScroll: WheelDown1
+14:18:23	WheelDown:
+14:18:23	switchAppVNC:
+14:18:26	WaitHighlight:app_calculator-1.png
+14:18:26	IsFindImage:app_calculator-1.png
+14:18:28	IsFindImage:NOT FOUND
+14:18:28	WaitHighlight:Not Found
+14:18:28	WaitHighlight:app_calculator-1.png
+14:18:28	IsFindImage:app_calculator-1.png
+14:18:30	IsFindImage:NOT FOUND
+14:18:30	WaitHighlight:Not Found
+14:18:30	FindScroll: WheelDown2
+14:18:30	WheelDown:
+14:18:30	switchAppVNC:
+14:18:33	WaitHighlight:app_calculator-1.png
+14:18:33	IsFindImage:app_calculator-1.png
+14:18:34	IsFindImage:NOT FOUND
+14:18:35	WaitHighlight:Not Found
+14:18:35	WaitHighlight:app_calculator-1.png
+14:18:35	IsFindImage:app_calculator-1.png
+14:18:37	IsFindImage:NOT FOUND
+14:18:37	WaitHighlight:Not Found
+14:18:37	FindScroll: WheelDown3
+14:18:37	WheelDown:
+14:18:37	switchAppVNC:
+14:18:40	WaitHighlight:app_calculator-1.png
+14:18:40	IsFindImage:app_calculator-1.png
+14:18:41	IsFindImage:NOT FOUND
+14:18:41	WaitHighlight:Not Found
+14:18:41	WaitHighlight:app_calculator-1.png
+14:18:41	IsFindImage:app_calculator-1.png
+14:18:44	IsFindImage:NOT FOUND
+14:18:44	WaitHighlight:Not Found
+14:18:44	FindScroll: WheelDown4
+14:18:44	WheelDown:
+14:18:44	switchAppVNC:
+14:18:47	WaitHighlight:app_calculator-1.png
+14:18:47	IsFindImage:app_calculator-1.png
+14:18:48	IsFindImage:NOT FOUND
+14:18:48	WaitHighlight:Not Found
+14:18:48	FindScroll: Try Opposite direction
+14:18:48	WaitHighlight:app_calculator-1.png
+14:18:48	IsFindImage:app_calculator-1.png
+14:18:50	IsFindImage:NOT FOUND
+14:18:50	WaitHighlight:Not Found
+14:18:50	FindScroll: WheelUp0
+14:18:50	WheelUp:
+14:18:50	switchAppVNC:
+14:18:54	WaitHighlight:app_calculator-1.png
+14:18:54	IsFindImage:app_calculator-1.png
+14:18:55	IsFindImage:NOT FOUND
+14:18:55	WaitHighlight:Not Found
+14:18:55	WaitHighlight:app_calculator-1.png
+14:18:55	IsFindImage:app_calculator-1.png
+14:18:57	IsFindImage:NOT FOUND
+14:18:57	WaitHighlight:Not Found
+14:18:57	FindScroll: WheelUp1
+14:18:57	WheelUp:
+14:18:57	switchAppVNC:
+14:19:01	WaitHighlight:app_calculator-1.png
+14:19:01	IsFindImage:app_calculator-1.png
+14:19:02	IsFindImage:NOT FOUND
+14:19:02	WaitHighlight:Not Found
+14:19:02	WaitHighlight:app_calculator-1.png
+14:19:02	IsFindImage:app_calculator-1.png
+14:19:04	IsFindImage:NOT FOUND
+14:19:04	WaitHighlight:Not Found
+14:19:04	FindScroll: WheelUp2
+14:19:04	WheelUp:
+14:19:04	switchAppVNC:
+14:19:08	WaitHighlight:app_calculator-1.png
+14:19:08	IsFindImage:app_calculator-1.png
+14:19:09	IsFindImage:NOT FOUND
+14:19:09	WaitHighlight:Not Found
+14:19:09	WaitHighlight:app_calculator-1.png
+14:19:09	IsFindImage:app_calculator-1.png
+14:19:11	IsFindImage:NOT FOUND
+14:19:11	WaitHighlight:Not Found
+14:19:11	FindScroll: WheelUp3
+14:19:11	WheelUp:
+14:19:11	switchAppVNC:
+14:19:14	WaitHighlight:app_calculator-1.png
+14:19:14	IsFindImage:app_calculator-1.png
+14:19:14	IsFindImage:FOUND
+14:19:15	WaitHighlight:Found
+14:19:19	WaitHighlight:app_calculator-1.png
+14:19:19	IsFindImage:app_calculator-1.png
+14:19:19	IsFindImage:FOUND
+14:19:20	WaitHighlight:Found
+14:19:20	FindScroll: FOUND
+14:19:20	ClickHighlight:
+14:19:21	*******ClickImage:M[-514,327 472x84]@S(1)[-1680,0 1680x1050] S:1.00 Center:-278,369
+14:19:21	ClickScroll: Clicked
+14:19:21	ClickScrollVerify:Clicked
+14:19:21	WaitHighlight:app_calculator_checked.png
+14:19:21	IsFindImage:app_calculator_checked.png
+14:19:22	IsFindImage:FOUND
+14:19:23	WaitHighlight:Found
+14:19:23	ClickScrollVerify:Found
+14:19:23	ClickScrollVerify:app_chrome.png:app_chrome_checked-1.png
+14:19:23	ClickScroll:app_chrome.png
+14:19:23	FindScroll:app_chrome.png
+14:19:23	switchAppVNC:
+14:19:23	WaitHighlight:app_chrome.png
+14:19:23	IsFindImage:app_chrome.png
+14:19:23	IsFindImage:FOUND
+14:19:24	WaitHighlight:Found
+14:19:27	WaitHighlight:app_chrome.png
+14:19:27	IsFindImage:app_chrome.png
+14:19:27	IsFindImage:FOUND
+14:19:28	WaitHighlight:Found
+14:19:28	FindScroll: FOUND
+14:19:28	ClickHighlight:
+14:19:29	*******ClickImage:M[-515,729 474x88]@S(1)[-1680,0 1680x1050] S:0.95 Center:-278,773
+14:19:30	ClickScroll: Clicked
+14:19:30	ClickScrollVerify:Clicked
+14:19:30	WaitHighlight:app_chrome_checked-1.png
+14:19:30	IsFindImage:app_chrome_checked-1.png
+14:19:30	IsFindImage:FOUND
+14:19:31	WaitHighlight:Found
+14:19:31	ClickScrollVerify:Found
+14:19:31	ClickScrollVerify:app_playstore.png:app_playstore_checked-1.png
+14:19:31	ClickScroll:app_playstore.png
+14:19:31	FindScroll:app_playstore.png
+14:19:31	switchAppVNC:
+14:19:31	WaitHighlight:app_playstore.png
+14:19:31	IsFindImage:app_playstore.png
+14:19:33	IsFindImage:NOT FOUND
+14:19:33	WaitHighlight:Not Found
+14:19:33	FindScroll: WheelDown0
+14:19:33	WheelDown:
+14:19:33	switchAppVNC:
+14:19:37	WaitHighlight:app_playstore.png
+14:19:37	IsFindImage:app_playstore.png
+14:19:38	IsFindImage:NOT FOUND
+14:19:38	WaitHighlight:Not Found
+14:19:38	WaitHighlight:app_playstore.png
+14:19:38	IsFindImage:app_playstore.png
+14:19:40	IsFindImage:NOT FOUND
+14:19:40	WaitHighlight:Not Found
+14:19:40	FindScroll: WheelDown1
+14:19:40	WheelDown:
+14:19:40	switchAppVNC:
+14:19:43	WaitHighlight:app_playstore.png
+14:19:43	IsFindImage:app_playstore.png
+14:19:45	IsFindImage:NOT FOUND
+14:19:45	WaitHighlight:Not Found
+14:19:45	WaitHighlight:app_playstore.png
+14:19:45	IsFindImage:app_playstore.png
+14:19:47	IsFindImage:NOT FOUND
+14:19:47	WaitHighlight:Not Found
+14:19:47	FindScroll: WheelDown2
+14:19:47	WheelDown:
+14:19:47	switchAppVNC:
+14:19:50	WaitHighlight:app_playstore.png
+14:19:50	IsFindImage:app_playstore.png
+14:19:52	IsFindImage:NOT FOUND
+14:19:52	WaitHighlight:Not Found
+14:19:52	WaitHighlight:app_playstore.png
+14:19:52	IsFindImage:app_playstore.png
+14:19:54	IsFindImage:NOT FOUND
+14:19:54	WaitHighlight:Not Found
+14:19:54	FindScroll: WheelDown3
+14:19:54	WheelDown:
+14:19:54	switchAppVNC:
+14:19:57	WaitHighlight:app_playstore.png
+14:19:57	IsFindImage:app_playstore.png
+14:19:58	IsFindImage:NOT FOUND
+14:19:58	WaitHighlight:Not Found
+14:19:58	WaitHighlight:app_playstore.png
+14:19:58	IsFindImage:app_playstore.png
+14:20:00	IsFindImage:NOT FOUND
+14:20:00	WaitHighlight:Not Found
+14:20:00	FindScroll: WheelDown4
+14:20:00	WheelDown:
+14:20:00	switchAppVNC:
+14:20:04	WaitHighlight:app_playstore.png
+14:20:04	IsFindImage:app_playstore.png
+14:20:05	IsFindImage:NOT FOUND
+14:20:05	WaitHighlight:Not Found
+14:20:05	FindScroll: Try Opposite direction
+14:20:05	WaitHighlight:app_playstore.png
+14:20:05	IsFindImage:app_playstore.png
+14:20:07	IsFindImage:NOT FOUND
+14:20:07	WaitHighlight:Not Found
+14:20:07	FindScroll: WheelUp0
+14:20:07	WheelUp:
+14:20:07	switchAppVNC:
+14:20:11	WaitHighlight:app_playstore.png
+14:20:11	IsFindImage:app_playstore.png
+14:20:11	IsFindImage:FOUND
+14:20:12	WaitHighlight:Found
+14:20:15	WaitHighlight:app_playstore.png
+14:20:15	IsFindImage:app_playstore.png
+14:20:15	IsFindImage:FOUND
+14:20:16	WaitHighlight:Found
+14:20:16	FindScroll: FOUND
+14:20:16	ClickHighlight:
+14:20:17	*******ClickImage:M[-515,659 474x79]@S(1)[-1680,0 1680x1050] S:1.00 Center:-278,698
+14:20:18	ClickScroll: Clicked
+14:20:18	ClickScrollVerify:Clicked
+14:20:18	WaitHighlight:app_playstore_checked-1.png
+14:20:18	IsFindImage:app_playstore_checked-1.png
+14:20:18	IsFindImage:FOUND
+14:20:19	WaitHighlight:Found
+14:20:19	ClickScrollVerify:Found
+14:20:19	ClickScrollVerify:app_youtube-1.png:app_youtube_checked.png
+14:20:19	ClickScroll:app_youtube-1.png
+14:20:19	FindScroll:app_youtube-1.png
+14:20:19	switchAppVNC:
+14:20:19	WaitHighlight:app_youtube-1.png
+14:20:19	IsFindImage:app_youtube-1.png
+14:20:21	IsFindImage:NOT FOUND
+14:20:21	WaitHighlight:Not Found
+14:20:21	FindScroll: WheelDown0
+14:20:21	WheelDown:
+14:20:21	switchAppVNC:
+14:20:24	WaitHighlight:app_youtube-1.png
+14:20:24	IsFindImage:app_youtube-1.png
+14:20:25	IsFindImage:FOUND
+14:20:26	WaitHighlight:Found
+14:20:29	WaitHighlight:app_youtube-1.png
+14:20:29	IsFindImage:app_youtube-1.png
+14:20:29	IsFindImage:FOUND
+14:20:30	WaitHighlight:Found
+14:20:30	FindScroll: FOUND
+14:20:30	ClickHighlight:
+14:20:31	*******ClickImage:M[-513,702 473x88]@S(1)[-1680,0 1680x1050] S:1.00 Center:-277,746
+14:20:32	ClickScroll: Clicked
+14:20:32	ClickScrollVerify:Clicked
+14:20:32	WaitHighlight:app_youtube_checked.png
+14:20:32	IsFindImage:app_youtube_checked.png
+14:20:32	IsFindImage:FOUND
+14:20:33	WaitHighlight:Found
+14:20:33	ClickScrollVerify:Found
+14:20:33	ClickVerify::ok_button.png:home_tab.png
+14:20:33	WaitHighlight:ok_button.png
+14:20:33	IsFindImage:ok_button.png
+14:20:33	IsFindImage:FOUND
+14:20:34	WaitHighlight:Found
+14:20:34	ClickVerify:Click
+14:20:34	ClickHighlight:
+14:20:35	*******ClickImage:M[-504,803 215x129]@S(1)[-1680,0 1680x1050] S:1.00 Center:-397,867
+14:20:36	WaitHighlight:home_tab.png
+14:20:36	IsFindImage:home_tab.png
+14:20:37	IsFindImage:FOUND
+14:20:38	WaitHighlight:Found
+14:20:38	ClickVerify:Found
+14:20:38	AssertScroll:Home_Fav_Navigation.png
+14:20:38	FindScroll:Home_Fav_Navigation.png
+14:20:38	switchAppVNC:
+14:20:38	WaitHighlight:Home_Fav_Navigation.png
+14:20:38	IsFindImage:Home_Fav_Navigation.png
+14:20:38	IsFindImage:FOUND
+14:20:39	WaitHighlight:Found
+14:20:42	WaitHighlight:Home_Fav_Navigation.png
+14:20:42	IsFindImage:Home_Fav_Navigation.png
+14:20:42	IsFindImage:FOUND
+14:20:43	WaitHighlight:Found
+14:20:43	FindScroll: FOUND
+14:20:43	AssertScroll:Found
+14:20:43	AssertScroll:Home_Fav_Calculator.png
+14:20:43	FindScroll:Home_Fav_Calculator.png
+14:20:43	switchAppVNC:
+14:20:43	WaitHighlight:Home_Fav_Calculator.png
+14:20:43	IsFindImage:Home_Fav_Calculator.png
+14:20:43	IsFindImage:FOUND
+14:20:44	WaitHighlight:Found
+14:20:48	WaitHighlight:Home_Fav_Calculator.png
+14:20:48	IsFindImage:Home_Fav_Calculator.png
+14:20:48	IsFindImage:FOUND
+14:20:49	WaitHighlight:Found
+14:20:49	FindScroll: FOUND
+14:20:49	AssertScroll:Found
+14:20:49	AssertScroll:Home_Fav_PlayStore.png
+14:20:49	FindScroll:Home_Fav_PlayStore.png
+14:20:49	switchAppVNC:
+14:20:49	WaitHighlight:Home_Fav_PlayStore.png
+14:20:49	IsFindImage:Home_Fav_PlayStore.png
+14:20:49	IsFindImage:FOUND
+14:20:50	WaitHighlight:Found
+14:20:53	WaitHighlight:Home_Fav_PlayStore.png
+14:20:53	IsFindImage:Home_Fav_PlayStore.png
+14:20:53	IsFindImage:FOUND
+14:20:54	WaitHighlight:Found
+14:20:54	FindScroll: FOUND
+14:20:54	AssertScroll:Found
+14:20:54	AssertScroll:Home_Fav_YouTube.png
+14:20:54	FindScroll:Home_Fav_YouTube.png
+14:20:54	switchAppVNC:
+14:20:54	WaitHighlight:Home_Fav_YouTube.png
+14:20:54	IsFindImage:Home_Fav_YouTube.png
+14:20:54	IsFindImage:FOUND
+14:20:55	WaitHighlight:Found
+14:20:58	WaitHighlight:Home_Fav_YouTube.png
+14:20:58	IsFindImage:Home_Fav_YouTube.png
+14:20:58	IsFindImage:FOUND
+14:20:59	WaitHighlight:Found
+14:20:59	FindScroll: FOUND
+14:20:59	AssertScroll:Found
+14:20:59	AssertScroll:Home_Fav_Chrome.png
+14:20:59	FindScroll:Home_Fav_Chrome.png
+14:20:59	switchAppVNC:
+14:20:59	WaitHighlight:Home_Fav_Chrome.png
+14:20:59	IsFindImage:Home_Fav_Chrome.png
+14:21:00	IsFindImage:FOUND
+14:21:01	WaitHighlight:Found
+14:21:04	WaitHighlight:Home_Fav_Chrome.png
+14:21:04	IsFindImage:Home_Fav_Chrome.png
+14:21:04	IsFindImage:FOUND
+14:21:05	WaitHighlight:Found
+14:21:05	FindScroll: FOUND
+14:21:05	AssertScroll:Found

@@ -1,0 +1,56 @@
+12:06:11	Start Framework Environment
+12:06:11	getEnvironment
+12:06:11	SetVNCAppRegion:Find HUAWEI
+12:06:11	SetApp
+12:06:11	SetAppRegionExitOnNull
+12:06:11	SetAppRegion: Find W=496 - H=914
+12:06:12	0 - SetAppRegion - W=1260 - H=745
+12:06:15	1 - SetAppRegion - W=700 - H=20
+12:06:15	2 - SetAppRegion - W=496 - H=914
+12:06:22	SetAppRegion:Found by Size: X=-557,Y=61,W=496,H=914,CX=-309.0,CY=518.0,
+12:06:22	****Script Start *****
+12:06:22	TakeScreenShot: Test_Start.png
+12:06:22	switchAppVNC:
+12:06:22	ScreenShot:Test_Start.png:C:\Users\KEITH~1.FIS\AppData\Local\Temp\sikuli-5651138941617219928.png
+12:06:22	ScreenShot:path - C:\Automation\Sikuli\HomeScreen\TestResults\AddFavoriteApps_20130620120611\Test_Start.png
+12:06:22	ScreenShot:Moved - Test_Start.png
+12:06:22	
+-------------------------------------
+12:06:22	START: AddFavoriteApps
+12:06:22	ClickVerify::global_menu.png:add_favorites.png
+12:06:22	WaitHighlight:global_menu.png
+12:06:22	IsFindImage:global_menu.png
+12:06:22	IsFindImage:FOUND
+12:06:23	WaitHighlight:Found
+12:06:23	ClickVerify:Click
+12:06:23	ClickHighlight:
+12:06:24	ClickImage:
+12:06:24	WaitHighlight:add_favorites.png
+12:06:24	IsFindImage:add_favorites.png
+12:06:25	IsFindImage:FOUND
+12:06:26	WaitHighlight:Found
+12:06:26	ClickVerify:Found
+12:06:26	ClickVerify::add_favorites.png:allbackup.png
+12:06:26	WaitHighlight:add_favorites.png
+12:06:26	IsFindImage:add_favorites.png
+12:06:27	IsFindImage:FOUND
+12:06:28	WaitHighlight:Found
+12:06:28	ClickVerify:Click
+12:06:28	ClickHighlight:
+12:06:29	ClickImage:
+12:06:29	WaitHighlight:allbackup.png
+12:06:29	IsFindImage:allbackup.png
+12:06:40	IsFindImage:NOT FOUND
+12:06:40	WaitHighlight:Not Found
+12:06:40	ClickVerify:NOT Found
+12:06:40	WaitHighlight:add_favorites.png
+12:06:40	IsFindImage:add_favorites.png
+12:06:50	IsFindImage:NOT FOUND
+12:06:50	WaitHighlight:Not Found
+12:06:50	ClickVerify:1
+12:06:50	FAILED:ClickVerifyadd_favorites.png
+12:06:50	TakeScreenShot: FAILED_AddFavoriteApps.png
+12:06:50	switchAppVNC:
+12:06:50	ScreenShot:FAILED_AddFavoriteApps.png:C:\Users\KEITH~1.FIS\AppData\Local\Temp\sikuli-4663665476627251856.png
+12:06:50	ScreenShot:path - C:\Automation\Sikuli\HomeScreen\TestResults\AddFavoriteApps_20130620120611\FAILED_AddFavoriteApps.png
+12:06:50	ScreenShot:Moved - FAILED_AddFavoriteApps.png

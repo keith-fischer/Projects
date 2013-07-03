@@ -1,0 +1,50 @@
+11:57:23	Start Framework Environment
+11:57:23	getEnvironment
+11:57:23	SetVNCAppRegion:Find HUAWEI
+11:57:23	SetApp
+11:57:23	SetAppRegionExitOnNull
+11:57:23	SetAppRegion: Find W=496 - H=914
+11:57:24	0 - SetAppRegion - W=1260 - H=745
+11:57:27	1 - SetAppRegion - W=700 - H=20
+11:57:27	2 - SetAppRegion - W=496 - H=914
+11:57:33	SetAppRegion:Found by Size: X=-557,Y=61,W=496,H=914,CX=-309.0,CY=518.0,
+11:57:33	****Script Start *****
+11:57:33	TakeScreenShot: Test_Start.png
+11:57:33	switchAppVNC:
+11:57:33	ScreenShot:Test_Start.png:C:\Users\KEITH~1.FIS\AppData\Local\Temp\sikuli-123327449741281219.png
+11:57:33	ScreenShot:path - C:\Automation\Sikuli\HomeScreen\TestResults\AddFavoriteApps_20130620115723\Test_Start.png
+11:57:33	ScreenShot:Moved - Test_Start.png
+11:57:33	
+-------------------------------------
+11:57:33	START: AddFavoriteApps
+11:57:33	ClickVerify::global_menu.png:add_favorites.png
+11:57:33	WaitHighlight:global_menu.png
+11:57:33	IsFindImage:global_menu.png
+11:57:34	IsFindImage:FOUND
+11:57:35	WaitHighlight:Found
+11:57:35	ClickVerify:Click
+11:57:35	ClickHighlight:
+11:57:36	ClickImage:
+11:57:36	WaitHighlight:add_favorites.png
+11:57:36	IsFindImage:add_favorites.png
+11:57:47	IsFindImage:NOT FOUND
+11:57:47	WaitHighlight:Not Found
+11:57:47	ClickVerify:NOT Found
+11:57:47	WaitHighlight:global_menu.png
+11:57:47	IsFindImage:global_menu.png
+11:57:47	IsFindImage:FOUND
+11:57:48	WaitHighlight:Found
+11:57:48	ClickVerify:Click
+11:57:48	ClickHighlight:
+11:57:49	ClickImage:
+11:57:49	WaitHighlight:add_favorites.png
+11:57:49	IsFindImage:add_favorites.png
+11:58:00	IsFindImage:NOT FOUND
+11:58:00	WaitHighlight:Not Found
+11:58:00	ClickVerify:NOT Found
+11:58:00	FAILED:ClickVerifyglobal_menu.png
+11:58:00	TakeScreenShot: FAILED_AddFavoriteApps.png
+11:58:00	switchAppVNC:
+11:58:00	ScreenShot:FAILED_AddFavoriteApps.png:C:\Users\KEITH~1.FIS\AppData\Local\Temp\sikuli-7005943848853760981.png
+11:58:00	ScreenShot:path - C:\Automation\Sikuli\HomeScreen\TestResults\AddFavoriteApps_20130620115723\FAILED_AddFavoriteApps.png
+11:58:00	ScreenShot:Moved - FAILED_AddFavoriteApps.png

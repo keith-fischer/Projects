@@ -1,0 +1,37 @@
+11:14:51	Start Framework Environment
+11:14:51	getEnvironment
+11:14:51	SetVNCAppRegion:Find HUAWEI
+11:14:51	SetApp
+11:14:51	SetAppRegionExitOnNull
+11:14:51	SetAppRegion: Find W=496 - H=914
+11:14:52	0 - SetAppRegion - W=1260 - H=745
+11:14:55	1 - SetAppRegion - W=700 - H=20
+11:14:55	2 - SetAppRegion - W=496 - H=914
+11:15:02	SetAppRegion:Found by Size: X=-557,Y=61,W=496,H=914,CX=-309.0,CY=518.0,
+11:15:02	****Script Start *****
+11:15:02	ClickVerify::device_button_back.png:home_tab.png
+11:15:02	WaitHighlight:device_button_back.png
+11:15:02	IsFindImage:device_button_back.png
+11:15:02	IsFindImage:FOUND
+11:15:03	WaitHighlight:Found
+11:15:03	ClickVerify:Click
+11:15:03	ClickHighlight:
+11:15:04	ClickImage:
+11:15:05	WaitHighlight:home_tab.png
+11:15:05	IsFindImage:home_tab.png
+11:15:15	IsFindImage:NOT FOUND
+11:15:15	WaitHighlight:Not Found
+11:15:15	ClickVerify:NOT Found
+11:15:15	WaitHighlight:device_button_back.png
+11:15:15	IsFindImage:device_button_back.png
+11:15:16	IsFindImage:FOUND
+11:15:17	WaitHighlight:Found
+11:15:17	ClickVerify:Click
+11:15:17	ClickHighlight:
+11:15:18	ClickImage:
+11:15:18	WaitHighlight:home_tab.png
+11:15:18	IsFindImage:home_tab.png
+11:15:29	IsFindImage:NOT FOUND
+11:15:29	WaitHighlight:Not Found
+11:15:29	ClickVerify:NOT Found
+11:15:29	FAILED:ClickVerifydevice_button_back.png

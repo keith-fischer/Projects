@@ -1,0 +1,59 @@
+14:00:58	Start Framework Environment
+14:00:58	getEnvironment
+14:00:58	SetVNCAppRegion:Find HUAWEI
+14:00:58	SetApp
+14:00:58	SetAppRegionExitOnNull
+14:00:58	SetAppRegion: Find W=496 - H=914
+14:00:59	0 - SetAppRegion - W=1260 - H=745
+14:01:03	1 - SetAppRegion - W=700 - H=20
+14:01:03	2 - SetAppRegion - W=496 - H=914
+14:01:09	SetAppRegion:Found by Size: X=-557,Y=61,W=496,H=914,CX=-309.0,CY=518.0,
+14:01:09	****Script Start *****
+14:01:09	TakeScreenShot: Test_Start.png
+14:01:09	switchAppVNC:
+14:01:09	ScreenShot:Test_Start.png:C:\Users\KEITH~1.FIS\AppData\Local\Temp\sikuli-4253926556140225232.png
+14:01:09	ScreenShot:path - C:\Automation\Sikuli\HomeScreen\TestResults\AddFavoriteApps_20130620140058\Test_Start.png
+14:01:09	ScreenShot:Moved - Test_Start.png
+14:01:09	
+-------------------------------------
+14:01:09	START: AddFavoriteApps
+14:01:09	ClickVerify::global_menu.png:add_favorites.png
+14:01:09	WaitHighlight:global_menu.png
+14:01:09	IsFindImage:global_menu.png
+14:01:09	IsFindImage:FOUND
+14:01:10	WaitHighlight:Found
+14:01:10	ClickVerify:Click
+14:01:10	ClickHighlight:
+14:01:11	ClickImage:
+14:01:12	WaitHighlight:add_favorites.png
+14:01:12	IsFindImage:add_favorites.png
+14:01:13	IsFindImage:FOUND
+14:01:14	WaitHighlight:Found
+14:01:14	ClickVerify:Found
+14:01:14	ClickVerify::add_favorites.png:P(allbackup.png) S: 0.53
+14:01:14	WaitHighlight:add_favorites.png
+14:01:14	IsFindImage:add_favorites.png
+14:01:14	IsFindImage:FOUND
+14:01:15	WaitHighlight:Found
+14:01:15	ClickVerify:Click
+14:01:15	ClickHighlight:
+14:01:16	ClickImage:
+14:01:17	WaitHighlight:P(allbackup.png) S: 0.53
+14:01:17	IsFindImage:P(allbackup.png) S: 0.53
+14:01:17	IsFindImage:FOUND
+14:01:18	WaitHighlight:Found
+14:01:18	ClickVerify:Found
+14:01:18	ClickVerify::app_calculator.png:app_calculator_checked.png
+14:01:18	WaitHighlight:app_calculator.png
+14:01:18	IsFindImage:app_calculator.png
+14:01:28	IsFindImage:NOT FOUND
+14:01:28	WaitHighlight:Not Found
+14:01:28	ClickVerify:0
+14:01:28	WaitHighlight:app_calculator.png
+14:01:28	IsFindImage:app_calculator.png
+14:01:39	IsFindImage:NOT FOUND
+14:01:39	WaitHighlight:Not Found
+14:01:39	ClickVerify:1
+14:01:39	FAILED:ClickVerifyapp_calculator.png
+14:01:39	TakeScreenShot: FAILED_AddFavoriteApps.png
+14:01:39	switchAppVNC:

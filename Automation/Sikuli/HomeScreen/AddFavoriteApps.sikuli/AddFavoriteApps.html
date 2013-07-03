@@ -1,0 +1,1115 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>AddFavoriteApps.sikuli\AddFavoriteApps.sikuli</h2> <a href="AddFavoriteApps.sikuli\AddFavoriteApps.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">import</span> java
+<span class="kw">import</span> os
+<span class="kw">import</span> shutil
+<span class="kw">from</span> time <span class="kw">import</span> strftime
+
+<span class="kw">global</span> targetApp
+<span class="cmt">#need the guide extension
+</span><span class="cmt">#from guide import *
+</span>
+<span class="cmt">#import sikuli.Sikuli *
+</span>
+<span class="cmt">##########################################
+</span><span class="cmt">#TakeScreenShot
+</span><span class="cmt">##########################################
+</span><span class="kw">def</span> TakeScreenShot(ScreenName):
+    Log(logpath,<span class="str">"TakeScreenShot: "</span>+ ScreenName)
+    ScreenShot(TestFolder,vncregion,ScreenName)
+
+<span class="cmt">##########################################
+</span><span class="cmt">#ScreenShot
+</span><span class="cmt">##########################################
+</span><span class="kw">def</span> ScreenShot(ResultsPath, imgRegion, FileName):
+    <span class="cmt">#srn=imgRegion.getScreen()
+</span>    <span class="cmt">#srnfile = srn.capture(imgRegion)
+</span>    switchAppVNC()
+    <span class="cmt">#srnfile=imgRegion.getScreen().capture()
+</span>    srnfile=<span class="skw">capture</span>(imgRegion)
+    Log(logpath,<span class="str">"ScreenShot:"</span> + FileName+<span class="str">":"</span>+str(srnfile))
+    fullpath=os.path.join(ResultsPath,FileName)
+    Log(logpath,<span class="str">"ScreenShot:path - "</span> + fullpath)
+    shutil.move(str(srnfile),fullpath )
+    Log(logpath,<span class="str">"ScreenShot:Moved - "</span> + FileName)
+
+<span class="cmt">##########################################
+</span><span class="cmt">#set app object
+</span><span class="cmt">##########################################
+</span><span class="kw">def</span> SetApp(appTitle):
+    Log(logpath,<span class="str">"SetApp"</span>)
+    a=App(appTitle)
+    a.focus()
+    <span class="kw">return</span> a
+
+<span class="cmt">##########################################
+</span><span class="cmt">#set region object
+</span><span class="cmt">#assumes ultravnc single window(0)
+</span><span class="cmt">##########################################
+</span>
+<span class="cmt">####################################################
+</span><span class="cmt">### 
+</span><span class="cmt">####################################################
+</span><span class="kw">def</span> getRegionInfo(thisRegion):
+    rc = <span class="str">""</span>
+    <span class="kw">if</span> <span class="kw">not</span> thisRegion:
+        <span class="kw">return</span> rc
+
+    rc += <span class="str">"X="</span> + str(thisRegion.getX()) + <span class="str">","</span>
+    rc += <span class="str">"Y="</span> + str(thisRegion.getY()) + <span class="str">","</span>
+    rc += <span class="str">"W="</span> + str(thisRegion.getW()) + <span class="str">","</span>
+    rc += <span class="str">"H="</span> + str(thisRegion.getH()) + <span class="str">","</span>
+    rc+= <span class="str">"CX="</span> + str(thisRegion.getCenter().getX())+<span class="str">","</span>
+    rc+= <span class="str">"CY="</span> + str(thisRegion.getCenter().getY())+<span class="str">","</span>
+
+    <span class="kw">return</span> rc
+
+<span class="cmt">####################################################
+</span><span class="cmt">### 
+</span><span class="cmt">####################################################
+</span><span class="kw">def</span> SetAppRegion(AppObject,RegWidth,RegHeight):
+    Log(logpath,<span class="str">"SetAppRegion: Find W="</span> + str(RegWidth)+<span class="str">" - H="</span>+str(RegHeight))
+    AppObject.focus()
+    <span class="skw">wait</span>(<span class="dig">1</span>)
+    <span class="cmt"># r = AppObject.window(2)
+</span>    <span class="cmt">#Found: HUAWEI(7448) Region[1181,56 496x914]@Screen(0)[0,0 1680x1050] E:Y, T:3.0 E:Y, T:3.0
+</span>    <span class="kw">for</span> i <span class="kw">in</span> range(<span class="dig">100</span>):
+        w = AppObject.window(i)
+        <span class="kw">if</span> <span class="kw">not</span> w:
+            Log(logpath,str(i)+<span class="str">" - SetAppRegion:Window Not Found"</span> )
+            <span class="kw">break</span>
+            <span class="cmt">#exit("Window Not Found")
+</span>        <span class="kw">else</span>:
+            Log(logpath,str(i) +<span class="str">" - SetAppRegion - W="</span>+str(w.getW())+<span class="str">" - H="</span>+ str(w.getH()))
+            <span class="kw">if</span> w.exists(<img src="global_vncregion_title.png" />):
+                <span class="kw">print</span> i, <span class="str">" # "</span>, w
+                Log(logpath,<span class="str">"SetAppRegion:Found by Title: "</span> + getRegionInfo(w))
+                w.highlight(<span class="dig">3</span>)
+                <span class="kw">break</span>
+            <span class="kw">elif</span> w.getW() &gt;= RegWidth:
+                <span class="kw">if</span> w.getH() &gt;= RegHeight:
+                    w.highlight(<span class="dig">3</span>)
+                    <span class="kw">print</span> i, <span class="str">" # "</span>, w
+                    Log(logpath,<span class="str">"SetAppRegion:Found by Size: "</span> + getRegionInfo(w))
+                    <span class="kw">break</span>
+    <span class="kw">return</span> w
+
+<span class="cmt">####################################################
+</span><span class="cmt">### 
+</span><span class="cmt">####################################################
+</span><span class="kw">def</span> SetAppRegionExitOnNull(AppObject,RegWidth,RegHeight):
+    Log(logpath,<span class="str">"SetAppRegionExitOnNull"</span>)
+    r = SetAppRegion(AppObject,RegWidth,RegHeight)
+    <span class="cmt">#Validate region not null
+</span>    <span class="kw">if</span> <span class="kw">not</span> r:
+        <span class="kw">print</span> <span class="str">"Not Found: "</span> ,AppObject, r
+        r = selectRegion(<span class="str">"Select the VNC window region"</span>)
+        <span class="kw">if</span> <span class="kw">not</span> r:
+            exit(<span class="str">"Not Found"</span>) <span class="cmt">#exit script target app window region is invalid</span>
+        <span class="kw">else</span>:
+            <span class="kw">print</span> <span class="str">"Found: "</span> ,AppObject, r
+    <span class="kw">else</span>:
+        <span class="kw">print</span> <span class="str">"Found: "</span> ,AppObject, r
+        <span class="kw">return</span> r
+
+
+<span class="cmt">####################################################
+</span><span class="cmt">### 
+</span><span class="cmt">####################################################   
+</span><span class="kw">def</span> SetVNCAppRegion():
+    AppTitle = <span class="str">"HUAWEI"</span>
+    Log(logpath,<span class="str">"SetVNCAppRegion:Find "</span>+AppTitle)
+    targetApp = SetApp(AppTitle)
+    vncregion = SetAppRegionExitOnNull(targetApp, <span class="dig">496</span>,<span class="dig">914</span>)
+    <span class="kw">if</span> <span class="kw">not</span> vncregion:
+        Log(logpath,<span class="str">"SetVNCAppRegion: Found"</span>)
+    <span class="kw">return</span> vncregion
+
+<span class="cmt">####################################################
+</span><span class="cmt">### 
+</span><span class="cmt">####################################################
+</span><span class="kw">def</span> getEnvironment():
+    Log(logpath,<span class="str">"getEnvironment"</span>)
+    envOS=Env.getOS()
+    envOSVer=Env.getOSVersion()
+    envSikuliVer=Env.getSikuliVersion()
+    <span class="kw">print</span> <span class="str">"OS"</span>,envOS
+    <span class="kw">print</span> <span class="str">"OS Version"</span>,envOSVer
+    <span class="kw">print</span> <span class="str">"Sikuli Ver: "</span>,envSikuliVer
+    <span class="cmt"># getImagePath() returns a Java array of unicode strings
+</span>    imgPath = list(getImagePath()) <span class="cmt"># makes it a Python list</span>
+    <span class="cmt"># to loop through
+</span>    <span class="kw">if</span> imgPath:
+        <span class="kw">for</span> p <span class="kw">in</span> imgPath:
+            <span class="kw">print</span> <span class="str">"IMAGE PATH: "</span> + p
+    <span class="kw">else</span>:
+        <span class="kw">print</span> <span class="str">"imgPath not found"</span>
+
+
+
+<span class="cmt">####################################################
+</span><span class="cmt">### 
+</span><span class="cmt">####################################################
+</span><span class="kw">def</span> Log2(pathname,msg):
+    <span class="kw">if</span> <span class="kw">not</span> pathname:
+        <span class="kw">return</span>
+    <span class="kw">if</span> <span class="kw">not</span> msg:
+        <span class="kw">return</span>
+    <span class="kw">try</span>:
+        f=open(pathname, <span class="str">'a'</span>)
+        f.write(msg+<span class="str">"\r\n"</span>)
+    <span class="kw">finally</span>:
+        f.close()
+
+<span class="cmt">####################################################
+</span><span class="cmt">### 
+</span><span class="cmt">####################################################
+</span><span class="kw">def</span> Log(pathname,msg):
+    s = strftime(<span class="str">"%H:%M:%S"</span>)+<span class="str">"\t"</span>
+    <span class="kw">try</span>:
+        Log2(pathname,s+msg)
+    <span class="kw">except</span>:
+        Log2(pathname,s+str(msg))
+
+<span class="kw">def</span> strCharBlock(char,count):
+    rc=<span class="str">""</span>
+    <span class="kw">for</span> x <span class="kw">in</span> range(count):
+        rc+=char
+    <span class="kw">return</span> rc
+
+
+<span class="kw">def</span> switchAppVNC():
+    switchApp(<span class="str">"HUAWEI M881"</span>)
+    Log(logpath,<span class="str">"switchAppVNC:"</span>)
+<span class="cmt">####################################################
+</span><span class="cmt">### 
+</span><span class="cmt">####################################################
+</span><span class="cmt">#def getRegionInfo(imageregion):
+</span><span class="cmt">#    info = vncregion.find(imageregion).getFileName()
+</span><span class="cmt">#    return info
+</span>
+
+<span class="cmt">####################################################
+</span><span class="cmt">### 
+</span><span class="cmt">####################################################
+</span><span class="kw">def</span> TabFields(imgRegion,TabCount):
+    <span class="cmt">#App.focus("vncviewer.exe")
+</span>    Log(logpath,<span class="str">"TabFields:"</span>)
+    switchAppVNC()
+
+    <span class="kw">for</span> i <span class="kw">in</span> range(TabCount):
+        imgRegion.<span class="skw">type</span>(Key.TAB)
+
+<span class="cmt">####################################################
+</span><span class="cmt">### 
+</span><span class="cmt">####################################################
+</span><span class="kw">def</span> KeyUp(imgRegion,keyDownCount):
+    Log(logpath,<span class="str">"KeyUp:"</span>)
+    switchAppVNC()
+
+    LocStart =  imgRegion.getCenter().above(<span class="dig">20</span>)
+    LocStop  =  imgRegion.getCenter().above(<span class="dig">280</span>)
+    imgRegion.mouseMove(LocStart)
+    <span class="kw">for</span> i <span class="kw">in</span> range(keyDownCount):
+        <span class="skw">type</span>(Key.UP)
+        <span class="skw">wait</span>(<span class="dig">1</span>)
+
+<span class="cmt">####################################################
+</span><span class="cmt">### 
+</span><span class="cmt">####################################################
+</span><span class="kw">def</span> KeyDown(imgRegion,keyDownCount):
+    Log(logpath,<span class="str">"KeyDown:"</span>)
+    switchAppVNC()
+
+    LocStart =  imgRegion.getCenter().above(<span class="dig">20</span>)
+    LocStop  =  imgRegion.getCenter().above(<span class="dig">280</span>)
+    imgRegion.mouseMove(LocStart)
+    <span class="kw">for</span> i <span class="kw">in</span> range(keyDownCount):
+        <span class="skw">type</span>(Key.DOWN)
+        <span class="skw">wait</span>(<span class="dig">1</span>)
+<span class="cmt">####################################################
+</span><span class="cmt">### 
+</span><span class="cmt">####################################################
+</span><span class="kw">def</span> SwipeUp(imgRegion):
+    Log(logpath,<span class="str">"SwipeUp:"</span>)
+    <span class="cmt">#App.focus("vncviewer.exe")#App.focus method does not work
+</span>    switchAppVNC()
+
+    LocStart =  imgRegion.getCenter().above(<span class="dig">20</span>)
+    LocStop  =  imgRegion.getCenter().above(<span class="dig">250</span>)
+
+<span class="cmt">#    imgRegion.mouseUp()
+</span><span class="cmt">#    imgRegion.mouseMove(LocStart)
+</span><span class="cmt">#    imgRegion.mouseUp()
+</span><span class="cmt">#    imgRegion.dragDrop(LocStart,LocStop)
+</span><span class="cmt">#    imgRegion.drag(LocStart)
+</span><span class="cmt">#    imgRegion.dropAt(LocStop)
+</span><span class="cmt">#    imgRegion.mouseUp(Button.LEFT)
+</span><span class="cmt">#    imgRegion.mouseMove(LocStart)
+</span><span class="cmt">#    wait(1)
+</span><span class="cmt">#    imgRegion.mouseDown(Button.LEFT)
+</span><span class="cmt">##    wait(1)
+</span><span class="cmt">#    imgRegion.mouseMove(LocStop)
+</span><span class="cmt">#    wait(1)
+</span><span class="cmt">#    imgRegion.mouseUp()
+</span><span class="cmt">#    imgRegion.mouseUp()
+</span>    <span class="skw">wait</span>(<span class="dig">2</span>)
+<span class="cmt">####################################################
+</span><span class="cmt">### WheelUp(imgRegion): scroll list up
+</span><span class="cmt">####################################################
+</span><span class="kw">def</span> WheelUp(imgRegion):
+    Log(logpath,<span class="str">"WheelUp:"</span>)
+    switchAppVNC()
+    LocStart =  imgRegion.getCenter().above(<span class="dig">20</span>)
+    LocStop  =  imgRegion.getCenter().above(<span class="dig">280</span>)
+    imgRegion.mouseMove(LocStart)
+    imgRegion.wheel(LocStart,WHEEL_UP, <span class="dig">1</span>)
+    <span class="skw">type</span>(Key.DOWN)
+    <span class="skw">type</span>(Key.DOWN)
+    <span class="skw">type</span>(Key.DOWN)
+    <span class="skw">type</span>(Key.DOWN)
+    <span class="skw">type</span>(Key.DOWN)
+    <span class="skw">type</span>(Key.DOWN)
+    <span class="skw">type</span>(Key.DOWN)
+    <span class="skw">type</span>(Key.DOWN)
+    <span class="skw">type</span>(Key.DOWN)
+
+<span class="cmt">#    imgRegion.wheel(LocStart,WHEEL_DOWN, 1)  
+</span><span class="cmt">#    imgRegion.wheel(LocStart,WHEEL_UP, 1)    
+</span>    <span class="skw">wait</span>(<span class="dig">1</span>)
+
+<span class="cmt">####################################################
+</span><span class="cmt">### WheelDown(imgRegion): scroll list down
+</span><span class="cmt">####################################################
+</span><span class="kw">def</span> WheelDown(imgRegion):
+    Log(logpath,<span class="str">"WheelDown:"</span>)
+    switchAppVNC()
+    LocStart =  imgRegion.getCenter().above(<span class="dig">20</span>)
+    LocStop  =  imgRegion.getCenter().above(<span class="dig">280</span>)
+    imgRegion.mouseMove(LocStart)
+    imgRegion.wheel(LocStart,WHEEL_DOWN, <span class="dig">1</span>)
+    <span class="skw">type</span>(Key.UP)
+    <span class="skw">type</span>(Key.UP)
+    <span class="skw">type</span>(Key.UP)
+    <span class="skw">type</span>(Key.UP)
+    <span class="skw">type</span>(Key.UP)
+    <span class="skw">type</span>(Key.UP)
+    <span class="skw">type</span>(Key.UP)
+    <span class="skw">type</span>(Key.UP)
+    <span class="skw">type</span>(Key.UP)
+
+<span class="cmt">#    imgRegion.wheel(LocStart,WHEEL_UP, 1)
+</span><span class="cmt">#    imgRegion.wheel(LocStart,WHEEL_DOWN, 1)    
+</span>    <span class="skw">wait</span>(<span class="dig">1</span>)
+
+<span class="cmt">####################################################
+</span><span class="cmt">### SwipeDown
+</span><span class="cmt">####################################################
+</span><span class="kw">def</span> SwipeDown(imgRegion):
+    Log(logpath,<span class="str">"SwipeDown:"</span>)
+    <span class="cmt">#App.focus("vncviewer.exe") #App.focus method does not work
+</span>    switchAppVNC()
+    LocStart =  imgRegion.getCenter().above(<span class="dig">250</span>)
+    LocStop  =  imgRegion.getCenter().above(<span class="dig">20</span>)
+    imgRegion.mouseMove(LocStart)
+    imgRegion.drag(LocStart)
+    imgRegion.dropAt(LocStop)
+    imgRegion.mouseUp(Button.LEFT)
+<span class="cmt">#    imgRegion.mouseMove(LocStart)
+</span><span class="cmt">#    wait(1)
+</span><span class="cmt">#    imgRegion.mouseDown(Button.LEFT)
+</span><span class="cmt">##    wait(1)
+</span><span class="cmt">#    imgRegion.mouseMove(LocStop)
+</span><span class="cmt">#    wait(1)
+</span><span class="cmt">#    imgRegion.mouseUp()
+</span>    <span class="skw">wait</span>(<span class="dig">2</span>)
+
+
+<span class="cmt">####################################################
+</span><span class="cmt">### 
+</span><span class="cmt">####################################################
+</span><span class="kw">def</span> ClickHighlight(imgClick):
+    Log(logpath,<span class="str">"ClickHighlight:"</span>)
+<span class="cmt">#    imageFound=WaitHighlight(imgRegion,imgClick,10)
+</span>    imgClick.highlight(<span class="dig">1</span>)
+    ClickImage(imgClick)
+
+
+
+<span class="cmt">####################################################
+</span><span class="cmt">### 
+</span><span class="cmt">####################################################
+</span><span class="kw">def</span> ClickImage(imgClick):
+    <span class="cmt">#imagecount = imagecount + 1
+</span>    <span class="cmt">#fname="ClickImage"+str(imagecount)+".png"
+</span>    Log(logpath,<span class="str">"*******ClickImage:"</span>+str(imgClick))
+   <span class="cmt"># ScreenShot(TestFolder,imgClick,fname)
+</span>    <span class="cmt">#wait(1)
+</span>    imgClick.<span class="skw">click</span>()
+
+
+<span class="cmt">####################################################
+</span><span class="cmt">### returns found region, not found is none
+</span><span class="cmt">### highlights the found region
+</span><span class="cmt">####################################################
+</span><span class="kw">def</span> IsFindImage(imgRegion,imgFind,timeout):
+    Log(logpath,<span class="str">"IsFindImage:"</span> + str(imgFind))
+    <span class="kw">if</span> imgRegion.exists(imgFind,timeout):
+            imgFound=imgRegion.<span class="skw">find</span>(imgFind)
+            Log(logpath,<span class="str">"IsFindImage:FOUND"</span> )
+            <span class="kw">return</span> imgFound
+    <span class="kw">else</span>:
+        Log(logpath,<span class="str">"IsFindImage:NOT FOUND"</span> )
+        <span class="kw">return</span>
+
+<span class="cmt">####################################################
+</span><span class="cmt">### 
+</span><span class="cmt">####################################################
+</span><span class="kw">def</span> WaitHighlight(imgRegion,imgHighlight):
+    <span class="kw">return</span> WaitHighlight(imgRegion,imgHighlight,<span class="dig">2</span>)
+
+<span class="cmt">####################################################
+</span><span class="cmt">### returns found match object imgHighlight within imgRegion, not found is none
+</span><span class="cmt">### highlights the found imgHighlight
+</span><span class="cmt">####################################################
+</span><span class="kw">def</span> WaitHighlight(imgRegion,imgHighlight,timeout):
+    Log(logpath,<span class="str">"WaitHighlight:"</span> + str(imgHighlight))
+    foundimg = IsFindImage(imgRegion,imgHighlight,timeout)
+    <span class="kw">if</span> foundimg:
+        foundimg.highlight(<span class="dig">1</span>)
+        Log(logpath,<span class="str">"WaitHighlight:Found"</span>)
+        <span class="kw">return</span> foundimg
+    <span class="kw">else</span>:
+        Log(logpath,<span class="str">"WaitHighlight:Not Found"</span>)
+        <span class="kw">return</span>
+
+
+<span class="cmt">####################################################
+</span><span class="cmt">### Scrolls list until target is visible and clicks target
+</span><span class="cmt">####################################################
+</span><span class="kw">def</span> TabScroll(imgRegion, imgFind, TabCount):
+    Log(logpath,<span class="str">"TabScroll:"</span> + str(imgFind))
+
+    <span class="kw">for</span> x <span class="kw">in</span> range(TabCount):
+        waitregion = WaitHighlight(imgRegion,imgFind,<span class="dig">1</span>)
+        <span class="kw">if</span> waitregion:
+            Log(logpath,<span class="str">"TabScroll: FOUND"</span>)
+            <span class="kw">return</span> waitregion
+        <span class="kw">else</span>:
+            Log(logpath,<span class="str">"TabScroll: "</span>+ str(x))
+            TabFields(imgRegion,<span class="dig">1</span>)
+
+
+<span class="cmt">#search failed        
+</span>    Log(logpath,<span class="str">"FAILED:TabScroll:"</span> + str(imgFind))
+    <span class="kw">return</span> none
+
+
+
+
+<span class="cmt">####################################################
+</span><span class="cmt">### Scrolls list until target region is visible and 
+</span><span class="cmt">### returns found region for further action
+</span><span class="cmt">### WHEEL_MOVE is ignored for now
+</span><span class="cmt">### WHEEL_UP_DOWN = WHEEL_UP OR WHEEL_UP_DOWN = WHEEL_DOWN (sikuli wheel direction constant)
+</span><span class="cmt">####################################################
+</span><span class="kw">def</span> FindScroll(imgRegion, imgFind, WHEEL_UP_DOWN, WHEEL_MOVE, WHEEL_MOVE_COUNT):
+    Log(logpath,<span class="str">"FindScroll:"</span> + str(imgFind))
+    switchAppVNC()
+    <span class="kw">for</span> x <span class="kw">in</span> range(WHEEL_MOVE_COUNT):
+        waitregion = WaitHighlight(imgRegion,imgFind,<span class="dig">2</span>)
+        <span class="kw">if</span> waitregion:
+            <span class="skw">wait</span>(<span class="dig">3</span>)
+            waitregion = WaitHighlight(imgRegion,imgFind,<span class="dig">1</span>)
+            Log(logpath,<span class="str">"FindScroll: FOUND"</span>)
+            <span class="kw">return</span> waitregion
+        <span class="kw">else</span>:
+            <span class="kw">if</span> WHEEL_UP_DOWN == WHEEL_DOWN:
+                Log(logpath,<span class="str">"FindScroll: WheelDown"</span> + str(x))
+                WheelDown(imgRegion)
+                <span class="cmt">#KeyDown(imgRegion,2)
+</span>            <span class="kw">else</span>:
+                Log(logpath,<span class="str">"FindScroll: WheelUp"</span> + str(x))
+                WheelUp(imgRegion)
+                <span class="cmt">#KeyUp(imgRegion,2)
+</span>            <span class="skw">wait</span>(<span class="dig">1</span>)
+            waitregion = WaitHighlight(imgRegion,imgFind,<span class="dig">1</span>)
+            <span class="kw">if</span> waitregion:
+                <span class="skw">wait</span>(<span class="dig">3</span>)
+                waitregion = WaitHighlight(imgRegion,imgFind,<span class="dig">1</span>)
+                Log(logpath,<span class="str">"FindScroll: FOUND"</span>)
+                <span class="kw">return</span> waitregion
+<span class="cmt">#Try scroll other direction
+</span>    Log(logpath,<span class="str">"FindScroll: Try Opposite direction"</span>)
+    <span class="kw">for</span> x <span class="kw">in</span> range(WHEEL_MOVE_COUNT):
+        waitregion = WaitHighlight(imgRegion,imgFind,<span class="dig">2</span>)
+        <span class="kw">if</span> waitregion:
+            Log(logpath,<span class="str">"FindScroll: FOUND"</span>)
+            <span class="kw">return</span> waitregion
+        <span class="kw">else</span>:
+            <span class="kw">if</span> WHEEL_UP_DOWN == WHEEL_DOWN:
+                Log(logpath,<span class="str">"FindScroll: WheelUp"</span> + str(x))
+                WheelUp(imgRegion)
+                <span class="cmt">#KeyUp(imgRegion,2)
+</span>            <span class="kw">else</span>:
+                Log(logpath,<span class="str">"FindScroll: WheelDown"</span> + str(x))
+                WheelDown(imgRegion)
+                <span class="cmt">#KeyDown(imgRegion,2)
+</span>            <span class="skw">wait</span>(<span class="dig">1</span>)
+            waitregion = WaitHighlight(imgRegion,imgFind,<span class="dig">1</span>)
+            <span class="kw">if</span> waitregion:
+                <span class="skw">wait</span>(<span class="dig">3</span>)
+                waitregion = WaitHighlight(imgRegion,imgFind,<span class="dig">1</span>)
+                Log(logpath,<span class="str">"FindScroll: FOUND"</span>)
+                <span class="kw">return</span> waitregion
+<span class="cmt">#search failed        
+</span>    Log(logpath,<span class="str">"FAILED:FindScroll:"</span> + imgFind)
+    <span class="kw">return</span> none
+
+
+
+
+<span class="cmt">####################################################
+</span><span class="cmt">### Scrolls list until target is visible and clicks target
+</span><span class="cmt">####################################################
+</span><span class="kw">def</span> ClickScroll(imgRegion, imgClick, WHEEL_UP_DOWN, WHEEL_MOVE, WHEEL_MOVE_COUNT):
+    Log(logpath,<span class="str">"ClickScroll:"</span> + str(imgClick))
+
+    <span class="kw">for</span> x <span class="kw">in</span> range(WHEEL_MOVE_COUNT):
+        waitregion = FindScroll(imgRegion,imgClick,<span class="dig">1</span>,<span class="dig">1</span>,WHEEL_MOVE_COUNT)
+        <span class="cmt">#waitregion = WaitHighlight(imgRegion,imgClick,2)
+</span>        <span class="kw">if</span> waitregion:
+            ClickHighlight(waitregion)
+            Log(logpath,<span class="str">"ClickScroll: Clicked"</span>)
+            <span class="kw">return</span> waitregion
+        <span class="kw">else</span>:
+            Log(logpath,<span class="str">"ClickScroll:"</span> + str(x))
+<span class="cmt">#            SwipeUp(imgRegion)
+</span>            <span class="cmt">#imgRegion.wheel(WHEEL_DOWN, WHEEL_MOVE)
+</span>            <span class="skw">wait</span>(<span class="dig">3</span>)
+    Log(logpath,<span class="str">"FAILED:ClickScroll:"</span> + imgClick)
+    exit()
+
+<span class="cmt">####################################################
+</span><span class="cmt">### 
+</span><span class="cmt">####################################################
+</span><span class="kw">def</span> ClickVerify(imgRegion,imgClick,imgVerify):
+
+    Log(logpath,<span class="str">"ClickVerify:"</span> + <span class="str">":"</span>+str(imgClick)+<span class="str">":"</span>+str(imgVerify))
+    <span class="kw">for</span> x <span class="kw">in</span> range(<span class="dig">2</span>):
+        waitregion = WaitHighlight(imgRegion,imgClick,<span class="dig">1</span>)
+        <span class="kw">if</span> waitregion:
+            Log(logpath,<span class="str">"ClickVerify:Click"</span> )
+            ClickHighlight(waitregion)
+            waitVregion = WaitHighlight(imgRegion,imgVerify,<span class="dig">10</span>)
+            <span class="kw">if</span> waitVregion:
+                Log(logpath,<span class="str">"ClickVerify:Found"</span> )
+                <span class="kw">return</span> waitVregion
+            <span class="kw">else</span>:
+                Log(logpath,<span class="str">"ClickVerify:NOT Found"</span> )
+        <span class="kw">else</span>:
+            Log(logpath,<span class="str">"ClickVerify:"</span> + str(x))
+    Log(logpath,<span class="str">"FAILED:ClickVerify"</span> + imgClick)
+    exit()
+
+<span class="cmt">####################################################
+</span><span class="cmt">### 
+</span><span class="cmt">####################################################
+</span><span class="kw">def</span> ClickScrollVerify(imgRegion,imgClick,imgVerify,WHEEL_UP_DOWN,WHEEL_MOVE,WHEEL_MOVE_COUNT):
+    Log(logpath,<span class="str">"ClickScrollVerify:"</span>+str(imgClick)+<span class="str">":"</span>+str(imgVerify))
+    <span class="kw">for</span> x <span class="kw">in</span> range(<span class="dig">4</span>):
+        waitregion = ClickScroll(imgRegion,imgClick,WHEEL_DOWN,WHEEL_MOVE,WHEEL_MOVE_COUNT)
+        <span class="kw">if</span> waitregion:
+            Log(logpath,<span class="str">"ClickScrollVerify:Clicked"</span>)
+            waitregion = WaitHighlight(imgRegion,imgVerify,<span class="dig">10</span>)
+            <span class="kw">if</span> waitregion:
+                Log(logpath,<span class="str">"ClickScrollVerify:Found"</span>)
+                <span class="kw">return</span> waitregion
+            <span class="kw">else</span>:
+                Log(logpath,<span class="str">"FAILED:ClickScrollVerify:Verify:"</span> + imgVerify)
+        <span class="kw">else</span>:
+            Log(logpath,<span class="str">"ClickScrollVerify:Click:"</span> + str(x))
+    Log(logpath,<span class="str">"FAILED:ClickScrollVerify:Click:"</span> + imgClick)
+    exit(<span class="dig">1</span>)
+<span class="cmt">####################################################
+</span><span class="cmt">### 
+</span><span class="cmt">####################################################
+</span><span class="kw">def</span> AssertScroll(imgRegion,imgAssert,WHEEL_UP_DOWN,WHEEL_MOVE,WHEEL_MOVE_COUNT):
+    Log(logpath,<span class="str">"AssertScroll:"</span>+str(imgAssert))
+    <span class="kw">for</span> x <span class="kw">in</span> range(<span class="dig">2</span>):
+        waitregion = FindScroll(imgRegion,imgAssert,WHEEL_DOWN,WHEEL_MOVE,WHEEL_MOVE_COUNT)
+        <span class="kw">if</span> waitregion:
+            Log(logpath,<span class="str">"PASSED:AssertScroll"</span>)
+            <span class="kw">return</span> waitregion
+        <span class="kw">else</span>:
+            Log(logpath,<span class="str">"AssertScroll:Search:"</span> + str(x))
+    Log(logpath,<span class="str">"FAILED:AssertScroll:"</span> + imgAssert)
+    exit(<span class="dig">1</span>)
+<span class="cmt">####################################################
+</span><span class="cmt">### 
+</span><span class="cmt">####################################################
+</span><span class="kw">def</span> AssertNotScroll(imgRegion,imgAssert,WHEEL_UP_DOWN,WHEEL_MOVE,WHEEL_MOVE_COUNT):
+    Log(logpath,<span class="str">"AssertNotScroll:"</span>+str(imgAssert))
+    <span class="kw">for</span> x <span class="kw">in</span> range(<span class="dig">2</span>):
+        waitregion = FindScroll(imgRegion,imgAssert,WHEEL_DOWN,WHEEL_MOVE,WHEEL_MOVE_COUNT)
+        <span class="kw">if</span> waitregion:
+            Log(logpath,<span class="str">" FAILED:AssertNotScroll"</span>)
+            exit(<span class="dig">1</span>)
+        <span class="kw">else</span>:
+            Log(logpath,<span class="str">"AssertNotScroll:Search:"</span> + str(x))
+
+    Log(logpath,<span class="str">"PASSED:AssertNotScroll"</span>)
+    <span class="kw">return</span> none
+
+<span class="cmt">####################################################
+</span><span class="cmt">### 
+</span><span class="cmt">####################################################
+</span><span class="kw">def</span> FieldInput(imgRegion,imgField,keyText):
+    Log(logpath,<span class="str">"FieldInput:"</span> + keyText)
+    imgfound = TabScroll(imgRegion,imgField,<span class="dig">10</span>)
+    <span class="kw">if</span> imgfound:
+        <span class="skw">click</span>(imgfound)
+        imgfound.<span class="skw">type</span>(keyText)
+        TabFields(imgRegion,<span class="dig">1</span>)
+        Log(logpath,<span class="str">"FieldInput: Found"</span>)
+        <span class="kw">return</span>
+    Log(logpath,<span class="str">"FieldInput: FAILED"</span>)
+    exit()
+
+<span class="cmt">####################################################
+</span><span class="cmt">### 
+</span><span class="cmt">####################################################
+</span><span class="kw">def</span> FieldInputSelectItem(imgRegion,imgField,imgFldSelectDefault,imgSelectPick,imgFldSelected):
+    Log(logpath,<span class="str">"FieldInputSelectItem:"</span> )
+    <span class="cmt">#do phone type select first for default phone field image
+</span>    TabScroll(vncregion,imgField,<span class="dig">10</span>)
+    ClickVerify(vncregion,imgFldSelectDefault ,imgSelectPick )
+    ClickVerify(vncregion,imgSelectPick   ,imgFldSelected )
+    Log(logpath,<span class="str">"FieldInputSelectItem:Selected"</span> )
+
+
+<span class="cmt">##########################################
+</span><span class="cmt">#Script START DEBUG: this is temp code for test debug/construction
+</span><span class="cmt">##########################################
+</span>
+
+<span class="kw">def</span> TestDebug(vncregion):
+    Log(logpath,<span class="str">"\n\r-------------------------------------"</span>)
+    Log(logpath,<span class="str">"START: TestDebug"</span>)
+
+    <span class="skw">type</span>(<img src="People_NewContacName.png" />, <span class="str">"testContactName1"</span>)
+
+    <span class="skw">type</span>( <img src="People_NewAddOrganizationName.png" /> , <span class="str">"testOrganization1"</span>)
+
+    <span class="skw">type</span>( <img src="People_NewTitleName.png" /> , <span class="str">"testTitle1"</span>)
+
+    FindScroll(vncregion, <img src="People_AddNewPhone.png" />,WHEEL_DOWN,<span class="dig">1</span>,<span class="dig">1</span>)
+
+    <span class="skw">type</span>( <img src="People_AddNewPhone.png" /> , <span class="str">"testPhone1"</span>)
+
+    ClickVerify(vncregion,<img src="people_AddNewMobile.png" />  ,<img src="people_SelectPhoneType.png" />  )
+    ClickVerify(vncregion,<img src="people_SelectPhoneType.png" />   ,<img src="people_selectedPhoneTypeHome.png" />  )
+
+
+
+
+    ClickVerify(vncregion,<img src="people_SelectRingtone.png" />  ,<img src="people_selectRingtoneTypeDialog.png" />  )
+
+    ClickVerify(vncregion,<img src="people_selectRingtoneItem.png" />  ,<img src="people_RingtoneList.png" />  )
+
+    ClickVerify(vncregion,<img src="people_selectArgoItem.png" /> ,<img src="people_SelectedArgoItem.png" />  )
+
+    ClickVerify(vncregion,<img src="people_SelectDefaultItem.png" /> , <img src="people_SelectedDefaultItem.png" /> )
+
+    ClickVerify(vncregion,<img src="people_ringtonesListOK.png" /> , <img src="people_contactsDonebutton.png" /> )
+
+    exit()
+
+    Log(logpath,<span class="str">"PASSED: TestDebug "</span>)
+<span class="cmt">##########################################
+</span><span class="cmt">#Script END DEBUG
+</span><span class="cmt">##########################################
+</span>
+
+<span class="cmt">##########################################
+</span><span class="cmt">#Script Start VoiceMail
+</span><span class="cmt">##########################################
+</span>
+<span class="kw">def</span> TestVoiceMail(vncregion):
+    Log(logpath,<span class="str">"\n\r-------------------------------------"</span>)
+    Log(logpath,<span class="str">"START: TestVoiceMail "</span>)
+    ClickVerify(vncregion,<img src="App_PeopleTab.png" /> , <img src="Apps_PeopleTab.png" /> )
+
+    ClickVerify(vncregion, <img src="Apps_AppsTab.png" /> , <img src="Apps_verifyAppsPeopleTabs.png" /> )
+
+    ClickVerify(vncregion,<img src="Home_Voicemail.png" /> ,<img src="Home_headVoicemail.png" />  )
+
+    ClickVerify(vncregion,<img src="Home_VoicemailHangup.png" />  , <img src="Home_Voicemail.png" />  )
+
+    Log(logpath,<span class="str">"PASSED: TestVoiceMail"</span>)
+<span class="cmt">##########################################
+</span><span class="cmt">#Script Start Home
+</span><span class="cmt">##########################################
+</span>
+<span class="cmt">#ClickVerify(vncregion,"Home_GreatCall.png" ,"Home_Head-GreatCall.png" )
+</span>
+
+
+<span class="cmt">##########################################
+</span><span class="cmt">#Script Home Contacts Us
+</span><span class="cmt">##########################################
+</span><span class="kw">def</span> TestContactUs(vncregion):
+    Log(logpath,<span class="str">"\n\r-------------------------------------"</span>)
+    Log(logpath,<span class="str">"START: TestContactUs "</span>)
+    ClickVerify(vncregion,<img src="Home_GreatCall.png" /> ,<img src="Home_Head-GreatCall.png" /> )
+
+    ClickVerify(vncregion,<img src="Home_ContactUs.png" />,<img src="Home_ContactUs_verifyNeedHelpAccount.png" />)
+
+    ClickVerify(vncregion,<img src="Global_BackButton.png" />,<img src="Home_Head-GreatCall.png" />)
+
+    ClickVerify(vncregion,<img src="Global_BackButton.png" />,<img src="Home_GreatCall.png" />)
+
+    <span class="cmt">#ClickVerify(vncregion,"Home_GreatCall.png" ,"Home_Head-GreatCall.png" )
+</span>    Log(logpath,<span class="str">"PASSED: TestContactUs"</span>)
+<span class="cmt">##########################################
+</span><span class="cmt">#--&gt;Script Home Featured Apps
+</span><span class="cmt">##########################################
+</span><span class="kw">def</span> TestFeaturedApps(vncregion):
+
+    Log(logpath,<span class="str">"\n\r-------------------------------------"</span>)
+    Log(logpath,<span class="str">"START: TestFeaturedApps "</span>)
+    ClickVerify(vncregion,<img src="Home_GreatCall.png" /> ,<img src="Home_Head-GreatCall.png" /> )
+
+    ClickVerify(vncregion,<img src="Home_FeaturedApps.png" />,<img src="Home_FeaturedApps_headFeaturedApps.png" />)
+
+    ClickVerify(vncregion,<img src="FeaturedApps_5Star.png" />,<img src="FeaturedApps_PlayStore.png" />)
+
+
+    ClickVerify(vncregion,<img src="Global_BackButton.png" />,<img src="Home_FeaturedApps_headFeaturedApps.png" />)
+    ClickVerify(vncregion,<img src="Global_BackButton.png" />,<img src="Home_Head-GreatCall.png" />)
+
+    ClickVerify(vncregion,<img src="Global_BackButton.png" />,<img src="Apps_verifyAppsPeopleTabs.png" />)
+    Log(logpath,<span class="str">"PASSED: TestFeaturedApps"</span>)
+<span class="cmt">##########################################
+</span><span class="cmt">#&lt;--Script Home Featured Apps
+</span><span class="cmt">##########################################
+</span>
+<span class="cmt">##########################################
+</span><span class="cmt">#--&gt;Script Home People Add contact
+</span><span class="cmt">#start from home
+</span><span class="cmt">##########################################
+</span><span class="kw">def</span> TestAddContact(vncregion):
+    Log(logpath,<span class="str">"\n\r-------------------------------------"</span>)
+    Log(logpath,<span class="str">"START: TestAddContact "</span>)
+
+    ClickVerify(vncregion,<img src="App_PeopleTab.png" /> , <img src="Apps_PeopleTab.png" /> )
+<span class="cmt">#ClickScrollVerify(vncregion,  ,  ,WHEEL_DOWN,10,10)
+</span>
+    <span class="skw">find</span>(<img src="Apps_PeopleTab_NoContacts.png" />)
+
+    ClickVerify(vncregion,<img src="global_menu.png" /> , <img src="home_people_menu_AddNew.png" /> )
+
+    ClickVerify(vncregion, <img src="home_people_menu_AddNew.png" />, <img src="home_people_Addnew_verifyDoneContact.png" /> )
+
+
+
+<span class="cmt">#FieldInput(vncregion, "People_AddNewContactPhoneContact.png",    "Phone Contact1")
+</span>
+    FieldInput(vncregion, <img src="People_AddNewContact_Name.png" />,    <span class="str">"Contact Name1"</span>)
+
+    FieldInput(vncregion,<img src="People_AddNewContact_AddOrganization.png" /> ,    <span class="str">""</span>)
+
+    FieldInput(vncregion,<img src="People_AddNewContact_Company.png" /> ,    <span class="str">"Company1"</span>)
+
+    FieldInput(vncregion,<img src="People_AddNewContact_Title.png" /> ,    <span class="str">"Title1"</span>)
+
+<span class="cmt">#People_AddNewContact
+</span>    FieldInputSelectItem(vncregion,<img src="People_AddNewPhone.png" />,<img src="people_AddNewMobile.png" /> ,<img src="people_SelectPhoneType.png" />,<img src="People_AddNewContact_PhoneTypeHomeSelected.png" />)
+
+    FieldInput(vncregion, <img src="People_AddNewPhone.png" />,<span class="str">"555-555-5555"</span>)
+
+<span class="cmt">#TabScroll(vncregion,"People_AddNewPhone.png",10)
+</span>
+<span class="cmt">#do phone type select first for default phone field image
+</span><span class="cmt">#ClickVerify(vncregion,"people_AddNewMobile.png"  ,"people_SelectPhoneType.png"  )
+</span><span class="cmt">#ClickVerify(vncregion,"people_SelectPhoneType.png"   ,"People_AddNewContact_PhoneTypeHomeSelected.png" )
+</span>
+
+    FieldInputSelectItem(vncregion,<img src="People_AddNewContact_Email-1.png" />,<img src="People_AddNewContact_PhoneTypeHomeSelected.png" />,<img src="People_AddNewContact_pickMobile.png" />,<img src="people_AddNewMobile.png" /> )
+
+
+<span class="cmt">#ClickVerify(vncregion,"people_AddNewMobile.png"  ,"people_SelectPhoneType.png"  )
+</span>
+    FieldInput(vncregion,<img src="People_AddNewContact_Email-1.png" /> ,<span class="str">"email1@email1.com"</span>)
+
+    TabScroll(vncregion,<img src="People_AddNewContact_PhoneTypeHomeSelected.png" />,<span class="dig">10</span>)<span class="cmt">#default</span>
+
+    FieldInputSelectItem(vncregion,<img src="people_AddContact_Address.png" />,<img src="People_AddNewContact_PhoneTypeHomeSelected.png" />,<img src="people_NewContact_SelectItem_Work.png" />,<img src="People_AddNewContact_SelectedWork.png" /> )
+
+    FieldInput(vncregion,<img src="people_AddContact_AddressEdit.png" /> ,<span class="str">"123 street, city state zip"</span>)
+
+    FieldInputSelectItem(vncregion,<img src="people_NewContactSelectGroupName.png" />,<img src="people_NewContactSelectGroupName.png" />,<img src="people_NewContactSelectGrpName_Work.png" />,<img src="people_SelectedGrpNameWork.png" /> )
+
+    ClickVerify(vncregion, <img src="people_GroupNameItemFieldSeleted_Work.png" /> ,<img src="people_GroupNameItemFieldSeleted_Work.png" />)
+
+<span class="cmt">#FieldInput(vncregion, "people_AddContactEventsDate.png","02/03/2013")
+</span>
+<span class="cmt">#FieldInput(vncregion, "people_AddContact_DateGroups.png","01/05/2013")
+</span>
+<span class="cmt">#FieldInput(vncregion,"people_AddContact_GroupName.png","My group name")
+</span>
+
+    <span class="cmt">#ClickVerify(vncregion, "home_people_Addnew_verifyDoneContact.png" ,"newContact_Save.png" )
+</span>
+    <span class="cmt">#ClickVerify(vncregion, "newContact_Save.png" ,"home_people_Addnew_verifyDoneContact.png" )
+</span>
+    ClickVerify(vncregion, <img src="global_menu.png" /> ,<img src="Apps_ExitContacts_Cancel.png" /> )
+
+    ClickVerify(vncregion ,<img src="Apps_ExitContacts_Cancel.png" />   ,<img src="Apps_ExitContacts_Cancel.png" /> )
+
+    <span class="cmt">#ClickVerify(vncregion, "global_menu.png" ,"Apps_ExitContacts_Delete.png")    
+</span>    <span class="skw">wait</span>(<span class="dig">3</span>)
+    ClickVerify(vncregion,<span class="skw">find</span>( <img src="NewContacts_DialogTitle_DiscardChanges.png" />).below(<img src="App_DeleteContact_OK.png" />),<img src="Apps_PeopleTab.png" />)
+
+<span class="cmt">#ClickVerify(vncregion,"App_PeopleTab.png" , "Apps_PeopleTab.png" )
+</span>
+    ClickVerify(vncregion, <img src="Apps_AppsTab.png" /> , <img src="Apps_verifyAppsPeopleTabs.png" /> )
+
+    Log(logpath,<span class="str">"PASSED: TestAddContact "</span>)
+<span class="cmt">##########################################
+</span><span class="cmt">#&lt;--Script Home People Add contact
+</span><span class="cmt">#start from home
+</span><span class="cmt">##########################################
+</span>
+<span class="cmt">##########################################
+</span><span class="cmt">#Script Home  Apps
+</span><span class="cmt">#start from home
+</span><span class="cmt">##########################################
+</span>
+<span class="kw">def</span> SelectFavoriteApps(vncregion):
+    Log(logpath,<span class="str">"\n\r-------------------------------------"</span>)
+    Log(logpath,<span class="str">"START: SelectFavoriteApps"</span>)
+    ClickScrollVerify(vncregion,<img src="Apps_LiveNurse.png" />  , <img src="Apps_LiveNurse_headLiveNurse.png" /> ,WHEEL_DOWN,<span class="dig">10</span>,<span class="dig">10</span>)
+
+
+    ClickVerify(vncregion,<img src="Global_BackButton.png" />,<img src="Apps_verifyAppsPeopleTabs.png" />)
+
+
+
+<span class="cmt">#ClickVerify(vncregion,"App_PeopleTab.png" , "Apps_PeopleTab.png" )
+</span>
+<span class="cmt">#ClickVerify(vncregion, "Apps_AppsTab.png" , "Apps_verifyAppsPeopleTabs.png" )
+</span>
+    ClickScrollVerify(vncregion, <img src="Apps_MedCoach.png" /> , <img src="Apps_MedCoach_headMedCoach.png" /> ,WHEEL_DOWN,<span class="dig">10</span>,<span class="dig">10</span>)
+
+    ClickVerify(vncregion,<img src="Global_BackButton.png" />,<img src="Apps_verifyAppsPeopleTabs.png" />)
+
+
+    <span class="cmt">#ClickVerify(vncregion, "App_HomeGreatCall.png" , "Home_Head-GreatCall.png" )
+</span>    Log(logpath,<span class="str">"PASSED: SelectFavoriteApps"</span>)
+
+<span class="cmt">##########################################
+</span><span class="cmt">#&lt;--Script Home  Apps
+</span><span class="cmt">#return to  home
+</span><span class="cmt">##########################################
+</span>
+<span class="cmt">##########################################
+</span><span class="cmt">#Script Home HELP
+</span><span class="cmt">##########################################
+</span>
+<span class="kw">def</span> TestHelp(vncregion):
+    Log(logpath,<span class="str">"\n\r-------------------------------------"</span>)
+    Log(logpath,<span class="str">"START: TestHelp "</span>)
+    ClickVerify(vncregion, <img src="App_HomeGreatCall.png" /> , <img src="Home_Head-GreatCall.png" /> )
+    vncregion.<span class="skw">wait</span>(<img src="Home_Head-GreatCall.png" />)
+
+<span class="cmt">#srnshotfile = Screen.capture(vncregion)
+</span>
+
+
+    ClickVerify(vncregion,<img src="Home_Help.png" />,<img src="Home_Help_headHelp.png" />)
+
+    ClickVerify(vncregion,<img src="Home_Help_gettingStarted.png" />,<img src="Home_help_headGettingStarted.png" />)
+
+    ClickVerify(vncregion,<img src="Home_Help_button-Help-list.png" />,<img src="Home_Help_gettingStarted.png" />)
+
+    ClickVerify(vncregion,<img src="Home_Help_UsingTouchScreen.png" />,<img src="Home_Help_head-Using-Touch-Screen.png" />)
+
+    ClickVerify(vncregion,<img src="Home_Help_button-Help-list.png" />,<img src="Home_Help_gettingStarted.png" />)
+
+    ClickVerify(vncregion,<img src="Home_Help_PhoneButtons.png" /> ,<img src="Home_Help_head-PhoneButtons.png" /> )
+
+    ClickVerify(vncregion,<img src="Home_Help_button-Help-list.png" />,<img src="Home_Help_gettingStarted.png" />)
+
+    ClickVerify(vncregion,<img src="Home_Help_AppsTab.png" /> ,<img src="Home_Help_head-AppsTab.png" /> )
+
+    ClickVerify(vncregion,<img src="Home_Help_button-Help-list.png" />,<img src="Home_Help_gettingStarted.png" />)
+
+    ClickVerify(vncregion,<img src="Home_Help_PeopleTab.png" />,<img src="Home_Help_head-PeopleTab.png" />)
+
+    ClickVerify(vncregion,<img src="Home_Help_button-Help-list.png" />,<img src="Home_Help_gettingStarted.png" />)
+
+    ClickVerify(vncregion,<img src="Home_Help_AddNewPeople.png" /> , <img src="Home_Help_head-AddNewPeople.png" />)
+
+    ClickVerify(vncregion,<img src="Home_Help_button-Help-list.png" />,<img src="Home_Help_gettingStarted.png" />)
+
+    ClickVerify(vncregion,<img src="Home_Help_MakeCall.png" /> , <img src="Home_Help_head-MakeACall.png" />)
+
+    ClickVerify(vncregion,<img src="Home_Help_button-Help-list.png" />,<img src="Home_Help_gettingStarted.png" />)
+
+    ClickVerify(vncregion,<img src="Home_Help_ReceivePhoneCalls.png" /> ,<img src="Home_Help_head-ReceivePhoneCalls.png" /> )
+
+    ClickVerify(vncregion,<img src="Home_Help_button-Help-list.png" />,<img src="Home_Help_gettingStarted.png" />)
+
+    <span class="cmt">#FindScroll(vncregion,"Home_Help_StatusBar.png",5,5,5)
+</span>
+    ClickScrollVerify(vncregion,<img src="Home_Help_StatusBar.png" />,<img src="Home_Help_head-StatusBar.png" />,WHEEL_DOWN,<span class="dig">10</span>,<span class="dig">10</span>)
+
+    ClickVerify(vncregion,<img src="Home_Help_button-Help-list.png" />,<img src="Home_Help_gettingStarted.png" />)
+
+    <span class="cmt">#FindScroll(vncregion,"Home_Help_Keyboard.png",5,5,5)
+</span>
+    ClickScrollVerify(vncregion,<img src="Home_Help_Keyboard.png" />,<img src="Home_Help_head-Keyboard.png" />,WHEEL_DOWN,<span class="dig">10</span>,<span class="dig">10</span>)
+
+    WaitHighlight(vncregion,<img src="Home_Help_head-KeyboardDiagram.png" />,<span class="dig">2</span>)
+
+    ClickVerify(vncregion,<img src="Home_Help_button-Help-list.png" />,<img src="Home_Help_gettingStarted.png" />)
+
+    <span class="cmt">#FindScroll(vncregion,"Home_Help_Voicemail.png",5,5,5)
+</span>
+    ClickScrollVerify(vncregion,<img src="Home_Help_Voicemail.png" />,<img src="Home_Help_head-Voicemail.png" />,WHEEL_DOWN,<span class="dig">10</span>,<span class="dig">10</span>)
+
+    ClickVerify(vncregion,<img src="Home_Help_button-Help-list.png" />,<img src="Home_Help_gettingStarted.png" />)
+
+    <span class="cmt">#FindScroll(vncregion,"Home_Help_Camera.png",5,5,5)
+</span>
+
+    ClickScrollVerify(vncregion,<img src="Home_Help_Camera.png" />,<img src="Home_Help_head-Camera.png" />,WHEEL_DOWN,<span class="dig">10</span>,<span class="dig">10</span>)
+
+    ClickVerify(vncregion,<img src="Home_Help_button-Help-list.png" />,<img src="Home_Help_gettingStarted.png" />)
+
+    <span class="cmt">#FindScroll(vncregion,"Home_Help_DownloadingApps.png",5,5,5)
+</span>
+    ClickScrollVerify(vncregion,<img src="Home_Help_DownloadingApps.png" />,<img src="Home_Help_head-DownloadApps.png" />,WHEEL_DOWN,<span class="dig">10</span>,<span class="dig">10</span>)
+
+    ClickVerify(vncregion,<img src="Home_Help_button-Help-list.png" />,<img src="Home_Help_gettingStarted.png" />)
+
+    ClickScrollVerify(vncregion,<img src="Home_Help_FeaturedApps.png" />,<img src="Home_Help_head-FeaturedApps.png" />,WHEEL_DOWN,<span class="dig">10</span>,<span class="dig">10</span>)
+
+    ClickVerify(vncregion,<img src="Home_Help_button-Help-list.png" />,<img src="Home_Help_gettingStarted.png" />)
+
+    ClickVerify(vncregion,<img src="Home_Help_CloseHelp.png" />,<img src="Home_Head-GreatCall.png" />)
+
+    ClickVerify(vncregion,<img src="Global_BackButton.png" />,<img src="Home_Head-GreatCall.png" />)
+    ClickVerify(vncregion,<img src="Global_BackButton.png" />,<img src="Apps_verifyAppsPeopleTabs.png" />)
+
+    Log(logpath,<span class="str">"PASSED: TestHelp"</span>)
+
+<span class="cmt">##########################################
+</span><span class="cmt">#Script Test_Nav_AddFavorites
+</span><span class="cmt">#start from home
+</span><span class="cmt">##########################################
+</span><span class="kw">def</span> Test_Nav_AddFavorites(vncregion):
+    Log(logpath,<span class="str">"\n\r-------------------------------------"</span>)
+    Log(logpath,<span class="str">"START: Test_Nav_AddFavorites"</span>)
+    ClickVerify(vncregion,<img src="global_menu.png" />,<img src="Home_Favorites_Menu.png" />)
+    ClickVerify(vncregion,<img src="Home_Favories_Menu_AddFavorites.png" />,<img src="AddFavoritesTitle.png" />)
+    Log(logpath,<span class="str">"PASSED: Test_Nav_AddFavorites"</span>)
+
+<span class="cmt">##########################################
+</span><span class="cmt">#Script Test_Nav_RemoveFavorites
+</span><span class="cmt">#start from home
+</span><span class="cmt">##########################################
+</span><span class="kw">def</span> Test_Nav_RemoveFavorites(vncregion):
+    Log(logpath,<span class="str">"\n\r-------------------------------------"</span>)
+    Log(logpath,<span class="str">"START: Test_Nav_RemoveFavorites"</span>)
+    ClickVerify(vncregion,<img src="global_menu.png" />,<img src="Home_Favorites_Menu.png" />)
+    ClickVerify(vncregion,<img src="Home_Favories_Menu_RemoveFavorites.png" />,<img src="RemoveFavoritesTitle.png" />)
+    Log(logpath,<span class="str">"PASSED: Test_Nav_RemoveFavorites"</span>)
+
+<span class="cmt">##########################################
+</span><span class="cmt">#Script Test_Nav_HomeFromAddRemoveFavorites
+</span><span class="cmt">#start from home
+</span><span class="cmt">##########################################
+</span><span class="kw">def</span> Test_Nav_HomeFromAddRemoveFavorites(vncregion):
+    Log(logpath,<span class="str">"\n\r-------------------------------------"</span>)
+    Log(logpath,<span class="str">"START: Test_Nav_HomeFromAddRemoveFavorites"</span>)
+    ClickVerify(vncregion,<img src="ok_button.png" />,<img src="home_tab.png" />)
+    Log(logpath,<span class="str">"PASSED: Test_Nav_HomeFromAddRemoveFavorites"</span>)
+
+<span class="cmt">##########################################
+</span><span class="cmt">#Script Add Favorites
+</span><span class="cmt">#start from home
+</span><span class="cmt">##########################################
+</span><span class="kw">def</span> Test_AddFavoriteApps(vncregion):
+    Log(logpath,<span class="str">"\n\r-------------------------------------"</span>)
+    Log(logpath,<span class="str">"START: AddFavoriteApps"</span>)
+    Test_Nav_AddFavorites(vncregion):
+
+    <span class="cmt">#Select the Add favorites items
+</span>    ClickScrollVerify(vncregion,<img src="app_nav-1.png" />,<img src="app_nav.png" />,WHEEL_DOWN,<span class="dig">10</span>,<span class="dig">5</span>)
+    ClickScrollVerify(vncregion,<img src="app_calculator-1.png" />,<img src="app_calculator_checked.png" />,WHEEL_DOWN,<span class="dig">10</span>,<span class="dig">5</span>)
+    ClickScrollVerify(vncregion,<img src="app_chrome.png" />,<img src="app_chrome_checked-1.png" />,WHEEL_DOWN,<span class="dig">10</span>,<span class="dig">5</span>)
+    ClickScrollVerify(vncregion,<img src="app_playstore.png" />,<img src="app_playstore_checked-1.png" />,WHEEL_DOWN,<span class="dig">10</span>,<span class="dig">5</span>)
+    ClickScrollVerify(vncregion,<img src="app_youtube-1.png" />,<img src="app_youtube_checked.png" />,WHEEL_DOWN,<span class="dig">10</span>,<span class="dig">5</span>)
+
+    Test_Nav_HomeFromAddRemoveFavorites(vncregion)
+    <span class="cmt">#Verify the selected favorites items    
+</span>    AssertScroll(vncregion,<img src="Home_Fav_Navigation.png" />,WHEEL_DOWN,<span class="dig">10</span>,<span class="dig">5</span>)
+    AssertScroll(vncregion,<img src="Home_Fav_Calculator.png" />,WHEEL_DOWN,<span class="dig">10</span>,<span class="dig">5</span>)
+    AssertScroll(vncregion,<img src="Home_Fav_PlayStore.png" />,WHEEL_DOWN,<span class="dig">10</span>,<span class="dig">5</span>)
+    AssertScroll(vncregion,<img src="Home_Fav_YouTube.png" />,WHEEL_DOWN,<span class="dig">10</span>,<span class="dig">5</span>)
+    AssertScroll(vncregion,<img src="Home_Fav_Chrome.png" />,WHEEL_DOWN,<span class="dig">10</span>,<span class="dig">5</span>)
+
+    Test_Nav_RemoveFavorites(vncregion)
+
+    <span class="cmt">#Select the selected same favorites items to be removed       
+</span>    ClickScrollVerify(vncregion,<img src="app_nav-1.png" />,<img src="app_nav.png" />,WHEEL_DOWN,<span class="dig">10</span>,<span class="dig">5</span>)
+    ClickScrollVerify(vncregion,<img src="app_calculator-1.png" />,<img src="app_calculator_checked.png" />,WHEEL_DOWN,<span class="dig">10</span>,<span class="dig">5</span>)
+    ClickScrollVerify(vncregion,<img src="app_chrome.png" />,<img src="app_chrome_checked-1.png" />,WHEEL_DOWN,<span class="dig">10</span>,<span class="dig">5</span>)
+    ClickScrollVerify(vncregion,<img src="app_playstore.png" />,<img src="app_playstore_checked-1.png" />,WHEEL_DOWN,<span class="dig">10</span>,<span class="dig">5</span>)
+    ClickScrollVerify(vncregion,<img src="app_youtube-1.png" />,<img src="app_youtube_checked.png" />,WHEEL_DOWN,<span class="dig">10</span>,<span class="dig">5</span>)
+
+    Test_Nav_HomeFromAddRemoveFavorites(vncregion)
+    <span class="cmt">#Verify the selected removed favorites items are not in home favorite list       
+</span>    AssertNotScroll(vncregion,<img src="Home_Fav_Navigation.png" />,WHEEL_DOWN,<span class="dig">10</span>,<span class="dig">5</span>)
+    AssertNotScroll(vncregion,<img src="Home_Fav_Calculator.png" />,WHEEL_DOWN,<span class="dig">10</span>,<span class="dig">5</span>)
+    AssertNotScroll(vncregion,<img src="Home_Fav_PlayStore.png" />,WHEEL_DOWN,<span class="dig">10</span>,<span class="dig">5</span>)
+    AssertNotScroll(vncregion,<img src="Home_Fav_YouTube.png" />,WHEEL_DOWN,<span class="dig">10</span>,<span class="dig">5</span>)
+    AssertNotScroll(vncregion,<img src="Home_Fav_Chrome.png" />,WHEEL_DOWN,<span class="dig">10</span>,<span class="dig">5</span>)
+
+<span class="cmt">##########################################
+</span><span class="cmt">#Script Start GoHome
+</span><span class="cmt">##########################################
+</span><span class="kw">def</span> GoHome():
+        <span class="cmt">#enablelog="false"
+</span>    ClickVerify(vncregion,<img src="Device_Btn_Home.png" />,<img src="App_HomeGreatCall.png" />)
+    imgFound =  IsFindImage(vncregion,<img src="Apps_verifyAppsPeopleTabs.png" />,<span class="dig">2</span>)
+    <span class="kw">if</span> <span class="kw">not</span> imgFound:
+        ClickVerify(vncregion,<img src="Home_Tab_Unselected.png" />,<img src="Apps_verifyAppsPeopleTabs.png" />)
+        <span class="cmt">#enablelog="true"
+</span><span class="cmt">##########################################
+</span><span class="cmt">#Script END GoHome
+</span><span class="cmt">##########################################
+</span>
+<span class="cmt">##########################################
+</span><span class="cmt">### define functions above main script ###
+</span><span class="cmt">##########################################
+</span>
+<span class="cmt">##########################################
+</span><span class="cmt">#Script Start
+</span><span class="cmt">##########################################
+</span><span class="cmt">#setShowActions(true)
+</span>enablelog=<span class="str">"true"</span>
+imagecount=<span class="dig">0</span>
+AppTitle = <span class="str">""</span>
+vnc = <span class="str">""</span>
+testscriptname=<span class="str">"AddFavoriteApps"</span>
+<span class="cmt">#get filename datetime stamp string
+</span>dt=strftime(<span class="str">"%Y%m%d%H%M%S"</span>)
+<span class="cmt">#os.makedirs(dt)
+</span>rootdir=<span class="str">"C:\\Automation\\Sikuli\\HomeScreen\\TestResults\\"</span>
+<span class="cmt">#rootdir="G:\\SWDev\\Private\\SQA Tests\\Automation\\Mobile\\Sikuli\\HomeScreen\\TestResults\\"
+</span><span class="cmt">#set test results folder name
+</span>TestFolder = rootdir + testscriptname + <span class="str">"_"</span> + dt
+<span class="cmt">#create the new test results folder
+</span>os.makedirs(TestFolder)
+<span class="cmt">#Set the log file path
+</span>logpath = TestFolder +<span class="str">"\\"</span>+testscriptname+<span class="str">"_Log_"</span> +dt +<span class="str">".txt"</span>
+<span class="cmt">#Log environment info
+</span>getEnvironment()
+<span class="cmt">#Find &amp; set the VNC region
+</span>vncregion = SetVNCAppRegion()
+step=<span class="dig">0</span>
+
+<span class="cmt">#need guide extension to use
+</span><span class="cmt">#Guide.tooltip(vncregion,"VNC Mobile Window")
+</span>
+<span class="cmt">#########################################################
+</span><span class="cmt">### Script Start
+</span>Log(logpath,<span class="str">"****Script Start *****"</span>)
+<span class="cmt">#########################################################
+</span>
+<span class="cmt">#ff=capture(vncregion)
+</span><span class="cmt">#Log(logpath,ff)
+</span><span class="cmt">#GoHome()
+</span>TakeScreenShot(<img src="Test_Start.png" />)
+
+<span class="kw">try</span>:
+    AddFavoriteApps(vncregion)
+<span class="kw">except</span>:
+    TakeScreenShot(<img src="FAILED_AddFavoriteApps.png" />)
+<span class="cmt">#GoHome()</span>
+</pre>
+</body>
+</html>

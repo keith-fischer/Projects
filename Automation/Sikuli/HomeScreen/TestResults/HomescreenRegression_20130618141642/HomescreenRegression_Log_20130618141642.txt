@@ -1,0 +1,208 @@
+14:16:42	Start Framework Environment
+14:16:42	getEnvironment
+14:16:42	SetVNCAppRegion:Find HUAWEI
+14:16:42	SetApp
+14:16:42	SetAppRegionExitOnNull
+14:16:42	SetAppRegion: Find W=496 - H=914
+14:16:43	0 - SetAppRegion - W=1260 - H=745
+14:16:46	1 - SetAppRegion - W=700 - H=20
+14:16:46	2 - SetAppRegion - W=496 - H=914
+14:16:53	SetAppRegion:Found by Size: X=1159,Y=57,W=496,H=914,CX=1407.0,CY=514.0,
+14:16:53	****Script Start *****
+14:16:53	TakeScreenShot: Test_Start.png
+14:16:53	switchAppVNC:
+14:16:53	ScreenShot:Test_Start.png:C:\Users\KEITH~1.FIS\AppData\Local\Temp\sikuli-5533560925850332182.png
+14:16:53	ScreenShot:path - C:\Automation\Sikuli\HomeScreen\TestResults\HomescreenRegression_20130618141642\Test_Start.png
+14:16:53	ScreenShot:Moved - C:\Automation\Sikuli\HomeScreen\TestResults\HomescreenRegression_20130618141642\Test_Start.png
+14:16:53	FAILED ScreenShot:Test_Start.png
+14:16:53	
+-------------------------------------
+14:16:53	START: TestVoiceMail 
+14:16:53	ClickVerify::App_PeopleTab.png:Apps_PeopleTab.png
+14:16:53	WaitHighlight:App_PeopleTab.png
+14:16:53	IsFindImage:App_PeopleTab.png
+14:16:53	IsFindImage:FOUND
+14:16:54	WaitHighlight:Found
+14:16:54	ClickVerify:Click
+14:16:54	ClickHighlight:
+14:16:55	ClickImage:
+14:16:56	WaitHighlight:Apps_PeopleTab.png
+14:16:56	IsFindImage:Apps_PeopleTab.png
+14:17:06	IsFindImage:NOT FOUND
+14:17:06	WaitHighlight:Not Found
+14:17:06	ClickVerify:NOT Found
+14:17:06	WaitHighlight:App_PeopleTab.png
+14:17:06	IsFindImage:App_PeopleTab.png
+14:17:16	IsFindImage:NOT FOUND
+14:17:16	WaitHighlight:Not Found
+14:17:16	ClickVerify:1
+14:17:16	FAILED:ClickVerifyApp_PeopleTab.png
+14:17:16	TakeScreenShot: FAILED_TestVoiceMail.png
+14:17:16	switchAppVNC:
+14:17:16	ScreenShot:FAILED_TestVoiceMail.png:C:\Users\KEITH~1.FIS\AppData\Local\Temp\sikuli-3372405602550646701.png
+14:17:16	ScreenShot:path - C:\Automation\Sikuli\HomeScreen\TestResults\HomescreenRegression_20130618141642\FAILED_TestVoiceMail.png
+14:17:16	ScreenShot:Moved - C:\Automation\Sikuli\HomeScreen\TestResults\HomescreenRegression_20130618141642\FAILED_TestVoiceMail.png
+14:17:16	FAILED ScreenShot:FAILED_TestVoiceMail.png
+14:17:16	
+-------------------------------------
+14:17:16	START: SelectFavoriteApps
+14:17:16	ClickScrollVerify:Apps_LiveNurse.png:Apps_LiveNurse_headLiveNurse.png
+14:17:16	ClickScroll:Apps_LiveNurse.png
+14:17:16	FindScroll:Apps_LiveNurse.png
+14:17:16	switchAppVNC:
+14:17:16	WaitHighlight:Apps_LiveNurse.png
+14:17:16	IsFindImage:Apps_LiveNurse.png
+14:17:19	IsFindImage:NOT FOUND
+14:17:19	WaitHighlight:Not Found
+14:17:19	FindScroll: SWIPEUP0
+14:17:19	SwipeUp:
+14:17:19	switchAppVNC:
+14:17:20	WaitHighlight:Apps_LiveNurse.png
+14:17:20	IsFindImage:Apps_LiveNurse.png
+14:17:22	IsFindImage:NOT FOUND
+14:17:22	WaitHighlight:Not Found
+14:17:22	WheelUp:
+14:17:22	switchAppVNC:
+14:17:22	WaitHighlight:Apps_LiveNurse.png
+14:17:22	IsFindImage:Apps_LiveNurse.png
+14:17:24	IsFindImage:NOT FOUND
+14:17:24	WaitHighlight:Not Found
+14:17:24	FindScroll: SWIPEUP1
+14:17:24	SwipeUp:
+14:17:24	switchAppVNC:
+14:17:26	WaitHighlight:Apps_LiveNurse.png
+14:17:26	IsFindImage:Apps_LiveNurse.png
+14:17:27	IsFindImage:NOT FOUND
+14:17:27	WaitHighlight:Not Found
+14:17:27	WheelUp:
+14:17:27	switchAppVNC:
+14:17:27	WaitHighlight:Apps_LiveNurse.png
+14:17:27	IsFindImage:Apps_LiveNurse.png
+14:17:29	IsFindImage:NOT FOUND
+14:17:29	WaitHighlight:Not Found
+14:17:29	FindScroll: SWIPEDOWN0
+14:17:29	SwipeDown:
+14:17:29	switchAppVNC:
+14:17:31	WaitHighlight:Apps_LiveNurse.png
+14:17:31	IsFindImage:Apps_LiveNurse.png
+14:17:33	IsFindImage:NOT FOUND
+14:17:33	WaitHighlight:Not Found
+14:17:33	WheelDown:
+14:17:33	switchAppVNC:
+14:17:33	WaitHighlight:Apps_LiveNurse.png
+14:17:33	IsFindImage:Apps_LiveNurse.png
+14:17:35	IsFindImage:NOT FOUND
+14:17:35	WaitHighlight:Not Found
+14:17:35	FindScroll: SWIPEDOWN1
+14:17:35	SwipeDown:
+14:17:35	switchAppVNC:
+14:17:37	WaitHighlight:Apps_LiveNurse.png
+14:17:37	IsFindImage:Apps_LiveNurse.png
+14:17:38	IsFindImage:NOT FOUND
+14:17:38	WaitHighlight:Not Found
+14:17:38	WheelDown:
+14:17:38	switchAppVNC:
+14:17:38	FAILED:FindScroll:Apps_LiveNurse.png
+14:17:38	TakeScreenShot: FAILED_SelectFavoriteApps.png
+14:17:38	switchAppVNC:
+14:17:38	ScreenShot:FAILED_SelectFavoriteApps.png:C:\Users\KEITH~1.FIS\AppData\Local\Temp\sikuli-8895118516797772967.png
+14:17:38	ScreenShot:path - C:\Automation\Sikuli\HomeScreen\TestResults\HomescreenRegression_20130618141642\FAILED_SelectFavoriteApps.png
+14:17:38	ScreenShot:Moved - C:\Automation\Sikuli\HomeScreen\TestResults\HomescreenRegression_20130618141642\FAILED_SelectFavoriteApps.png
+14:17:38	FAILED ScreenShot:FAILED_SelectFavoriteApps.png
+14:17:38	
+-------------------------------------
+14:17:38	START: TestContactUs 
+14:17:38	ClickVerify::Home_GreatCall.png:Home_Head-GreatCall.png
+14:17:38	WaitHighlight:Home_GreatCall.png
+14:17:38	IsFindImage:Home_GreatCall.png
+14:17:38	IsFindImage:FOUND
+14:17:39	WaitHighlight:Found
+14:17:39	ClickVerify:Click
+14:17:39	ClickHighlight:
+14:17:41	ClickImage:
+14:17:41	WaitHighlight:Home_Head-GreatCall.png
+14:17:41	IsFindImage:Home_Head-GreatCall.png
+14:17:42	IsFindImage:FOUND
+14:17:43	WaitHighlight:Found
+14:17:43	ClickVerify:Found
+14:17:43	ClickVerify::Home_ContactUs.png:Home_ContactUs_verifyNeedHelpAccount.png
+14:17:43	WaitHighlight:Home_ContactUs.png
+14:17:43	IsFindImage:Home_ContactUs.png
+14:17:43	IsFindImage:FOUND
+14:17:44	WaitHighlight:Found
+14:17:44	ClickVerify:Click
+14:17:44	ClickHighlight:
+14:17:45	ClickImage:
+14:17:46	WaitHighlight:Home_ContactUs_verifyNeedHelpAccount.png
+14:17:46	IsFindImage:Home_ContactUs_verifyNeedHelpAccount.png
+14:17:47	IsFindImage:FOUND
+14:17:48	WaitHighlight:Found
+14:17:48	ClickVerify:Found
+14:17:48	ClickVerify::Global_BackButton.png:Home_Head-GreatCall.png
+14:17:48	WaitHighlight:Global_BackButton.png
+14:17:48	IsFindImage:Global_BackButton.png
+14:17:48	IsFindImage:FOUND
+14:17:49	WaitHighlight:Found
+14:17:49	ClickVerify:Click
+14:17:49	ClickHighlight:
+14:17:51	ClickImage:
+14:17:51	WaitHighlight:Home_Head-GreatCall.png
+14:17:51	IsFindImage:Home_Head-GreatCall.png
+14:17:52	IsFindImage:FOUND
+14:17:53	WaitHighlight:Found
+14:17:53	ClickVerify:Found
+14:17:53	ClickVerify::Global_BackButton.png:Home_GreatCall.png
+14:17:53	WaitHighlight:Global_BackButton.png
+14:17:53	IsFindImage:Global_BackButton.png
+14:17:54	IsFindImage:FOUND
+14:17:55	WaitHighlight:Found
+14:17:55	ClickVerify:Click
+14:17:55	ClickHighlight:
+14:17:56	ClickImage:
+14:17:56	WaitHighlight:Home_GreatCall.png
+14:17:56	IsFindImage:Home_GreatCall.png
+14:17:57	IsFindImage:FOUND
+14:17:58	WaitHighlight:Found
+14:17:58	ClickVerify:Found
+14:17:58	PASSED: TestContactUs
+14:17:58	
+-------------------------------------
+14:17:58	START: TestFeaturedApps 
+14:17:58	ClickVerify::Home_GreatCall.png:Home_Head-GreatCall.png
+14:17:58	WaitHighlight:Home_GreatCall.png
+14:17:58	IsFindImage:Home_GreatCall.png
+14:17:59	IsFindImage:FOUND
+14:18:00	WaitHighlight:Found
+14:18:00	ClickVerify:Click
+14:18:00	ClickHighlight:
+14:18:01	ClickImage:
+14:18:01	WaitHighlight:Home_Head-GreatCall.png
+14:18:01	IsFindImage:Home_Head-GreatCall.png
+14:18:03	IsFindImage:FOUND
+14:18:04	WaitHighlight:Found
+14:18:04	ClickVerify:Found
+14:18:04	ClickVerify::Home_FeaturedApps.png:Home_FeaturedApps_headFeaturedApps.png
+14:18:04	WaitHighlight:Home_FeaturedApps.png
+14:18:04	IsFindImage:Home_FeaturedApps.png
+14:18:04	IsFindImage:FOUND
+14:18:05	WaitHighlight:Found
+14:18:05	ClickVerify:Click
+14:18:05	ClickHighlight:
+14:18:06	ClickImage:
+14:18:07	WaitHighlight:Home_FeaturedApps_headFeaturedApps.png
+14:18:07	IsFindImage:Home_FeaturedApps_headFeaturedApps.png
+14:18:07	IsFindImage:FOUND
+14:18:08	WaitHighlight:Found
+14:18:08	ClickVerify:Found
+14:18:08	ClickVerify::FeaturedApps_5Star.png:FeaturedApps_PlayStore.png
+14:18:08	WaitHighlight:FeaturedApps_5Star.png
+14:18:08	IsFindImage:FeaturedApps_5Star.png
+14:18:18	IsFindImage:NOT FOUND
+14:18:18	WaitHighlight:Not Found
+14:18:18	ClickVerify:0
+14:18:18	WaitHighlight:FeaturedApps_5Star.png
+14:18:18	IsFindImage:FeaturedApps_5Star.png
+14:18:29	IsFindImage:NOT FOUND
+14:18:29	WaitHighlight:Not Found
+14:18:29	ClickVerify:1
+14:18:29	FAILED:ClickVerifyFeaturedApps_5Star.png

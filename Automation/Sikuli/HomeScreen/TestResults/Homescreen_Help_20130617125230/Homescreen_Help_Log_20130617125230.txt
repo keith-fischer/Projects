@@ -1,0 +1,51 @@
+12:52:30	Start Framework Environment
+12:52:30	getEnvironment
+12:52:30	SetVNCAppRegion:Find HUAWEI
+12:52:30	SetApp
+12:52:30	SetAppRegionExitOnNull
+12:52:30	SetAppRegion: Find W=496 - H=914
+12:52:31	0 - SetAppRegion - W=700 - H=20
+12:52:31	1 - SetAppRegion - W=496 - H=914
+12:52:37	SetAppRegion:Found by Size: X=1422,Y=125,W=496,H=914,CX=1670.0,CY=582.0,
+12:52:37	****Script Start *****
+12:52:37	
+-------------------------------------
+12:52:37	START: TestVoiceMail 
+12:52:37	ClickVerify::App_PeopleTab.png:Apps_PeopleTab.png
+12:52:37	WaitHighlight:App_PeopleTab.png
+12:52:37	IsFindImage:App_PeopleTab.png
+12:52:37	IsFindImage:FOUND
+12:52:38	WaitHighlight:Found
+12:52:38	ClickVerify:Click
+12:52:38	ClickHighlight:
+12:52:40	ClickImage:
+12:52:40	WaitHighlight:Apps_PeopleTab.png
+12:52:40	IsFindImage:Apps_PeopleTab.png
+12:52:41	IsFindImage:FOUND
+12:52:42	WaitHighlight:Found
+12:52:42	ClickVerify:Found
+12:52:42	ClickVerify::Apps_AppsTab.png:Apps_verifyAppsPeopleTabs.png
+12:52:42	WaitHighlight:Apps_AppsTab.png
+12:52:42	IsFindImage:Apps_AppsTab.png
+12:52:42	IsFindImage:FOUND
+12:52:43	WaitHighlight:Found
+12:52:43	ClickVerify:Click
+12:52:43	ClickHighlight:
+12:52:44	ClickImage:
+12:52:45	WaitHighlight:Apps_verifyAppsPeopleTabs.png
+12:52:45	IsFindImage:Apps_verifyAppsPeopleTabs.png
+12:52:45	IsFindImage:FOUND
+12:52:46	WaitHighlight:Found
+12:52:46	ClickVerify:Found
+12:52:46	ClickVerify::Home_Voicemail.png:Home_headVoicemail.png
+12:52:46	WaitHighlight:Home_Voicemail.png
+12:52:46	IsFindImage:Home_Voicemail.png
+12:52:57	IsFindImage:NOT FOUND
+12:52:57	WaitHighlight:Not Found
+12:52:57	ClickVerify:0
+12:52:57	WaitHighlight:Home_Voicemail.png
+12:52:57	IsFindImage:Home_Voicemail.png
+12:53:07	IsFindImage:NOT FOUND
+12:53:07	WaitHighlight:Not Found
+12:53:07	ClickVerify:1
+12:53:07	FAILED:ClickVerifyHome_Voicemail.png

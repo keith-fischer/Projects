@@ -1,0 +1,14 @@
+13:26:51	Start Framework Environment
+13:26:51	getEnvironment
+13:26:51	SetVNCAppRegion:Find HUAWEI
+13:26:51	SetApp
+13:26:51	SetAppRegionExitOnNull
+13:26:51	SetAppRegion: Find W=496 - H=914
+13:26:52	0 - SetAppRegion - W=1260 - H=745
+13:26:55	1 - SetAppRegion - W=700 - H=20
+13:26:55	2 - SetAppRegion - W=496 - H=914
+13:27:02	SetAppRegion:Found by Size: X=1135,Y=69,W=496,H=914,CX=1383.0,CY=526.0,
+13:27:02	****Script Start *****
+13:27:02	TakeScreenShot: Test_Start.png
+13:27:02	switchAppVNC:
+13:27:02	ScreenShot:Test_Start.png:org.sikuli.script.ScreenImage@2c90d810

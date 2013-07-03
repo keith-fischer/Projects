@@ -1,0 +1,37 @@
+12:59:10	Start Framework Environment
+12:59:10	getEnvironment
+12:59:10	SetVNCAppRegion:Find HUAWEI
+12:59:10	SetApp
+12:59:10	SetAppRegionExitOnNull
+12:59:10	SetAppRegion: Find W=496 - H=914
+12:59:11	0 - SetAppRegion - W=1260 - H=745
+12:59:14	1 - SetAppRegion - W=700 - H=20
+12:59:14	2 - SetAppRegion - W=496 - H=914
+12:59:20	SetAppRegion:Found by Size: X=-557,Y=61,W=496,H=914,CX=-309.0,CY=518.0,
+12:59:20	****Script Start *****
+12:59:20	TakeScreenShot: Test_Start.png
+12:59:20	switchAppVNC:
+12:59:20	ScreenShot:Test_Start.png:C:\Users\KEITH~1.FIS\AppData\Local\Temp\sikuli-6360634666864444042.png
+12:59:20	ScreenShot:path - C:\Automation\Sikuli\HomeScreen\TestResults\AddFavoriteApps_20130620125910\Test_Start.png
+12:59:20	ScreenShot:Moved - Test_Start.png
+12:59:20	
+-------------------------------------
+12:59:20	START: AddFavoriteApps
+12:59:20	ClickVerify::global_menu.png:add_favorites.png
+12:59:20	WaitHighlight:global_menu.png
+12:59:20	IsFindImage:global_menu.png
+12:59:21	IsFindImage:FOUND
+12:59:22	WaitHighlight:Found
+12:59:22	ClickVerify:Click
+12:59:22	ClickHighlight:
+12:59:23	ClickImage:
+12:59:23	WaitHighlight:add_favorites.png
+12:59:23	IsFindImage:add_favorites.png
+12:59:24	IsFindImage:FOUND
+12:59:25	WaitHighlight:Found
+12:59:25	ClickVerify:Found
+12:59:25	TakeScreenShot: FAILED_AddFavoriteApps.png
+12:59:25	switchAppVNC:
+12:59:25	ScreenShot:FAILED_AddFavoriteApps.png:C:\Users\KEITH~1.FIS\AppData\Local\Temp\sikuli-1090906330350221118.png
+12:59:25	ScreenShot:path - C:\Automation\Sikuli\HomeScreen\TestResults\AddFavoriteApps_20130620125910\FAILED_AddFavoriteApps.png
+12:59:25	ScreenShot:Moved - FAILED_AddFavoriteApps.png

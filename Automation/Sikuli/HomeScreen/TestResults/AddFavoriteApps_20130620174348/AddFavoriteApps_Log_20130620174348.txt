@@ -1,0 +1,274 @@
+17:43:48	getEnvironment
+17:43:48	SetVNCAppRegion:Find HUAWEI
+17:43:48	SetApp
+17:43:49	SetAppRegionExitOnNull
+17:43:49	SetAppRegion: Find W=496 - H=914
+17:43:50	0 - SetAppRegion - W=126 - H=20
+17:43:53	1 - SetAppRegion - W=700 - H=20
+17:43:53	2 - SetAppRegion - W=496 - H=914
+17:43:59	SetAppRegion:Found by Size: X=-521,Y=61,W=496,H=914,CX=-273.0,CY=518.0,
+17:43:59	****Script Start *****
+17:43:59	TakeScreenShot: Test_Start.png
+17:43:59	switchAppVNC:
+17:43:59	ScreenShot:Test_Start.png:C:\Users\KEITH~1.FIS\AppData\Local\Temp\sikuli-7579109419629446017.png
+17:43:59	ScreenShot:path - C:\Automation\Sikuli\HomeScreen\TestResults\AddFavoriteApps_20130620174348\Test_Start.png
+17:43:59	ScreenShot:Moved - Test_Start.png
+17:43:59	
+-------------------------------------
+17:43:59	START: AddFavoriteApps
+17:43:59	ClickVerify::global_menu.png:Home_Favorites_Menu.png
+17:43:59	WaitHighlight:global_menu.png
+17:43:59	IsFindImage:global_menu.png
+17:43:59	IsFindImage:FOUND
+17:44:00	WaitHighlight:Found
+17:44:00	ClickVerify:Click
+17:44:00	ClickHighlight:
+17:44:02	ClickImage:
+17:44:02	WaitHighlight:Home_Favorites_Menu.png
+17:44:02	IsFindImage:Home_Favorites_Menu.png
+17:44:03	IsFindImage:FOUND
+17:44:04	WaitHighlight:Found
+17:44:04	ClickVerify:Found
+17:44:04	ClickVerify::Home_Favories_Menu_AddFavorites.png:AddFavoritesTitle.png
+17:44:04	WaitHighlight:Home_Favories_Menu_AddFavorites.png
+17:44:04	IsFindImage:Home_Favories_Menu_AddFavorites.png
+17:44:04	IsFindImage:FOUND
+17:44:05	WaitHighlight:Found
+17:44:05	ClickVerify:Click
+17:44:05	ClickHighlight:
+17:44:06	ClickImage:
+17:44:07	WaitHighlight:AddFavoritesTitle.png
+17:44:07	IsFindImage:AddFavoritesTitle.png
+17:44:08	IsFindImage:FOUND
+17:44:09	WaitHighlight:Found
+17:44:09	ClickVerify:Found
+17:44:09	ClickScrollVerify:app_nav-1.png:app_nav.png
+17:44:09	ClickScroll:app_nav-1.png
+17:44:09	FindScroll:app_nav-1.png
+17:44:09	switchAppVNC:
+17:44:09	WaitHighlight:app_nav-1.png
+17:44:09	IsFindImage:app_nav-1.png
+17:44:11	IsFindImage:NOT FOUND
+17:44:11	WaitHighlight:Not Found
+17:44:11	FindScroll: WheelDown0
+17:44:11	SwipeUp:
+17:44:11	switchAppVNC:
+17:44:16	WaitHighlight:app_nav-1.png
+17:44:16	IsFindImage:app_nav-1.png
+17:44:17	IsFindImage:NOT FOUND
+17:44:17	WaitHighlight:Not Found
+17:44:17	WaitHighlight:app_nav-1.png
+17:44:17	IsFindImage:app_nav-1.png
+17:44:19	IsFindImage:NOT FOUND
+17:44:19	WaitHighlight:Not Found
+17:44:19	FindScroll: WheelDown1
+17:44:19	SwipeUp:
+17:44:19	switchAppVNC:
+17:44:24	WaitHighlight:app_nav-1.png
+17:44:24	IsFindImage:app_nav-1.png
+17:44:25	IsFindImage:NOT FOUND
+17:44:25	WaitHighlight:Not Found
+17:44:25	WaitHighlight:app_nav-1.png
+17:44:25	IsFindImage:app_nav-1.png
+17:44:27	IsFindImage:NOT FOUND
+17:44:27	WaitHighlight:Not Found
+17:44:27	FindScroll: WheelDown2
+17:44:27	SwipeUp:
+17:44:27	switchAppVNC:
+17:44:32	WaitHighlight:app_nav-1.png
+17:44:32	IsFindImage:app_nav-1.png
+17:44:33	IsFindImage:NOT FOUND
+17:44:33	WaitHighlight:Not Found
+17:44:33	WaitHighlight:app_nav-1.png
+17:44:33	IsFindImage:app_nav-1.png
+17:44:35	IsFindImage:NOT FOUND
+17:44:35	WaitHighlight:Not Found
+17:44:35	FindScroll: WheelDown3
+17:44:35	SwipeUp:
+17:44:35	switchAppVNC:
+17:44:40	WaitHighlight:app_nav-1.png
+17:44:40	IsFindImage:app_nav-1.png
+17:44:41	IsFindImage:NOT FOUND
+17:44:41	WaitHighlight:Not Found
+17:44:41	WaitHighlight:app_nav-1.png
+17:44:41	IsFindImage:app_nav-1.png
+17:44:43	IsFindImage:NOT FOUND
+17:44:43	WaitHighlight:Not Found
+17:44:43	FindScroll: WheelDown4
+17:44:43	SwipeUp:
+17:44:43	switchAppVNC:
+17:44:48	WaitHighlight:app_nav-1.png
+17:44:48	IsFindImage:app_nav-1.png
+17:44:49	IsFindImage:NOT FOUND
+17:44:49	WaitHighlight:Not Found
+17:44:49	WaitHighlight:app_nav-1.png
+17:44:49	IsFindImage:app_nav-1.png
+17:44:52	IsFindImage:NOT FOUND
+17:44:52	WaitHighlight:Not Found
+17:44:52	FindScroll: WheelDown5
+17:44:52	SwipeUp:
+17:44:52	switchAppVNC:
+17:44:56	WaitHighlight:app_nav-1.png
+17:44:56	IsFindImage:app_nav-1.png
+17:44:57	IsFindImage:NOT FOUND
+17:44:57	WaitHighlight:Not Found
+17:44:57	WaitHighlight:app_nav-1.png
+17:44:57	IsFindImage:app_nav-1.png
+17:45:00	IsFindImage:NOT FOUND
+17:45:00	WaitHighlight:Not Found
+17:45:00	FindScroll: WheelDown6
+17:45:00	SwipeUp:
+17:45:00	switchAppVNC:
+17:45:04	WaitHighlight:app_nav-1.png
+17:45:04	IsFindImage:app_nav-1.png
+17:45:05	IsFindImage:NOT FOUND
+17:45:05	WaitHighlight:Not Found
+17:45:05	WaitHighlight:app_nav-1.png
+17:45:05	IsFindImage:app_nav-1.png
+17:45:08	IsFindImage:NOT FOUND
+17:45:08	WaitHighlight:Not Found
+17:45:08	FindScroll: WheelDown7
+17:45:08	SwipeUp:
+17:45:08	switchAppVNC:
+17:45:12	WaitHighlight:app_nav-1.png
+17:45:12	IsFindImage:app_nav-1.png
+17:45:14	IsFindImage:NOT FOUND
+17:45:14	WaitHighlight:Not Found
+17:45:14	WaitHighlight:app_nav-1.png
+17:45:14	IsFindImage:app_nav-1.png
+17:45:16	IsFindImage:NOT FOUND
+17:45:16	WaitHighlight:Not Found
+17:45:16	FindScroll: WheelDown8
+17:45:16	SwipeUp:
+17:45:16	switchAppVNC:
+17:45:20	WaitHighlight:app_nav-1.png
+17:45:20	IsFindImage:app_nav-1.png
+17:45:22	IsFindImage:NOT FOUND
+17:45:22	WaitHighlight:Not Found
+17:45:22	WaitHighlight:app_nav-1.png
+17:45:22	IsFindImage:app_nav-1.png
+17:45:24	IsFindImage:NOT FOUND
+17:45:24	WaitHighlight:Not Found
+17:45:24	FindScroll: WheelDown9
+17:45:24	SwipeUp:
+17:45:24	switchAppVNC:
+17:45:28	WaitHighlight:app_nav-1.png
+17:45:28	IsFindImage:app_nav-1.png
+17:45:30	IsFindImage:NOT FOUND
+17:45:30	WaitHighlight:Not Found
+17:45:30	WaitHighlight:app_nav-1.png
+17:45:30	IsFindImage:app_nav-1.png
+17:45:32	IsFindImage:NOT FOUND
+17:45:32	WaitHighlight:Not Found
+17:45:32	FindScroll: WheelUp0
+17:45:32	SwipeDown:
+17:45:32	switchAppVNC:
+17:45:36	WaitHighlight:app_nav-1.png
+17:45:36	IsFindImage:app_nav-1.png
+17:45:38	IsFindImage:NOT FOUND
+17:45:38	WaitHighlight:Not Found
+17:45:38	WaitHighlight:app_nav-1.png
+17:45:38	IsFindImage:app_nav-1.png
+17:45:40	IsFindImage:NOT FOUND
+17:45:40	WaitHighlight:Not Found
+17:45:40	FindScroll: WheelUp1
+17:45:40	SwipeDown:
+17:45:40	switchAppVNC:
+17:45:45	WaitHighlight:app_nav-1.png
+17:45:45	IsFindImage:app_nav-1.png
+17:45:46	IsFindImage:NOT FOUND
+17:45:46	WaitHighlight:Not Found
+17:45:46	WaitHighlight:app_nav-1.png
+17:45:46	IsFindImage:app_nav-1.png
+17:45:48	IsFindImage:NOT FOUND
+17:45:48	WaitHighlight:Not Found
+17:45:48	FindScroll: WheelUp2
+17:45:48	SwipeDown:
+17:45:48	switchAppVNC:
+17:45:53	WaitHighlight:app_nav-1.png
+17:45:53	IsFindImage:app_nav-1.png
+17:45:54	IsFindImage:NOT FOUND
+17:45:54	WaitHighlight:Not Found
+17:45:54	WaitHighlight:app_nav-1.png
+17:45:54	IsFindImage:app_nav-1.png
+17:45:56	IsFindImage:NOT FOUND
+17:45:56	WaitHighlight:Not Found
+17:45:56	FindScroll: WheelUp3
+17:45:56	SwipeDown:
+17:45:56	switchAppVNC:
+17:46:00	WaitHighlight:app_nav-1.png
+17:46:00	IsFindImage:app_nav-1.png
+17:46:02	IsFindImage:NOT FOUND
+17:46:02	WaitHighlight:Not Found
+17:46:02	WaitHighlight:app_nav-1.png
+17:46:02	IsFindImage:app_nav-1.png
+17:46:04	IsFindImage:NOT FOUND
+17:46:04	WaitHighlight:Not Found
+17:46:04	FindScroll: WheelUp4
+17:46:04	SwipeDown:
+17:46:04	switchAppVNC:
+17:46:09	WaitHighlight:app_nav-1.png
+17:46:09	IsFindImage:app_nav-1.png
+17:46:10	IsFindImage:NOT FOUND
+17:46:10	WaitHighlight:Not Found
+17:46:10	WaitHighlight:app_nav-1.png
+17:46:10	IsFindImage:app_nav-1.png
+17:46:12	IsFindImage:NOT FOUND
+17:46:12	WaitHighlight:Not Found
+17:46:12	FindScroll: WheelUp5
+17:46:12	SwipeDown:
+17:46:12	switchAppVNC:
+17:46:16	WaitHighlight:app_nav-1.png
+17:46:16	IsFindImage:app_nav-1.png
+17:46:18	IsFindImage:NOT FOUND
+17:46:18	WaitHighlight:Not Found
+17:46:18	WaitHighlight:app_nav-1.png
+17:46:18	IsFindImage:app_nav-1.png
+17:46:20	IsFindImage:NOT FOUND
+17:46:20	WaitHighlight:Not Found
+17:46:20	FindScroll: WheelUp6
+17:46:20	SwipeDown:
+17:46:20	switchAppVNC:
+17:46:24	WaitHighlight:app_nav-1.png
+17:46:24	IsFindImage:app_nav-1.png
+17:46:26	IsFindImage:NOT FOUND
+17:46:26	WaitHighlight:Not Found
+17:46:26	WaitHighlight:app_nav-1.png
+17:46:26	IsFindImage:app_nav-1.png
+17:46:28	IsFindImage:NOT FOUND
+17:46:28	WaitHighlight:Not Found
+17:46:28	FindScroll: WheelUp7
+17:46:28	SwipeDown:
+17:46:28	switchAppVNC:
+17:46:32	WaitHighlight:app_nav-1.png
+17:46:32	IsFindImage:app_nav-1.png
+17:46:34	IsFindImage:NOT FOUND
+17:46:34	WaitHighlight:Not Found
+17:46:34	WaitHighlight:app_nav-1.png
+17:46:34	IsFindImage:app_nav-1.png
+17:46:36	IsFindImage:NOT FOUND
+17:46:36	WaitHighlight:Not Found
+17:46:36	FindScroll: WheelUp8
+17:46:36	SwipeDown:
+17:46:36	switchAppVNC:
+17:46:41	WaitHighlight:app_nav-1.png
+17:46:41	IsFindImage:app_nav-1.png
+17:46:42	IsFindImage:NOT FOUND
+17:46:42	WaitHighlight:Not Found
+17:46:42	WaitHighlight:app_nav-1.png
+17:46:42	IsFindImage:app_nav-1.png
+17:46:44	IsFindImage:NOT FOUND
+17:46:44	WaitHighlight:Not Found
+17:46:44	FindScroll: WheelUp9
+17:46:44	SwipeDown:
+17:46:44	switchAppVNC:
+17:46:49	WaitHighlight:app_nav-1.png
+17:46:49	IsFindImage:app_nav-1.png
+17:46:50	IsFindImage:NOT FOUND
+17:46:50	WaitHighlight:Not Found
+17:46:50	FAILED:FindScroll:app_nav-1.png
+17:46:50	TakeScreenShot: FAILED_AddFavoriteApps.png
+17:46:50	switchAppVNC:
+17:46:50	ScreenShot:FAILED_AddFavoriteApps.png:C:\Users\KEITH~1.FIS\AppData\Local\Temp\sikuli-7550779507014782663.png
+17:46:50	ScreenShot:path - C:\Automation\Sikuli\HomeScreen\TestResults\AddFavoriteApps_20130620174348\FAILED_AddFavoriteApps.png
+17:46:50	ScreenShot:Moved - FAILED_AddFavoriteApps.png

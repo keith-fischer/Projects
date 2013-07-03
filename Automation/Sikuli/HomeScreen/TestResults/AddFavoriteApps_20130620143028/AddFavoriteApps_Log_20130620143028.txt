@@ -1,0 +1,82 @@
+14:30:28	Start Framework Environment
+14:30:28	getEnvironment
+14:30:28	SetVNCAppRegion:Find HUAWEI
+14:30:28	SetApp
+14:30:28	SetAppRegionExitOnNull
+14:30:28	SetAppRegion: Find W=496 - H=914
+14:30:29	0 - SetAppRegion - W=1260 - H=745
+14:30:33	1 - SetAppRegion - W=700 - H=20
+14:30:33	2 - SetAppRegion - W=496 - H=914
+14:30:39	SetAppRegion:Found by Size: X=-521,Y=61,W=496,H=914,CX=-273.0,CY=518.0,
+14:30:39	****Script Start *****
+14:30:39	TakeScreenShot: Test_Start.png
+14:30:39	switchAppVNC:
+14:30:39	ScreenShot:Test_Start.png:C:\Users\KEITH~1.FIS\AppData\Local\Temp\sikuli-8014031262691847633.png
+14:30:39	ScreenShot:path - C:\Automation\Sikuli\HomeScreen\TestResults\AddFavoriteApps_20130620143028\Test_Start.png
+14:30:39	ScreenShot:Moved - Test_Start.png
+14:30:39	
+-------------------------------------
+14:30:39	START: AddFavoriteApps
+14:30:39	ClickVerify::global_menu.png:add_favorites.png
+14:30:39	WaitHighlight:global_menu.png
+14:30:39	IsFindImage:global_menu.png
+14:30:39	IsFindImage:FOUND
+14:30:40	WaitHighlight:Found
+14:30:40	ClickVerify:Click
+14:30:40	ClickHighlight:
+14:30:41	ClickImage:
+14:30:42	WaitHighlight:add_favorites.png
+14:30:42	IsFindImage:add_favorites.png
+14:30:43	IsFindImage:FOUND
+14:30:44	WaitHighlight:Found
+14:30:44	ClickVerify:Found
+14:30:44	ClickVerify::add_favorites.png:P(allbackup.png) S: 0.53
+14:30:44	WaitHighlight:add_favorites.png
+14:30:44	IsFindImage:add_favorites.png
+14:30:44	IsFindImage:FOUND
+14:30:45	WaitHighlight:Found
+14:30:45	ClickVerify:Click
+14:30:45	ClickHighlight:
+14:30:46	ClickImage:
+14:30:47	WaitHighlight:P(allbackup.png) S: 0.53
+14:30:47	IsFindImage:P(allbackup.png) S: 0.53
+14:30:57	IsFindImage:NOT FOUND
+14:30:57	WaitHighlight:Not Found
+14:30:57	ClickVerify:NOT Found
+14:30:57	WaitHighlight:add_favorites.png
+14:30:57	IsFindImage:add_favorites.png
+14:31:07	IsFindImage:NOT FOUND
+14:31:07	WaitHighlight:Not Found
+14:31:07	ClickVerify:1
+14:31:07	FAILED:ClickVerifyadd_favorites.png
+14:31:07	TakeScreenShot: FAILED_AddFavoriteApps.png
+14:31:07	switchAppVNC:
+14:31:07	ScreenShot:FAILED_AddFavoriteApps.png:C:\Users\KEITH~1.FIS\AppData\Local\Temp\sikuli-6480917811250119601.png
+14:31:07	ScreenShot:path - C:\Automation\Sikuli\HomeScreen\TestResults\AddFavoriteApps_20130620143028\FAILED_AddFavoriteApps.png
+14:31:07	ScreenShot:Moved - FAILED_AddFavoriteApps.png
+14:31:07	ClickVerify::Device_Btn_Home.png:App_HomeGreatCall.png
+14:31:07	WaitHighlight:Device_Btn_Home.png
+14:31:07	IsFindImage:Device_Btn_Home.png
+14:31:08	IsFindImage:FOUND
+14:31:09	WaitHighlight:Found
+14:31:09	ClickVerify:Click
+14:31:09	ClickHighlight:
+14:31:10	ClickImage:
+14:31:10	WaitHighlight:App_HomeGreatCall.png
+14:31:10	IsFindImage:App_HomeGreatCall.png
+14:31:21	IsFindImage:NOT FOUND
+14:31:21	WaitHighlight:Not Found
+14:31:21	ClickVerify:NOT Found
+14:31:21	WaitHighlight:Device_Btn_Home.png
+14:31:21	IsFindImage:Device_Btn_Home.png
+14:31:21	IsFindImage:FOUND
+14:31:22	WaitHighlight:Found
+14:31:22	ClickVerify:Click
+14:31:22	ClickHighlight:
+14:31:23	ClickImage:
+14:31:23	WaitHighlight:App_HomeGreatCall.png
+14:31:24	IsFindImage:App_HomeGreatCall.png
+14:31:34	IsFindImage:NOT FOUND
+14:31:34	WaitHighlight:Not Found
+14:31:34	ClickVerify:NOT Found
+14:31:34	FAILED:ClickVerifyDevice_Btn_Home.png

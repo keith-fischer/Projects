@@ -1,0 +1,42 @@
+20130607163728	Start Framework Environment
+20130607163728	getEnvironment
+20130607163728	SetVNCAppRegion
+20130607163728	SetApp
+20130607163728	SetAppRegionExitOnNull
+20130607163728	SetAppRegion
+20130607163732	SetAppRegion:Found X=1144,Y=48,W=496,H=914,CX=1392.0,CY=505.0,
+20130607163732	****Script Start *****
+20130607163732	ClickScrollVerify::Home_Help_StatusBar.png:Home_Help_headStatusBar.png
+20130607163732	ClickScroll:Home_Help_StatusBar.png
+20130607163732	WaitHighlight:Home_Help_StatusBar.png
+20130607163732	IsFindImage:Home_Help_StatusBar.png
+20130607163735	IsFindImage:NOT FOUND
+20130607163735	WaitHighlight:Not Found
+20130607163735	ClickScroll:0
+20130607163738	WaitHighlight:Home_Help_StatusBar.png
+20130607163738	IsFindImage:Home_Help_StatusBar.png
+20130607163741	IsFindImage:FOUND
+20130607163742	WaitHighlight:Found
+20130607163743	ClickHighlight:
+20130607163743	WaitHighlight:Home_Help_StatusBar.png
+20130607163743	IsFindImage:Home_Help_StatusBar.png
+20130607163745	IsFindImage:FOUND
+20130607163746	WaitHighlight:Found
+20130607163756	ClickScroll: Clicked
+20130607163756	ClickScrollVerify:Clicked
+20130607163756	WaitHighlight:Home_Help_headStatusBar.png
+20130607163756	IsFindImage:Home_Help_headStatusBar.png
+20130607163758	IsFindImage:FOUND
+20130607163759	WaitHighlight:Found
+20130607163759	ClickScrollVerify:Found
+20130607163759	ClickVerify::Home_Help_button-Help-list.png:Home_Help_gettingStarted.png
+20130607163759	ClickHighlight:
+20130607163759	WaitHighlight:Home_Help_button-Help-list.png
+20130607163759	IsFindImage:Home_Help_button-Help-list.png
+20130607163801	IsFindImage:FOUND
+20130607163802	WaitHighlight:Found
+20130607163812	WaitHighlight:Home_Help_gettingStarted.png
+20130607163812	IsFindImage:Home_Help_gettingStarted.png
+20130607163814	IsFindImage:FOUND
+20130607163815	WaitHighlight:Found
+20130607163815	ClickVerify:Found

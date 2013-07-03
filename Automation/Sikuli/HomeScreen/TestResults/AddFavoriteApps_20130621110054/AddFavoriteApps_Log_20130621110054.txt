@@ -1,0 +1,21 @@
+11:00:54	getEnvironment
+11:00:54	SetVNCAppRegion:Find HUAWEI
+11:00:54	SetApp
+11:00:54	SetAppRegionExitOnNull
+11:00:54	SetAppRegion: Find W=496 - H=914
+11:00:55	0 - SetAppRegion - W=1260 - H=745
+11:00:58	1 - SetAppRegion - W=700 - H=20
+11:00:58	2 - SetAppRegion - W=496 - H=914
+11:01:05	SetAppRegion:Found by Size: X=-518,Y=40,W=496,H=914,CX=-270.0,CY=497.0,
+11:01:05	****Script Start *****
+11:01:05	ClickScrollVerify:app_nav-1.png:app_nav.png
+11:01:05	ClickScroll:app_nav-1.png
+11:01:05	FindScroll:app_nav-1.png
+11:01:05	switchAppVNC:
+11:01:05	WaitHighlight:app_nav-1.png
+11:01:05	IsFindImage:app_nav-1.png
+11:01:07	IsFindImage:NOT FOUND
+11:01:07	WaitHighlight:Not Found
+11:01:07	FindScroll: WheelDown0
+11:01:07	KeyDown:
+11:01:07	switchAppVNC:

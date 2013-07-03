@@ -1,0 +1,16 @@
+Start Framework Environment
+getEnvironment
+SetVNCAppRegion
+SetApp
+SetAppRegionExitOnNull
+SetAppRegion
+SetAppRegion:Found X=1144,Y=48,W=496,H=914,CX=1392.0,CY=505.0,
+****Script Start *****
+ClickScrollVerify::Home_Help_StatusBar.png:Home_Help_headStatusBar.png
+ClickScroll:Home_Help_StatusBar.png
+ClickScroll:0
+WaitHighlight:Home_Help_StatusBar.png
+IsFindImage:Home_Help_StatusBar.png
+IsFindImage:FOUND
+WaitHighlight:Found
+ClickHighlight:

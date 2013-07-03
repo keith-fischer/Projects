@@ -1,0 +1,172 @@
+17:11:43	Start Framework Environment
+17:11:43	getEnvironment
+17:11:43	SetVNCAppRegion:Find HUAWEI
+17:11:43	SetApp
+17:11:43	SetAppRegionExitOnNull
+17:11:43	SetAppRegion: Find W=496 - H=914
+17:11:44	0 - SetAppRegion - W=1260 - H=745
+17:11:47	1 - SetAppRegion - W=700 - H=20
+17:11:47	2 - SetAppRegion - W=496 - H=914
+17:11:53	SetAppRegion:Found by Size: X=-540,Y=68,W=496,H=914,CX=-292.0,CY=525.0,
+17:11:53	****Script Start *****
+17:11:53	ClickVerify::Device_Btn_Home.png:App_HomeGreatCall.png
+17:11:53	WaitHighlight:Device_Btn_Home.png
+17:11:53	IsFindImage:Device_Btn_Home.png
+17:11:54	IsFindImage:FOUND
+17:11:55	WaitHighlight:Found
+17:11:55	ClickVerify:Click
+17:11:55	ClickHighlight:
+17:11:56	ClickImage:
+17:11:56	WaitHighlight:App_HomeGreatCall.png
+17:11:56	IsFindImage:App_HomeGreatCall.png
+17:11:57	IsFindImage:FOUND
+17:11:58	WaitHighlight:Found
+17:11:58	ClickVerify:Found
+17:11:58	IsFindImage:Apps_verifyAppsPeopleTabs.png
+17:11:58	IsFindImage:FOUND
+17:11:58	TakeScreenShot: Test_Start.png
+17:11:58	switchAppVNC:
+17:11:58	ScreenShot:Moved - Test_Start.png
+17:11:58	TakeScreenShot: TEST_SelectFavoriteApps.png
+17:11:58	switchAppVNC:
+17:11:58	ScreenShot:Moved - TEST_SelectFavoriteApps.png
+17:11:58	
+-------------------------------------
+17:11:58	START: TestVoiceMail 
+17:11:58	ClickVerify::App_PeopleTab.png:Apps_PeopleTab.png
+17:11:58	WaitHighlight:App_PeopleTab.png
+17:11:58	IsFindImage:App_PeopleTab.png
+17:11:58	IsFindImage:FOUND
+17:11:59	WaitHighlight:Found
+17:11:59	ClickVerify:Click
+17:11:59	ClickHighlight:
+17:12:00	ClickImage:
+17:12:01	WaitHighlight:Apps_PeopleTab.png
+17:12:01	IsFindImage:Apps_PeopleTab.png
+17:12:02	IsFindImage:FOUND
+17:12:03	WaitHighlight:Found
+17:12:03	ClickVerify:Found
+17:12:03	ClickVerify::Apps_AppsTab.png:Apps_verifyAppsPeopleTabs.png
+17:12:03	WaitHighlight:Apps_AppsTab.png
+17:12:03	IsFindImage:Apps_AppsTab.png
+17:12:03	IsFindImage:FOUND
+17:12:04	WaitHighlight:Found
+17:12:04	ClickVerify:Click
+17:12:04	ClickHighlight:
+17:12:05	ClickImage:
+17:12:06	WaitHighlight:Apps_verifyAppsPeopleTabs.png
+17:12:06	IsFindImage:Apps_verifyAppsPeopleTabs.png
+17:12:16	IsFindImage:NOT FOUND
+17:12:16	WaitHighlight:Not Found
+17:12:16	ClickVerify:NOT Found
+17:12:16	WaitHighlight:Apps_AppsTab.png
+17:12:16	IsFindImage:Apps_AppsTab.png
+17:12:16	IsFindImage:FOUND
+17:12:17	WaitHighlight:Found
+17:12:17	ClickVerify:Click
+17:12:17	ClickHighlight:
+17:12:18	ClickImage:
+17:12:19	WaitHighlight:Apps_verifyAppsPeopleTabs.png
+17:12:19	IsFindImage:Apps_verifyAppsPeopleTabs.png
+17:12:29	IsFindImage:NOT FOUND
+17:12:29	WaitHighlight:Not Found
+17:12:29	ClickVerify:NOT Found
+17:12:29	FAILED:ClickVerifyApps_AppsTab.png
+17:12:29	**** FAILED *****
+17:12:29	TakeScreenShot: FAILED_TestVoiceMail.png
+17:12:29	switchAppVNC:
+17:12:29	ScreenShot:Moved - FAILED_TestVoiceMail.png
+17:12:29	ClickVerify::Device_Btn_Home.png:App_HomeGreatCall.png
+17:12:29	WaitHighlight:Device_Btn_Home.png
+17:12:29	IsFindImage:Device_Btn_Home.png
+17:12:30	IsFindImage:FOUND
+17:12:31	WaitHighlight:Found
+17:12:31	ClickVerify:Click
+17:12:31	ClickHighlight:
+17:12:32	ClickImage:
+17:12:32	WaitHighlight:App_HomeGreatCall.png
+17:12:32	IsFindImage:App_HomeGreatCall.png
+17:12:32	IsFindImage:FOUND
+17:12:33	WaitHighlight:Found
+17:12:33	ClickVerify:Found
+17:12:33	IsFindImage:Apps_verifyAppsPeopleTabs.png
+17:12:36	IsFindImage:NOT FOUND
+17:12:36	ClickVerify::Home_Unselected.png:Apps_verifyAppsPeopleTabs.png
+17:12:36	WaitHighlight:Home_Unselected.png
+17:12:36	IsFindImage:Home_Unselected.png
+17:12:36	IsFindImage:FOUND
+17:12:37	WaitHighlight:Found
+17:12:37	ClickVerify:Click
+17:12:37	ClickHighlight:
+17:12:38	ClickImage:
+17:12:39	WaitHighlight:Apps_verifyAppsPeopleTabs.png
+17:12:39	IsFindImage:Apps_verifyAppsPeopleTabs.png
+17:12:40	IsFindImage:FOUND
+17:12:41	WaitHighlight:Found
+17:12:41	ClickVerify:Found
+17:12:41	TakeScreenShot: TEST_SelectFavoriteApps.png
+17:12:41	switchAppVNC:
+17:12:41	ScreenShot:Moved - TEST_SelectFavoriteApps.png
+17:12:41	
+-------------------------------------
+17:12:41	START: SelectFavoriteApps
+17:12:41	ClickScrollVerify:Home_Itenm_TextMessages.png:Apps_LiveNurse_headLiveNurse.png
+17:12:41	ClickScroll:Home_Itenm_TextMessages.png
+17:12:41	FindScroll:Home_Itenm_TextMessages.png
+17:12:41	switchAppVNC:
+17:12:41	WaitHighlight:Home_Itenm_TextMessages.png
+17:12:41	IsFindImage:Home_Itenm_TextMessages.png
+17:12:43	IsFindImage:NOT FOUND
+17:12:43	WaitHighlight:Not Found
+17:12:43	FindScroll: SWIPEUP0
+17:12:43	SwipeUp:
+17:12:43	switchAppVNC:
+17:12:45	WaitHighlight:Home_Itenm_TextMessages.png
+17:12:45	IsFindImage:Home_Itenm_TextMessages.png
+17:12:46	IsFindImage:NOT FOUND
+17:12:46	WaitHighlight:Not Found
+17:12:46	WheelUp:
+17:12:46	switchAppVNC:
+17:12:46	WaitHighlight:Home_Itenm_TextMessages.png
+17:12:46	IsFindImage:Home_Itenm_TextMessages.png
+17:12:49	IsFindImage:NOT FOUND
+17:12:49	WaitHighlight:Not Found
+17:12:49	FindScroll: SWIPEUP1
+17:12:49	SwipeUp:
+17:12:49	switchAppVNC:
+17:12:51	WaitHighlight:Home_Itenm_TextMessages.png
+17:12:51	IsFindImage:Home_Itenm_TextMessages.png
+17:12:52	IsFindImage:NOT FOUND
+17:12:52	WaitHighlight:Not Found
+17:12:52	WheelUp:
+17:12:52	switchAppVNC:
+17:12:52	WaitHighlight:Home_Itenm_TextMessages.png
+17:12:52	IsFindImage:Home_Itenm_TextMessages.png
+17:12:54	IsFindImage:NOT FOUND
+17:12:54	WaitHighlight:Not Found
+17:12:54	FindScroll: SWIPEDOWN0
+17:12:54	SwipeDown:
+17:12:54	switchAppVNC:
+17:12:56	WaitHighlight:Home_Itenm_TextMessages.png
+17:12:56	IsFindImage:Home_Itenm_TextMessages.png
+17:12:57	IsFindImage:NOT FOUND
+17:12:57	WaitHighlight:Not Found
+17:12:57	WheelDown:
+17:12:57	switchAppVNC:
+17:12:57	WaitHighlight:Home_Itenm_TextMessages.png
+17:12:57	IsFindImage:Home_Itenm_TextMessages.png
+17:13:00	IsFindImage:NOT FOUND
+17:13:00	WaitHighlight:Not Found
+17:13:00	FindScroll: SWIPEDOWN1
+17:13:00	SwipeDown:
+17:13:00	switchAppVNC:
+17:13:01	WaitHighlight:Home_Itenm_TextMessages.png
+17:13:01	IsFindImage:Home_Itenm_TextMessages.png
+17:13:03	IsFindImage:NOT FOUND
+17:13:03	WaitHighlight:Not Found
+17:13:03	WheelDown:
+17:13:03	switchAppVNC:
+17:13:03	FAILED:FindScroll:Home_Itenm_TextMessages.png
+17:13:03	**** FAILED *****
+17:13:03	TakeScreenShot: FAILED_SelectFavoriteApps.png
+17:13:03	switchAppVNC:

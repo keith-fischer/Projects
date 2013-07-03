@@ -1,0 +1,36 @@
+16:54:26	Start Framework Environment
+16:54:26	getEnvironment
+16:54:26	SetVNCAppRegion:Find HUAWEI
+16:54:26	SetApp
+16:54:26	SetAppRegionExitOnNull
+16:54:26	SetAppRegion: Find W=496 - H=914
+16:54:27	0 - SetAppRegion - W=1260 - H=745
+16:54:30	1 - SetAppRegion - W=700 - H=20
+16:54:30	2 - SetAppRegion - W=496 - H=914
+16:54:37	SetAppRegion:Found by Size: X=-540,Y=68,W=496,H=914,CX=-292.0,CY=525.0,
+16:54:37	****Script Start *****
+16:54:37	ClickVerify::Device_Btn_Home.png:App_HomeGreatCall.png
+16:54:37	WaitHighlight:Device_Btn_Home.png
+16:54:37	IsFindImage:Device_Btn_Home.png
+16:54:37	IsFindImage:FOUND
+16:54:38	WaitHighlight:Found
+16:54:38	ClickVerify:Click
+16:54:38	ClickHighlight:
+16:54:39	ClickImage:
+16:54:40	WaitHighlight:App_HomeGreatCall.png
+16:54:40	IsFindImage:App_HomeGreatCall.png
+16:54:40	IsFindImage:FOUND
+16:54:41	WaitHighlight:Found
+16:54:41	ClickVerify:Found
+16:54:41	ClickVerify::Home_Unselected.png:Apps_verifyAppsPeopleTabs.png
+16:54:41	WaitHighlight:Home_Unselected.png
+16:54:41	IsFindImage:Home_Unselected.png
+16:54:51	IsFindImage:NOT FOUND
+16:54:51	WaitHighlight:Not Found
+16:54:51	ClickVerify:0
+16:54:51	WaitHighlight:Home_Unselected.png
+16:54:51	IsFindImage:Home_Unselected.png
+16:55:01	IsFindImage:NOT FOUND
+16:55:01	WaitHighlight:Not Found
+16:55:01	ClickVerify:1
+16:55:01	FAILED:ClickVerifyHome_Unselected.png

@@ -1,0 +1,119 @@
+12:11:54	getEnvironment
+12:11:54	SetVNCAppRegion:Find HUAWEI
+12:11:54	SetApp
+12:11:54	SetAppRegionExitOnNull
+12:11:54	SetAppRegion: Find W=496 - H=914
+12:11:55	0 - SetAppRegion - W=126 - H=20
+12:11:59	1 - SetAppRegion - W=700 - H=20
+12:11:59	2 - SetAppRegion - W=496 - H=914
+12:12:05	SetAppRegion:Found by Size: X=-526,Y=45,W=496,H=914,CX=-278.0,CY=502.0,
+12:12:05	****Script Start *****
+12:12:05	TakeScreenShot: Test_Start.png
+12:12:05	switchAppVNC:
+12:12:05	ScreenShot:Test_Start.png:C:\Users\KEITH~1.FIS\AppData\Local\Temp\sikuli-6506169683158279504.png
+12:12:05	ScreenShot:path - C:\Automation\Sikuli\HomeScreen\TestResults\AddFavoriteApps_20130621121154\Test_Start.png
+12:12:05	ScreenShot:Moved - Test_Start.png
+12:12:05	
+-------------------------------------
+12:12:05	START: AddFavoriteApps
+12:12:05	ClickVerify::global_menu.png:Home_Favorites_Menu.png
+12:12:05	WaitHighlight:global_menu.png
+12:12:05	IsFindImage:global_menu.png
+12:12:05	IsFindImage:FOUND
+12:12:06	WaitHighlight:Found
+12:12:06	ClickVerify:Click
+12:12:06	ClickHighlight:
+12:12:07	*******ClickImage:M[-343,901 214x45]@S(1)[-1680,0 1680x1050] S:1.00 Center:-236,923
+12:12:08	WaitHighlight:Home_Favorites_Menu.png
+12:12:08	IsFindImage:Home_Favorites_Menu.png
+12:12:09	IsFindImage:FOUND
+12:12:10	WaitHighlight:Found
+12:12:10	ClickVerify:Found
+12:12:10	ClickVerify::Home_Favories_Menu_AddFavorites.png:AddFavoritesTitle.png
+12:12:10	WaitHighlight:Home_Favories_Menu_AddFavorites.png
+12:12:10	IsFindImage:Home_Favories_Menu_AddFavorites.png
+12:12:10	IsFindImage:FOUND
+12:12:11	WaitHighlight:Found
+12:12:11	ClickVerify:Click
+12:12:11	ClickHighlight:
+12:12:12	*******ClickImage:M[-496,801 202x143]@S(1)[-1680,0 1680x1050] S:1.00 Center:-395,872
+12:12:13	WaitHighlight:AddFavoritesTitle.png
+12:12:13	IsFindImage:AddFavoritesTitle.png
+12:12:13	IsFindImage:FOUND
+12:12:14	WaitHighlight:Found
+12:12:14	ClickVerify:Found
+12:12:14	ClickScrollVerify:app_nav-1.png:app_nav.png
+12:12:14	ClickScroll:app_nav-1.png
+12:12:14	FindScroll:app_nav-1.png
+12:12:14	switchAppVNC:
+12:12:14	WaitHighlight:app_nav-1.png
+12:12:14	IsFindImage:app_nav-1.png
+12:12:17	IsFindImage:NOT FOUND
+12:12:17	WaitHighlight:Not Found
+12:12:17	FindScroll: WheelDown0
+12:12:17	WheelDown:
+12:12:17	switchAppVNC:
+12:12:20	WaitHighlight:app_nav-1.png
+12:12:20	IsFindImage:app_nav-1.png
+12:12:21	IsFindImage:NOT FOUND
+12:12:21	WaitHighlight:Not Found
+12:12:21	WaitHighlight:app_nav-1.png
+12:12:21	IsFindImage:app_nav-1.png
+12:12:23	IsFindImage:NOT FOUND
+12:12:23	WaitHighlight:Not Found
+12:12:23	FindScroll: WheelDown1
+12:12:23	WheelDown:
+12:12:23	switchAppVNC:
+12:12:27	WaitHighlight:app_nav-1.png
+12:12:27	IsFindImage:app_nav-1.png
+12:12:28	IsFindImage:NOT FOUND
+12:12:28	WaitHighlight:Not Found
+12:12:28	WaitHighlight:app_nav-1.png
+12:12:28	IsFindImage:app_nav-1.png
+12:12:30	IsFindImage:NOT FOUND
+12:12:30	WaitHighlight:Not Found
+12:12:30	FindScroll: WheelDown2
+12:12:30	WheelDown:
+12:12:30	switchAppVNC:
+12:12:33	WaitHighlight:app_nav-1.png
+12:12:33	IsFindImage:app_nav-1.png
+12:12:35	IsFindImage:NOT FOUND
+12:12:35	WaitHighlight:Not Found
+12:12:35	WaitHighlight:app_nav-1.png
+12:12:35	IsFindImage:app_nav-1.png
+12:12:37	IsFindImage:NOT FOUND
+12:12:37	WaitHighlight:Not Found
+12:12:37	FindScroll: WheelDown3
+12:12:37	WheelDown:
+12:12:37	switchAppVNC:
+12:12:40	WaitHighlight:app_nav-1.png
+12:12:40	IsFindImage:app_nav-1.png
+12:12:40	IsFindImage:FOUND
+12:12:41	WaitHighlight:Found
+12:12:41	FindScroll: FOUND
+12:12:41	ClickHighlight:
+12:12:42	*******ClickImage:M[-504,239 463x77]@S(1)[-1680,0 1680x1050] S:0.92 Center:-273,277
+12:12:43	ClickScroll: Clicked
+12:12:43	ClickScrollVerify:Clicked
+12:12:43	WaitHighlight:app_nav.png
+12:12:43	IsFindImage:app_nav.png
+12:12:43	IsFindImage:FOUND
+12:12:44	WaitHighlight:Found
+12:12:44	ClickScrollVerify:Found
+12:12:44	ClickVerify::app_calculator-1.png:app_calculator_checked.png
+12:12:44	WaitHighlight:app_calculator-1.png
+12:12:44	IsFindImage:app_calculator-1.png
+12:12:46	IsFindImage:NOT FOUND
+12:12:46	WaitHighlight:Not Found
+12:12:46	ClickVerify:0
+12:12:46	WaitHighlight:app_calculator-1.png
+12:12:46	IsFindImage:app_calculator-1.png
+12:12:47	IsFindImage:NOT FOUND
+12:12:47	WaitHighlight:Not Found
+12:12:47	ClickVerify:1
+12:12:47	FAILED:ClickVerifyapp_calculator-1.png
+12:12:47	TakeScreenShot: FAILED_AddFavoriteApps.png
+12:12:47	switchAppVNC:
+12:12:47	ScreenShot:FAILED_AddFavoriteApps.png:C:\Users\KEITH~1.FIS\AppData\Local\Temp\sikuli-6993475175985121025.png
+12:12:47	ScreenShot:path - C:\Automation\Sikuli\HomeScreen\TestResults\AddFavoriteApps_20130621121154\FAILED_AddFavoriteApps.png
+12:12:47	ScreenShot:Moved - FAILED_AddFavoriteApps.png

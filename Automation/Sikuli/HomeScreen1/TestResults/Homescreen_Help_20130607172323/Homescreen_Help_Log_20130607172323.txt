@@ -1,0 +1,10 @@
+17:23:23	Start Framework Environment
+17:23:23	getEnvironment
+17:23:23	SetVNCAppRegion
+17:23:23	SetApp
+17:23:23	SetAppRegionExitOnNull
+17:23:23	SetAppRegion
+17:23:27	SetAppRegion:Found X=1144,Y=48,W=496,H=914,CX=1392.0,CY=505.0,
+17:23:27	****Script Start *****
+17:23:31	ClickVerify::Home_Help.png:Home_Help_headHelp.png
+17:23:31	ClickHighlight:

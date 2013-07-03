@@ -1,0 +1,538 @@
+15:14:58	getEnvironment
+15:14:58	SetVNCAppRegion:Find HUAWEI
+15:14:58	SetApp
+15:14:58	SetAppRegionExitOnNull
+15:14:58	SetAppRegion: Find W=496 - H=914
+15:14:59	0 - SetAppRegion - W=1260 - H=745
+15:15:02	1 - SetAppRegion - W=700 - H=20
+15:15:02	2 - SetAppRegion - W=496 - H=914
+15:15:08	SetAppRegion:Found by Size: X=-521,Y=61,W=496,H=914,CX=-273.0,CY=518.0,
+15:15:08	****Script Start *****
+15:15:08	TakeScreenShot: Test_Start.png
+15:15:08	switchAppVNC:
+15:15:08	ScreenShot:Test_Start.png:C:\Users\KEITH~1.FIS\AppData\Local\Temp\sikuli-1766418280452884283.png
+15:15:08	ScreenShot:path - C:\Automation\Sikuli\HomeScreen\TestResults\AddFavoriteApps_20130620151458\Test_Start.png
+15:15:08	ScreenShot:Moved - Test_Start.png
+15:15:08	
+-------------------------------------
+15:15:08	START: AddFavoriteApps
+15:15:08	ClickVerify::global_menu.png:add_favorites.png
+15:15:08	WaitHighlight:global_menu.png
+15:15:08	IsFindImage:global_menu.png
+15:15:09	IsFindImage:FOUND
+15:15:10	WaitHighlight:Found
+15:15:10	ClickVerify:Click
+15:15:10	ClickHighlight:
+15:15:11	ClickImage:
+15:15:11	WaitHighlight:add_favorites.png
+15:15:11	IsFindImage:add_favorites.png
+15:15:12	IsFindImage:FOUND
+15:15:13	WaitHighlight:Found
+15:15:13	ClickVerify:Found
+15:15:13	ClickVerify::add_favorites.png:AddFavoritesTitle.png
+15:15:13	WaitHighlight:add_favorites.png
+15:15:13	IsFindImage:add_favorites.png
+15:15:13	IsFindImage:FOUND
+15:15:14	WaitHighlight:Found
+15:15:14	ClickVerify:Click
+15:15:14	ClickHighlight:
+15:15:15	ClickImage:
+15:15:16	WaitHighlight:AddFavoritesTitle.png
+15:15:16	IsFindImage:AddFavoritesTitle.png
+15:15:17	IsFindImage:FOUND
+15:15:18	WaitHighlight:Found
+15:15:18	ClickVerify:Found
+15:15:18	ClickVerify::app_calculator-1.png:app_calculator_checked.png
+15:15:18	WaitHighlight:app_calculator-1.png
+15:15:18	IsFindImage:app_calculator-1.png
+15:15:18	IsFindImage:FOUND
+15:15:19	WaitHighlight:Found
+15:15:19	ClickVerify:Click
+15:15:19	ClickHighlight:
+15:15:20	ClickImage:
+15:15:21	WaitHighlight:app_calculator_checked.png
+15:15:21	IsFindImage:app_calculator_checked.png
+15:15:21	IsFindImage:FOUND
+15:15:22	WaitHighlight:Found
+15:15:22	ClickVerify:Found
+15:15:22	ClickVerify::app_chrome.png:app_chrome_checked-1.png
+15:15:22	WaitHighlight:app_chrome.png
+15:15:22	IsFindImage:app_chrome.png
+15:15:22	IsFindImage:FOUND
+15:15:23	WaitHighlight:Found
+15:15:23	ClickVerify:Click
+15:15:23	ClickHighlight:
+15:15:24	ClickImage:
+15:15:25	WaitHighlight:app_chrome_checked-1.png
+15:15:25	IsFindImage:app_chrome_checked-1.png
+15:15:25	IsFindImage:FOUND
+15:15:26	WaitHighlight:Found
+15:15:26	ClickVerify:Found
+15:15:26	ClickScrollVerify:app_nav-1.png:app_nav.png
+15:15:26	ClickScroll:app_nav-1.png
+15:15:26	FindScroll:app_nav-1.png
+15:15:26	switchAppVNC:
+15:15:26	WaitHighlight:app_nav-1.png
+15:15:26	IsFindImage:app_nav-1.png
+15:15:28	IsFindImage:NOT FOUND
+15:15:28	WaitHighlight:Not Found
+15:15:28	FindScroll: SWIPEUP0
+15:15:28	SwipeUp:
+15:15:28	switchAppVNC:
+15:15:30	WaitHighlight:app_nav-1.png
+15:15:30	IsFindImage:app_nav-1.png
+15:15:31	IsFindImage:NOT FOUND
+15:15:31	WaitHighlight:Not Found
+15:15:31	WheelUp:
+15:15:31	switchAppVNC:
+15:15:31	WaitHighlight:app_nav-1.png
+15:15:31	IsFindImage:app_nav-1.png
+15:15:34	IsFindImage:NOT FOUND
+15:15:34	WaitHighlight:Not Found
+15:15:34	FindScroll: SWIPEUP1
+15:15:34	SwipeUp:
+15:15:34	switchAppVNC:
+15:15:36	WaitHighlight:app_nav-1.png
+15:15:36	IsFindImage:app_nav-1.png
+15:15:37	IsFindImage:NOT FOUND
+15:15:37	WaitHighlight:Not Found
+15:15:37	WheelUp:
+15:15:37	switchAppVNC:
+15:15:37	WaitHighlight:app_nav-1.png
+15:15:37	IsFindImage:app_nav-1.png
+15:15:39	IsFindImage:NOT FOUND
+15:15:39	WaitHighlight:Not Found
+15:15:39	FindScroll: SWIPEUP2
+15:15:39	SwipeUp:
+15:15:39	switchAppVNC:
+15:15:41	WaitHighlight:app_nav-1.png
+15:15:41	IsFindImage:app_nav-1.png
+15:15:43	IsFindImage:NOT FOUND
+15:15:43	WaitHighlight:Not Found
+15:15:43	WheelUp:
+15:15:43	switchAppVNC:
+15:15:43	WaitHighlight:app_nav-1.png
+15:15:43	IsFindImage:app_nav-1.png
+15:15:45	IsFindImage:NOT FOUND
+15:15:45	WaitHighlight:Not Found
+15:15:45	FindScroll: SWIPEUP3
+15:15:45	SwipeUp:
+15:15:45	switchAppVNC:
+15:15:47	WaitHighlight:app_nav-1.png
+15:15:47	IsFindImage:app_nav-1.png
+15:15:48	IsFindImage:NOT FOUND
+15:15:48	WaitHighlight:Not Found
+15:15:48	WheelUp:
+15:15:48	switchAppVNC:
+15:15:48	WaitHighlight:app_nav-1.png
+15:15:48	IsFindImage:app_nav-1.png
+15:15:50	IsFindImage:NOT FOUND
+15:15:50	WaitHighlight:Not Found
+15:15:50	FindScroll: SWIPEUP4
+15:15:50	SwipeUp:
+15:15:50	switchAppVNC:
+15:15:52	WaitHighlight:app_nav-1.png
+15:15:52	IsFindImage:app_nav-1.png
+15:15:54	IsFindImage:NOT FOUND
+15:15:54	WaitHighlight:Not Found
+15:15:54	WheelUp:
+15:15:54	switchAppVNC:
+15:15:54	WaitHighlight:app_nav-1.png
+15:15:54	IsFindImage:app_nav-1.png
+15:15:56	IsFindImage:NOT FOUND
+15:15:56	WaitHighlight:Not Found
+15:15:56	FindScroll: SWIPEUP5
+15:15:56	SwipeUp:
+15:15:56	switchAppVNC:
+15:15:58	WaitHighlight:app_nav-1.png
+15:15:58	IsFindImage:app_nav-1.png
+15:15:59	IsFindImage:NOT FOUND
+15:15:59	WaitHighlight:Not Found
+15:15:59	WheelUp:
+15:15:59	switchAppVNC:
+15:15:59	WaitHighlight:app_nav-1.png
+15:15:59	IsFindImage:app_nav-1.png
+15:16:02	IsFindImage:NOT FOUND
+15:16:02	WaitHighlight:Not Found
+15:16:02	FindScroll: SWIPEUP6
+15:16:02	SwipeUp:
+15:16:02	switchAppVNC:
+15:16:03	WaitHighlight:app_nav-1.png
+15:16:03	IsFindImage:app_nav-1.png
+15:16:05	IsFindImage:NOT FOUND
+15:16:05	WaitHighlight:Not Found
+15:16:05	WheelUp:
+15:16:05	switchAppVNC:
+15:16:05	WaitHighlight:app_nav-1.png
+15:16:05	IsFindImage:app_nav-1.png
+15:16:07	IsFindImage:NOT FOUND
+15:16:07	WaitHighlight:Not Found
+15:16:07	FindScroll: SWIPEUP7
+15:16:07	SwipeUp:
+15:16:07	switchAppVNC:
+15:16:09	WaitHighlight:app_nav-1.png
+15:16:09	IsFindImage:app_nav-1.png
+15:16:10	IsFindImage:NOT FOUND
+15:16:10	WaitHighlight:Not Found
+15:16:10	WheelUp:
+15:16:10	switchAppVNC:
+15:16:10	WaitHighlight:app_nav-1.png
+15:16:10	IsFindImage:app_nav-1.png
+15:16:13	IsFindImage:NOT FOUND
+15:16:13	WaitHighlight:Not Found
+15:16:13	FindScroll: SWIPEUP8
+15:16:13	SwipeUp:
+15:16:13	switchAppVNC:
+15:16:15	WaitHighlight:app_nav-1.png
+15:16:15	IsFindImage:app_nav-1.png
+15:16:16	IsFindImage:NOT FOUND
+15:16:16	WaitHighlight:Not Found
+15:16:16	WheelUp:
+15:16:16	switchAppVNC:
+15:16:16	WaitHighlight:app_nav-1.png
+15:16:16	IsFindImage:app_nav-1.png
+15:16:18	IsFindImage:NOT FOUND
+15:16:18	WaitHighlight:Not Found
+15:16:18	FindScroll: SWIPEUP9
+15:16:18	SwipeUp:
+15:16:18	switchAppVNC:
+15:16:20	WaitHighlight:app_nav-1.png
+15:16:20	IsFindImage:app_nav-1.png
+15:16:21	IsFindImage:NOT FOUND
+15:16:21	WaitHighlight:Not Found
+15:16:21	WheelUp:
+15:16:21	switchAppVNC:
+15:16:22	WaitHighlight:app_nav-1.png
+15:16:22	IsFindImage:app_nav-1.png
+15:16:24	IsFindImage:NOT FOUND
+15:16:24	WaitHighlight:Not Found
+15:16:24	FindScroll: SWIPEDOWN0
+15:16:24	SwipeDown:
+15:16:24	switchAppVNC:
+15:16:26	WaitHighlight:app_nav-1.png
+15:16:26	IsFindImage:app_nav-1.png
+15:16:27	IsFindImage:NOT FOUND
+15:16:27	WaitHighlight:Not Found
+15:16:27	WheelDown:
+15:16:27	switchAppVNC:
+15:16:27	WaitHighlight:app_nav-1.png
+15:16:27	IsFindImage:app_nav-1.png
+15:16:29	IsFindImage:NOT FOUND
+15:16:29	WaitHighlight:Not Found
+15:16:29	FindScroll: SWIPEDOWN1
+15:16:29	SwipeDown:
+15:16:29	switchAppVNC:
+15:16:31	WaitHighlight:app_nav-1.png
+15:16:31	IsFindImage:app_nav-1.png
+15:16:33	IsFindImage:NOT FOUND
+15:16:33	WaitHighlight:Not Found
+15:16:33	WheelDown:
+15:16:33	switchAppVNC:
+15:16:33	WaitHighlight:app_nav-1.png
+15:16:33	IsFindImage:app_nav-1.png
+15:16:35	IsFindImage:NOT FOUND
+15:16:35	WaitHighlight:Not Found
+15:16:35	FindScroll: SWIPEDOWN2
+15:16:35	SwipeDown:
+15:16:35	switchAppVNC:
+15:16:37	WaitHighlight:app_nav-1.png
+15:16:37	IsFindImage:app_nav-1.png
+15:16:38	IsFindImage:NOT FOUND
+15:16:38	WaitHighlight:Not Found
+15:16:38	WheelDown:
+15:16:38	switchAppVNC:
+15:16:38	WaitHighlight:app_nav-1.png
+15:16:38	IsFindImage:app_nav-1.png
+15:16:39	IsFindImage:FOUND
+15:16:40	WaitHighlight:Found
+15:16:40	FindScroll: FOUND
+15:16:40	ClickHighlight:
+15:16:41	ClickImage:
+15:16:42	ClickScroll: Clicked
+15:16:42	ClickScrollVerify:Clicked
+15:16:42	WaitHighlight:app_nav.png
+15:16:42	IsFindImage:app_nav.png
+15:16:42	IsFindImage:FOUND
+15:16:43	WaitHighlight:Found
+15:16:43	ClickScrollVerify:Found
+15:16:43	ClickScrollVerify:app_playstore.png:app_playstore_checked-1.png
+15:16:43	ClickScroll:app_playstore.png
+15:16:43	FindScroll:app_playstore.png
+15:16:43	switchAppVNC:
+15:16:43	WaitHighlight:app_playstore.png
+15:16:43	IsFindImage:app_playstore.png
+15:16:46	IsFindImage:NOT FOUND
+15:16:46	WaitHighlight:Not Found
+15:16:46	FindScroll: SWIPEUP0
+15:16:46	SwipeUp:
+15:16:46	switchAppVNC:
+15:16:48	WaitHighlight:app_playstore.png
+15:16:48	IsFindImage:app_playstore.png
+15:16:49	IsFindImage:NOT FOUND
+15:16:49	WaitHighlight:Not Found
+15:16:49	WheelUp:
+15:16:49	switchAppVNC:
+15:16:49	WaitHighlight:app_playstore.png
+15:16:49	IsFindImage:app_playstore.png
+15:16:51	IsFindImage:NOT FOUND
+15:16:51	WaitHighlight:Not Found
+15:16:51	FindScroll: SWIPEUP1
+15:16:51	SwipeUp:
+15:16:51	switchAppVNC:
+15:16:53	WaitHighlight:app_playstore.png
+15:16:53	IsFindImage:app_playstore.png
+15:16:54	IsFindImage:NOT FOUND
+15:16:54	WaitHighlight:Not Found
+15:16:54	WheelUp:
+15:16:54	switchAppVNC:
+15:16:54	WaitHighlight:app_playstore.png
+15:16:54	IsFindImage:app_playstore.png
+15:16:57	IsFindImage:NOT FOUND
+15:16:57	WaitHighlight:Not Found
+15:16:57	FindScroll: SWIPEUP2
+15:16:57	SwipeUp:
+15:16:57	switchAppVNC:
+15:16:58	WaitHighlight:app_playstore.png
+15:16:58	IsFindImage:app_playstore.png
+15:17:00	IsFindImage:NOT FOUND
+15:17:00	WaitHighlight:Not Found
+15:17:00	WheelUp:
+15:17:00	switchAppVNC:
+15:17:00	WaitHighlight:app_playstore.png
+15:17:00	IsFindImage:app_playstore.png
+15:17:02	IsFindImage:NOT FOUND
+15:17:02	WaitHighlight:Not Found
+15:17:02	FindScroll: SWIPEUP3
+15:17:02	SwipeUp:
+15:17:02	switchAppVNC:
+15:17:04	WaitHighlight:app_playstore.png
+15:17:04	IsFindImage:app_playstore.png
+15:17:05	IsFindImage:NOT FOUND
+15:17:05	WaitHighlight:Not Found
+15:17:05	WheelUp:
+15:17:05	switchAppVNC:
+15:17:05	WaitHighlight:app_playstore.png
+15:17:05	IsFindImage:app_playstore.png
+15:17:08	IsFindImage:NOT FOUND
+15:17:08	WaitHighlight:Not Found
+15:17:08	FindScroll: SWIPEUP4
+15:17:08	SwipeUp:
+15:17:08	switchAppVNC:
+15:17:09	WaitHighlight:app_playstore.png
+15:17:09	IsFindImage:app_playstore.png
+15:17:11	IsFindImage:NOT FOUND
+15:17:11	WaitHighlight:Not Found
+15:17:11	WheelUp:
+15:17:11	switchAppVNC:
+15:17:11	WaitHighlight:app_playstore.png
+15:17:11	IsFindImage:app_playstore.png
+15:17:13	IsFindImage:NOT FOUND
+15:17:13	WaitHighlight:Not Found
+15:17:13	FindScroll: SWIPEUP5
+15:17:13	SwipeUp:
+15:17:13	switchAppVNC:
+15:17:15	WaitHighlight:app_playstore.png
+15:17:15	IsFindImage:app_playstore.png
+15:17:16	IsFindImage:NOT FOUND
+15:17:16	WaitHighlight:Not Found
+15:17:16	WheelUp:
+15:17:16	switchAppVNC:
+15:17:16	WaitHighlight:app_playstore.png
+15:17:16	IsFindImage:app_playstore.png
+15:17:18	IsFindImage:NOT FOUND
+15:17:18	WaitHighlight:Not Found
+15:17:18	FindScroll: SWIPEUP6
+15:17:18	SwipeUp:
+15:17:18	switchAppVNC:
+15:17:20	WaitHighlight:app_playstore.png
+15:17:20	IsFindImage:app_playstore.png
+15:17:22	IsFindImage:NOT FOUND
+15:17:22	WaitHighlight:Not Found
+15:17:22	WheelUp:
+15:17:22	switchAppVNC:
+15:17:22	WaitHighlight:app_playstore.png
+15:17:22	IsFindImage:app_playstore.png
+15:17:24	IsFindImage:NOT FOUND
+15:17:24	WaitHighlight:Not Found
+15:17:24	FindScroll: SWIPEUP7
+15:17:24	SwipeUp:
+15:17:24	switchAppVNC:
+15:17:26	WaitHighlight:app_playstore.png
+15:17:26	IsFindImage:app_playstore.png
+15:17:27	IsFindImage:NOT FOUND
+15:17:27	WaitHighlight:Not Found
+15:17:27	WheelUp:
+15:17:27	switchAppVNC:
+15:17:27	WaitHighlight:app_playstore.png
+15:17:27	IsFindImage:app_playstore.png
+15:17:30	IsFindImage:NOT FOUND
+15:17:30	WaitHighlight:Not Found
+15:17:30	FindScroll: SWIPEUP8
+15:17:30	SwipeUp:
+15:17:30	switchAppVNC:
+15:17:31	WaitHighlight:app_playstore.png
+15:17:31	IsFindImage:app_playstore.png
+15:17:33	IsFindImage:NOT FOUND
+15:17:33	WaitHighlight:Not Found
+15:17:33	WheelUp:
+15:17:33	switchAppVNC:
+15:17:33	WaitHighlight:app_playstore.png
+15:17:33	IsFindImage:app_playstore.png
+15:17:35	IsFindImage:NOT FOUND
+15:17:35	WaitHighlight:Not Found
+15:17:35	FindScroll: SWIPEUP9
+15:17:35	SwipeUp:
+15:17:35	switchAppVNC:
+15:17:37	WaitHighlight:app_playstore.png
+15:17:37	IsFindImage:app_playstore.png
+15:17:38	IsFindImage:NOT FOUND
+15:17:38	WaitHighlight:Not Found
+15:17:38	WheelUp:
+15:17:38	switchAppVNC:
+15:17:38	WaitHighlight:app_playstore.png
+15:17:38	IsFindImage:app_playstore.png
+15:17:41	IsFindImage:NOT FOUND
+15:17:41	WaitHighlight:Not Found
+15:17:41	FindScroll: SWIPEDOWN0
+15:17:41	SwipeDown:
+15:17:41	switchAppVNC:
+15:17:43	WaitHighlight:app_playstore.png
+15:17:43	IsFindImage:app_playstore.png
+15:17:44	IsFindImage:NOT FOUND
+15:17:44	WaitHighlight:Not Found
+15:17:44	WheelDown:
+15:17:44	switchAppVNC:
+15:17:44	WaitHighlight:app_playstore.png
+15:17:44	IsFindImage:app_playstore.png
+15:17:46	IsFindImage:NOT FOUND
+15:17:46	WaitHighlight:Not Found
+15:17:46	FindScroll: SWIPEDOWN1
+15:17:46	SwipeDown:
+15:17:46	switchAppVNC:
+15:17:48	WaitHighlight:app_playstore.png
+15:17:48	IsFindImage:app_playstore.png
+15:17:49	IsFindImage:NOT FOUND
+15:17:49	WaitHighlight:Not Found
+15:17:49	WheelDown:
+15:17:49	switchAppVNC:
+15:17:49	WaitHighlight:app_playstore.png
+15:17:49	IsFindImage:app_playstore.png
+15:17:51	IsFindImage:NOT FOUND
+15:17:51	WaitHighlight:Not Found
+15:17:51	FindScroll: SWIPEDOWN2
+15:17:51	SwipeDown:
+15:17:51	switchAppVNC:
+15:17:53	WaitHighlight:app_playstore.png
+15:17:53	IsFindImage:app_playstore.png
+15:17:55	IsFindImage:NOT FOUND
+15:17:55	WaitHighlight:Not Found
+15:17:55	WheelDown:
+15:17:55	switchAppVNC:
+15:17:55	WaitHighlight:app_playstore.png
+15:17:55	IsFindImage:app_playstore.png
+15:17:57	IsFindImage:FOUND
+15:17:58	WaitHighlight:Found
+15:17:58	FindScroll: FOUND
+15:17:58	ClickHighlight:
+15:17:59	ClickImage:
+15:17:59	ClickScroll: Clicked
+15:17:59	ClickScrollVerify:Clicked
+15:17:59	WaitHighlight:app_playstore_checked-1.png
+15:17:59	IsFindImage:app_playstore_checked-1.png
+15:17:59	IsFindImage:FOUND
+15:18:01	WaitHighlight:Found
+15:18:01	ClickScrollVerify:Found
+15:18:01	ClickScrollVerify:app_youtube-1.png:app_youtube_checked.png
+15:18:01	ClickScroll:app_youtube-1.png
+15:18:01	FindScroll:app_youtube-1.png
+15:18:01	switchAppVNC:
+15:18:01	WaitHighlight:app_youtube-1.png
+15:18:01	IsFindImage:app_youtube-1.png
+15:18:03	IsFindImage:NOT FOUND
+15:18:03	WaitHighlight:Not Found
+15:18:03	FindScroll: SWIPEUP0
+15:18:03	SwipeUp:
+15:18:03	switchAppVNC:
+15:18:05	WaitHighlight:app_youtube-1.png
+15:18:05	IsFindImage:app_youtube-1.png
+15:18:06	IsFindImage:NOT FOUND
+15:18:06	WaitHighlight:Not Found
+15:18:06	WheelUp:
+15:18:06	switchAppVNC:
+15:18:06	WaitHighlight:app_youtube-1.png
+15:18:06	IsFindImage:app_youtube-1.png
+15:18:08	IsFindImage:NOT FOUND
+15:18:08	WaitHighlight:Not Found
+15:18:08	FindScroll: SWIPEUP1
+15:18:08	SwipeUp:
+15:18:08	switchAppVNC:
+15:18:10	WaitHighlight:app_youtube-1.png
+15:18:10	IsFindImage:app_youtube-1.png
+15:18:12	IsFindImage:NOT FOUND
+15:18:12	WaitHighlight:Not Found
+15:18:12	WheelUp:
+15:18:12	switchAppVNC:
+15:18:12	WaitHighlight:app_youtube-1.png
+15:18:12	IsFindImage:app_youtube-1.png
+15:18:14	IsFindImage:NOT FOUND
+15:18:14	WaitHighlight:Not Found
+15:18:14	FindScroll: SWIPEUP2
+15:18:14	SwipeUp:
+15:18:14	switchAppVNC:
+15:18:16	WaitHighlight:app_youtube-1.png
+15:18:16	IsFindImage:app_youtube-1.png
+15:18:17	IsFindImage:NOT FOUND
+15:18:17	WaitHighlight:Not Found
+15:18:17	WheelUp:
+15:18:17	switchAppVNC:
+15:18:17	WaitHighlight:app_youtube-1.png
+15:18:17	IsFindImage:app_youtube-1.png
+15:18:20	IsFindImage:NOT FOUND
+15:18:20	WaitHighlight:Not Found
+15:18:20	FindScroll: SWIPEUP3
+15:18:20	SwipeUp:
+15:18:20	switchAppVNC:
+15:18:21	WaitHighlight:app_youtube-1.png
+15:18:21	IsFindImage:app_youtube-1.png
+15:18:23	IsFindImage:NOT FOUND
+15:18:23	WaitHighlight:Not Found
+15:18:23	WheelUp:
+15:18:23	switchAppVNC:
+15:18:23	WaitHighlight:app_youtube-1.png
+15:18:23	IsFindImage:app_youtube-1.png
+15:18:24	IsFindImage:FOUND
+15:18:25	WaitHighlight:Found
+15:18:25	FindScroll: FOUND
+15:18:25	ClickHighlight:
+15:18:26	ClickImage:
+15:18:27	ClickScroll: Clicked
+15:18:27	ClickScrollVerify:Clicked
+15:18:27	WaitHighlight:app_youtube_checked.png
+15:18:27	IsFindImage:app_youtube_checked.png
+15:18:27	IsFindImage:FOUND
+15:18:28	WaitHighlight:Found
+15:18:28	ClickScrollVerify:Found
+15:18:28	ClickVerify::ok_button.png:home_tab.png
+15:18:28	WaitHighlight:ok_button.png
+15:18:28	IsFindImage:ok_button.png
+15:18:29	IsFindImage:FOUND
+15:18:30	WaitHighlight:Found
+15:18:30	ClickVerify:Click
+15:18:30	ClickHighlight:
+15:18:31	ClickImage:
+15:18:31	WaitHighlight:home_tab.png
+15:18:31	IsFindImage:home_tab.png
+15:18:42	IsFindImage:NOT FOUND
+15:18:42	WaitHighlight:Not Found
+15:18:42	ClickVerify:NOT Found
+15:18:42	WaitHighlight:ok_button.png
+15:18:42	IsFindImage:ok_button.png
+15:18:52	IsFindImage:NOT FOUND
+15:18:52	WaitHighlight:Not Found
+15:18:52	ClickVerify:1
+15:18:52	FAILED:ClickVerifyok_button.png
+15:18:52	TakeScreenShot: FAILED_AddFavoriteApps.png
+15:18:52	switchAppVNC:
+15:18:52	ScreenShot:FAILED_AddFavoriteApps.png:C:\Users\KEITH~1.FIS\AppData\Local\Temp\sikuli-1272745734213021929.png
+15:18:52	ScreenShot:path - C:\Automation\Sikuli\HomeScreen\TestResults\AddFavoriteApps_20130620151458\FAILED_AddFavoriteApps.png
+15:18:52	ScreenShot:Moved - FAILED_AddFavoriteApps.png

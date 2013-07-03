@@ -1,0 +1,11 @@
+11:33:11	getEnvironment
+11:33:11	SetVNCAppRegion:Find HUAWEI
+11:33:11	SetApp
+11:33:11	SetAppRegionExitOnNull
+11:33:11	SetAppRegion: Find W=496 - H=914
+11:33:12	0 - SetAppRegion - W=126 - H=20
+11:33:15	1 - SetAppRegion - W=700 - H=20
+11:33:16	2 - SetAppRegion - W=496 - H=886
+11:33:19	3 - SetAppRegion - W=0 - H=0
+11:33:19	4 - SetAppRegion - W=0 - H=0
+11:33:19	5 - SetAppRegion:Window Not Found

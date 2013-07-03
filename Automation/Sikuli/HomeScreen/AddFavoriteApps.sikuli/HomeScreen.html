@@ -1,0 +1,190 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>AddFavoriteApps.sikuli\AddFavoriteApps.sikuli</h2> <a href="AddFavoriteApps.sikuli\AddFavoriteApps.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">import</span> java
+<span class="kw">import</span> os
+<span class="kw">from</span> time <span class="kw">import</span> strftime
+<span class="cmt">#import sikuli.Sikuli *
+</span>
+<span class="cmt">##########################################
+</span><span class="cmt">#set app object
+</span><span class="cmt">##########################################
+</span><span class="kw">def</span> SetApp(appTitle):
+    Log(logpath,<span class="str">"SetApp"</span>)
+    a=App(appTitle)
+    a.focus()
+    <span class="kw">return</span> a
+
+<span class="cmt">##########################################
+</span><span class="cmt">#set region object
+</span><span class="cmt">#assumes ultravnc single window(0)
+</span><span class="cmt">##########################################
+</span>
+<span class="kw">def</span> getRegionInfo(thisRegion):
+    rc = <span class="str">""</span>
+    <span class="kw">if</span> <span class="kw">not</span> thisRegion:
+        <span class="kw">return</span> rc
+
+    rc += <span class="str">"X="</span> + str(thisRegion.getX()) + <span class="str">","</span>
+    rc += <span class="str">"Y="</span> + str(thisRegion.getY()) + <span class="str">","</span>
+    rc += <span class="str">"W="</span> + str(thisRegion.getW()) + <span class="str">","</span>
+    rc += <span class="str">"H="</span> + str(thisRegion.getH()) + <span class="str">","</span>
+    rc+= <span class="str">"CX="</span> + str(thisRegion.getCenter().getX())+<span class="str">","</span>
+    rc+= <span class="str">"CY="</span> + str(thisRegion.getCenter().getY())+<span class="str">","</span>
+
+    <span class="kw">return</span> rc
+
+<span class="kw">def</span> SetAppRegion(AppObject,RegWidth,RegHeight):
+    Log(logpath,<span class="str">"SetAppRegion"</span>)
+    AppObject.focus()
+    <span class="skw">wait</span>(<span class="dig">1</span>)
+   <span class="cmt"># r = AppObject.window(2)
+</span>    <span class="cmt">#Found: HUAWEI(7448) Region[1181,56 496x914]@Screen(0)[0,0 1680x1050] E:Y, T:3.0 E:Y, T:3.0
+</span>    <span class="kw">for</span> i <span class="kw">in</span> range(<span class="dig">100</span>):
+        w = AppObject.window(i)
+        <span class="kw">if</span> <span class="kw">not</span> w:
+            Log(logpath,<span class="str">"SetAppRegion:Window Not Found"</span> )
+            exit(<span class="str">"Window Not Found"</span>)
+        <span class="kw">else</span>:
+        <span class="cmt">#vncregion = vnc.window(i)
+</span>            <span class="cmt">#w.highlight(5)
+</span>            <span class="cmt">#print i, " # ", w
+</span>            <span class="kw">if</span> w.getW() &gt;= RegWidth:
+                <span class="kw">if</span> w.getH() &gt;= RegHeight:
+                    w.highlight(<span class="dig">3</span>)
+                    <span class="kw">print</span> i, <span class="str">" # "</span>, w
+                    Log(logpath,<span class="str">"SetAppRegion:Found "</span> + getRegionInfo(w))
+                    <span class="kw">break</span>
+            <span class="cmt">#w.highlight(1)
+</span>    <span class="kw">return</span> w
+
+<span class="kw">def</span> SetAppRegionExitOnNull(AppObject,RegWidth,RegHeight):
+    Log(logpath,<span class="str">"SetAppRegionExitOnNull"</span>)
+    r = SetAppRegion(AppObject,RegWidth,RegHeight)
+    <span class="cmt">#Validate region not null
+</span>    <span class="kw">if</span> <span class="kw">not</span> r:
+        <span class="kw">print</span> <span class="str">"Not Found: "</span> ,AppObject, r
+        r = selectRegion(<span class="str">"Select the VNC window region"</span>)
+        <span class="kw">if</span> <span class="kw">not</span> r:
+            exit(<span class="str">"Not Found"</span>) <span class="cmt">#exit script target app window region is invalid</span>
+        <span class="kw">else</span>:
+            <span class="kw">print</span> <span class="str">"Found: "</span> ,AppObject, r
+    <span class="kw">else</span>:
+        <span class="kw">print</span> <span class="str">"Found: "</span> ,AppObject, r
+        <span class="kw">return</span> r
+
+
+<span class="kw">def</span> SetVNCAppRegion():
+    Log(logpath,<span class="str">"SetVNCAppRegion"</span>)
+    AppTitle = <span class="str">"HUAWEI"</span>
+    vnc = SetApp(AppTitle)
+    vncregion = SetAppRegionExitOnNull(vnc, <span class="dig">496</span>,<span class="dig">914</span>)
+    <span class="kw">return</span> vncregion
+
+<span class="kw">def</span> getEnvironment():
+    Log(logpath,<span class="str">"getEnvironment"</span>)
+    envOS=Env.getOS()
+    envOSVer=Env.getOSVersion()
+    envSikuliVer=Env.getSikuliVersion()
+    <span class="kw">print</span> <span class="str">"OS"</span>,envOS
+    <span class="kw">print</span> <span class="str">"OS Version"</span>,envOSVer
+    <span class="kw">print</span> <span class="str">"Sikuli Ver: "</span>,envSikuliVer
+
+<span class="kw">def</span> Log(pathname,msg):
+    <span class="kw">if</span> <span class="kw">not</span> pathname:
+        <span class="kw">return</span>
+    <span class="kw">if</span> <span class="kw">not</span> msg:
+        <span class="kw">return</span>
+    f=open(pathname, <span class="str">'a'</span>)
+    f.write(msg+<span class="str">"\r\n"</span>)
+    f.close()
+
+
+
+
+<span class="cmt">##########################################
+</span><span class="cmt">### define functions above main script ###
+</span><span class="cmt">##########################################
+</span>
+<span class="cmt">##########################################
+</span><span class="cmt">#Script Start
+</span><span class="cmt">##########################################
+</span>AppTitle = <span class="str">""</span>
+vnc = <span class="str">""</span>
+testscriptname=<span class="str">"homescreen1"</span>
+dt=strftime(<span class="str">"%Y%m%d%H%M%S"</span>)
+os.makedirs(dt)
+TestFolder = <span class="str">"G:\\SWDev\\Private\\SQA Tests\\Automation\\Mobile\\Sikuli\\HomeScreen\\TestResults\\"</span> + testscriptname + <span class="str">"_"</span> + dt
+
+os.makedirs(TestFolder)
+logpath = TestFolder +<span class="str">"\\"</span>+testscriptname+<span class="str">"_Log_"</span> +dt +<span class="str">".txt"</span>
+Log(l

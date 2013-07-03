@@ -1,0 +1,7 @@
+Start Framework Environment
+getEnvironment
+SetVNCAppRegion
+SetApp
+SetAppRegionExitOnNull
+SetAppRegion
+SetAppRegion:Found X=1144,Y=48,W=496,H=914,CX=1392.0,CY=505.0,

@@ -1,0 +1,15 @@
+13:32:10	Start Framework Environment
+13:32:10	getEnvironment
+13:32:10	SetVNCAppRegion:Find HUAWEI
+13:32:10	SetApp
+13:32:10	SetAppRegionExitOnNull
+13:32:10	SetAppRegion: Find W=496 - H=914
+13:32:11	0 - SetAppRegion - W=1260 - H=745
+13:32:14	1 - SetAppRegion - W=700 - H=20
+13:32:14	2 - SetAppRegion - W=496 - H=914
+13:32:20	SetAppRegion:Found by Size: X=1135,Y=69,W=496,H=914,CX=1383.0,CY=526.0,
+13:32:20	****Script Start *****
+13:32:20	TakeScreenShot: Test_Start.png
+13:32:20	switchAppVNC:
+13:32:20	ScreenShot:Test_Start.png:org.sikuli.script.ScreenImage@544e6f7
+13:32:20	ScreenShot:Moved - C:\Automation\Sikuli\HomeScreen\TestResults\HomescreenRegression_20130618133210\Test_Start.png

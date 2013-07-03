@@ -1,0 +1,157 @@
+12:53:42	Start Framework Environment
+12:53:42	getEnvironment
+12:53:42	SetVNCAppRegion:Find HUAWEI
+12:53:42	SetApp
+12:53:42	SetAppRegionExitOnNull
+12:53:42	SetAppRegion: Find W=496 - H=914
+12:53:43	0 - SetAppRegion - W=700 - H=20
+12:53:43	1 - SetAppRegion - W=496 - H=914
+12:53:49	SetAppRegion:Found by Size: X=1422,Y=125,W=496,H=914,CX=1670.0,CY=582.0,
+12:53:49	****Script Start *****
+12:53:49	
+-------------------------------------
+12:53:49	START: TestVoiceMail 
+12:53:49	ClickVerify::App_PeopleTab.png:Apps_PeopleTab.png
+12:53:49	WaitHighlight:App_PeopleTab.png
+12:53:49	IsFindImage:App_PeopleTab.png
+12:53:49	IsFindImage:FOUND
+12:53:50	WaitHighlight:Found
+12:53:50	ClickVerify:Click
+12:53:50	ClickHighlight:
+12:53:51	ClickImage:
+12:53:52	WaitHighlight:Apps_PeopleTab.png
+12:53:52	IsFindImage:Apps_PeopleTab.png
+12:53:52	IsFindImage:FOUND
+12:53:53	WaitHighlight:Found
+12:53:53	ClickVerify:Found
+12:53:53	ClickVerify::Apps_AppsTab.png:Apps_verifyAppsPeopleTabs.png
+12:53:53	WaitHighlight:Apps_AppsTab.png
+12:53:53	IsFindImage:Apps_AppsTab.png
+12:53:54	IsFindImage:FOUND
+12:53:55	WaitHighlight:Found
+12:53:55	ClickVerify:Click
+12:53:55	ClickHighlight:
+12:53:56	ClickImage:
+12:53:56	WaitHighlight:Apps_verifyAppsPeopleTabs.png
+12:53:56	IsFindImage:Apps_verifyAppsPeopleTabs.png
+12:53:57	IsFindImage:FOUND
+12:53:58	WaitHighlight:Found
+12:53:58	ClickVerify:Found
+12:53:58	ClickVerify::Home_Voicemail.png:Home_headVoicemail.png
+12:53:58	WaitHighlight:Home_Voicemail.png
+12:53:58	IsFindImage:Home_Voicemail.png
+12:53:58	IsFindImage:FOUND
+12:53:59	WaitHighlight:Found
+12:53:59	ClickVerify:Click
+12:53:59	ClickHighlight:
+12:54:00	ClickImage:
+12:54:01	WaitHighlight:Home_headVoicemail.png
+12:54:01	IsFindImage:Home_headVoicemail.png
+12:54:02	IsFindImage:FOUND
+12:54:03	WaitHighlight:Found
+12:54:03	ClickVerify:Found
+12:54:03	ClickVerify::Home_VoicemailHangup.png:Home_Voicemail.png
+12:54:03	WaitHighlight:Home_VoicemailHangup.png
+12:54:03	IsFindImage:Home_VoicemailHangup.png
+12:54:03	IsFindImage:FOUND
+12:54:05	WaitHighlight:Found
+12:54:05	ClickVerify:Click
+12:54:05	ClickHighlight:
+12:54:06	ClickImage:
+12:54:06	WaitHighlight:Home_Voicemail.png
+12:54:06	IsFindImage:Home_Voicemail.png
+12:54:09	IsFindImage:FOUND
+12:54:10	WaitHighlight:Found
+12:54:10	ClickVerify:Found
+12:54:10	PASSED: TestVoiceMail
+12:54:10	
+-------------------------------------
+12:54:10	START: SelectFavoriteApps
+12:54:10	ClickScrollVerify:Apps_LiveNurse.png:Apps_LiveNurse_headLiveNurse.png
+12:54:10	ClickScroll:Apps_LiveNurse.png
+12:54:10	FindScroll:Apps_LiveNurse.png
+12:54:10	switchAppVNC:
+12:54:10	WaitHighlight:Apps_LiveNurse.png
+12:54:10	IsFindImage:Apps_LiveNurse.png
+12:54:10	IsFindImage:FOUND
+12:54:11	WaitHighlight:Found
+12:54:11	FindScroll: FOUND
+12:54:11	ClickHighlight:
+12:54:13	ClickImage:
+12:54:13	ClickScroll: Clicked
+12:54:13	ClickScrollVerify:Clicked
+12:54:13	WaitHighlight:Apps_LiveNurse_headLiveNurse.png
+12:54:13	IsFindImage:Apps_LiveNurse_headLiveNurse.png
+12:54:16	IsFindImage:FOUND
+12:54:17	WaitHighlight:Found
+12:54:17	ClickScrollVerify:Found
+12:54:17	ClickVerify::Global_BackButton.png:Apps_verifyAppsPeopleTabs.png
+12:54:17	WaitHighlight:Global_BackButton.png
+12:54:17	IsFindImage:Global_BackButton.png
+12:54:17	IsFindImage:FOUND
+12:54:18	WaitHighlight:Found
+12:54:18	ClickVerify:Click
+12:54:18	ClickHighlight:
+12:54:19	ClickImage:
+12:54:20	WaitHighlight:Apps_verifyAppsPeopleTabs.png
+12:54:20	IsFindImage:Apps_verifyAppsPeopleTabs.png
+12:54:21	IsFindImage:FOUND
+12:54:22	WaitHighlight:Found
+12:54:22	ClickVerify:Found
+12:54:22	ClickScrollVerify:Apps_MedCoach.png:Apps_MedCoach_headMedCoach.png
+12:54:22	ClickScroll:Apps_MedCoach.png
+12:54:22	FindScroll:Apps_MedCoach.png
+12:54:22	switchAppVNC:
+12:54:22	WaitHighlight:Apps_MedCoach.png
+12:54:22	IsFindImage:Apps_MedCoach.png
+12:54:24	IsFindImage:NOT FOUND
+12:54:24	WaitHighlight:Not Found
+12:54:24	FindScroll: SWIPEUP0
+12:54:24	SwipeUp:
+12:54:24	switchAppVNC:
+12:54:26	WaitHighlight:Apps_MedCoach.png
+12:54:26	IsFindImage:Apps_MedCoach.png
+12:54:27	IsFindImage:NOT FOUND
+12:54:27	WaitHighlight:Not Found
+12:54:27	WheelUp:
+12:54:27	switchAppVNC:
+12:54:27	WaitHighlight:Apps_MedCoach.png
+12:54:27	IsFindImage:Apps_MedCoach.png
+12:54:30	IsFindImage:NOT FOUND
+12:54:30	WaitHighlight:Not Found
+12:54:30	FindScroll: SWIPEUP1
+12:54:30	SwipeUp:
+12:54:30	switchAppVNC:
+12:54:32	WaitHighlight:Apps_MedCoach.png
+12:54:32	IsFindImage:Apps_MedCoach.png
+12:54:33	IsFindImage:NOT FOUND
+12:54:33	WaitHighlight:Not Found
+12:54:33	WheelUp:
+12:54:33	switchAppVNC:
+12:54:33	WaitHighlight:Apps_MedCoach.png
+12:54:33	IsFindImage:Apps_MedCoach.png
+12:54:35	IsFindImage:NOT FOUND
+12:54:35	WaitHighlight:Not Found
+12:54:35	FindScroll: SWIPEDOWN0
+12:54:35	SwipeDown:
+12:54:35	switchAppVNC:
+12:54:37	WaitHighlight:Apps_MedCoach.png
+12:54:37	IsFindImage:Apps_MedCoach.png
+12:54:38	IsFindImage:NOT FOUND
+12:54:38	WaitHighlight:Not Found
+12:54:38	WheelDown:
+12:54:38	switchAppVNC:
+12:54:38	WaitHighlight:Apps_MedCoach.png
+12:54:38	IsFindImage:Apps_MedCoach.png
+12:54:40	IsFindImage:NOT FOUND
+12:54:40	WaitHighlight:Not Found
+12:54:40	FindScroll: SWIPEDOWN1
+12:54:40	SwipeDown:
+12:54:40	switchAppVNC:
+12:54:42	WaitHighlight:Apps_MedCoach.png
+12:54:42	IsFindImage:Apps_MedCoach.png
+12:54:43	IsFindImage:NOT FOUND
+12:54:43	WaitHighlight:Not Found
+12:54:43	WheelDown:
+12:54:43	switchAppVNC:
+12:54:43	FAILED:FindScroll:Apps_MedCoach.png

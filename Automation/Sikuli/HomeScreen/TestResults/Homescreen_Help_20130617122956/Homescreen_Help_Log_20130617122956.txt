@@ -1,0 +1,350 @@
+12:29:56	Start Framework Environment
+12:29:56	getEnvironment
+12:29:56	SetVNCAppRegion:Find HUAWEI
+12:29:56	SetApp
+12:29:56	SetAppRegionExitOnNull
+12:29:56	SetAppRegion: Find W=496 - H=914
+12:29:57	0 - SetAppRegion - W=700 - H=20
+12:29:57	1 - SetAppRegion - W=496 - H=914
+12:30:03	SetAppRegion:Found by Size: X=1422,Y=125,W=496,H=914,CX=1670.0,CY=582.0,
+12:30:03	****Script Start *****
+12:30:03	START: TestAddContact -------------------------------------
+12:30:03	ClickVerify::App_PeopleTab.png:Apps_PeopleTab.png
+12:30:03	WaitHighlight:App_PeopleTab.png
+12:30:03	IsFindImage:App_PeopleTab.png
+12:30:03	IsFindImage:FOUND
+12:30:04	WaitHighlight:Found
+12:30:04	ClickVerify:Click
+12:30:04	ClickHighlight:
+12:30:05	ClickImage:
+12:30:06	WaitHighlight:Apps_PeopleTab.png
+12:30:06	IsFindImage:Apps_PeopleTab.png
+12:30:07	IsFindImage:FOUND
+12:30:08	WaitHighlight:Found
+12:30:08	ClickVerify:Found
+12:30:08	ClickVerify::global_menu.png:home_people_menu_AddNew.png
+12:30:08	WaitHighlight:global_menu.png
+12:30:08	IsFindImage:global_menu.png
+12:30:08	IsFindImage:FOUND
+12:30:09	WaitHighlight:Found
+12:30:09	ClickVerify:Click
+12:30:09	ClickHighlight:
+12:30:11	ClickImage:
+12:30:11	WaitHighlight:home_people_menu_AddNew.png
+12:30:11	IsFindImage:home_people_menu_AddNew.png
+12:30:12	IsFindImage:FOUND
+12:30:13	WaitHighlight:Found
+12:30:13	ClickVerify:Found
+12:30:13	ClickVerify::home_people_menu_AddNew.png:home_people_Addnew_verifyDoneContact.png
+12:30:13	WaitHighlight:home_people_menu_AddNew.png
+12:30:13	IsFindImage:home_people_menu_AddNew.png
+12:30:13	IsFindImage:FOUND
+12:30:14	WaitHighlight:Found
+12:30:14	ClickVerify:Click
+12:30:14	ClickHighlight:
+12:30:16	ClickImage:
+12:30:16	WaitHighlight:home_people_Addnew_verifyDoneContact.png
+12:30:16	IsFindImage:home_people_Addnew_verifyDoneContact.png
+12:30:18	IsFindImage:FOUND
+12:30:19	WaitHighlight:Found
+12:30:19	ClickVerify:Found
+12:30:19	FieldInput:Contact Name1
+12:30:19	TabScroll:People_AddNewContact_Name.png
+12:30:19	WaitHighlight:People_AddNewContact_Name.png
+12:30:19	IsFindImage:People_AddNewContact_Name.png
+12:30:19	IsFindImage:FOUND
+12:30:20	WaitHighlight:Found
+12:30:20	TabScroll: FOUND
+12:30:22	TabFields:
+12:30:22	switchAppVNC:
+12:30:22	FieldInput: Found
+12:30:22	FieldInput:
+12:30:22	TabScroll:People_AddNewContact_AddOrganization.png
+12:30:22	WaitHighlight:People_AddNewContact_AddOrganization.png
+12:30:22	IsFindImage:People_AddNewContact_AddOrganization.png
+12:30:22	IsFindImage:FOUND
+12:30:23	WaitHighlight:Found
+12:30:23	TabScroll: FOUND
+12:30:24	TabFields:
+12:30:24	switchAppVNC:
+12:30:24	FieldInput: Found
+12:30:24	FieldInput:Company1
+12:30:24	TabScroll:People_AddNewContact_Company.png
+12:30:24	WaitHighlight:People_AddNewContact_Company.png
+12:30:24	IsFindImage:People_AddNewContact_Company.png
+12:30:25	IsFindImage:FOUND
+12:30:26	WaitHighlight:Found
+12:30:26	TabScroll: FOUND
+12:30:27	TabFields:
+12:30:27	switchAppVNC:
+12:30:27	FieldInput: Found
+12:30:27	FieldInput:Title1
+12:30:27	TabScroll:People_AddNewContact_Title.png
+12:30:27	WaitHighlight:People_AddNewContact_Title.png
+12:30:27	IsFindImage:People_AddNewContact_Title.png
+12:30:27	IsFindImage:FOUND
+12:30:28	WaitHighlight:Found
+12:30:28	TabScroll: FOUND
+12:30:29	TabFields:
+12:30:29	switchAppVNC:
+12:30:29	FieldInput: Found
+12:30:29	FieldInputSelectItem:
+12:30:29	TabScroll:People_AddNewPhone.png
+12:30:29	WaitHighlight:People_AddNewPhone.png
+12:30:29	IsFindImage:People_AddNewPhone.png
+12:30:30	IsFindImage:FOUND
+12:30:31	WaitHighlight:Found
+12:30:31	TabScroll: FOUND
+12:30:31	ClickVerify::people_AddNewMobile.png:people_SelectPhoneType.png
+12:30:31	WaitHighlight:people_AddNewMobile.png
+12:30:31	IsFindImage:people_AddNewMobile.png
+12:30:31	IsFindImage:FOUND
+12:30:33	WaitHighlight:Found
+12:30:33	ClickVerify:Click
+12:30:33	ClickHighlight:
+12:30:34	ClickImage:
+12:30:34	WaitHighlight:people_SelectPhoneType.png
+12:30:34	IsFindImage:people_SelectPhoneType.png
+12:30:35	IsFindImage:FOUND
+12:30:36	WaitHighlight:Found
+12:30:36	ClickVerify:Found
+12:30:36	ClickVerify::people_SelectPhoneType.png:People_AddNewContact_PhoneTypeHomeSelected.png
+12:30:36	WaitHighlight:people_SelectPhoneType.png
+12:30:36	IsFindImage:people_SelectPhoneType.png
+12:30:36	IsFindImage:FOUND
+12:30:38	WaitHighlight:Found
+12:30:38	ClickVerify:Click
+12:30:38	ClickHighlight:
+12:30:39	ClickImage:
+12:30:39	WaitHighlight:People_AddNewContact_PhoneTypeHomeSelected.png
+12:30:39	IsFindImage:People_AddNewContact_PhoneTypeHomeSelected.png
+12:30:40	IsFindImage:FOUND
+12:30:41	WaitHighlight:Found
+12:30:41	ClickVerify:Found
+12:30:41	FieldInputSelectItem:Selected
+12:30:41	FieldInput:555-555-5555
+12:30:41	TabScroll:People_AddNewPhone.png
+12:30:41	WaitHighlight:People_AddNewPhone.png
+12:30:41	IsFindImage:People_AddNewPhone.png
+12:30:41	IsFindImage:FOUND
+12:30:42	WaitHighlight:Found
+12:30:42	TabScroll: FOUND
+12:30:44	TabFields:
+12:30:44	switchAppVNC:
+12:30:44	FieldInput: Found
+12:30:44	FieldInputSelectItem:
+12:30:44	TabScroll:People_AddNewContact_Email-1.png
+12:30:44	WaitHighlight:People_AddNewContact_Email-1.png
+12:30:44	IsFindImage:People_AddNewContact_Email-1.png
+12:30:45	IsFindImage:NOT FOUND
+12:30:45	WaitHighlight:Not Found
+12:30:45	TabScroll: 0
+12:30:45	TabFields:
+12:30:45	switchAppVNC:
+12:30:45	WaitHighlight:People_AddNewContact_Email-1.png
+12:30:45	IsFindImage:People_AddNewContact_Email-1.png
+12:30:46	IsFindImage:FOUND
+12:30:47	WaitHighlight:Found
+12:30:47	TabScroll: FOUND
+12:30:47	ClickVerify::People_AddNewContact_PhoneTypeHomeSelected.png:People_AddNewContact_pickMobile.png
+12:30:47	WaitHighlight:People_AddNewContact_PhoneTypeHomeSelected.png
+12:30:47	IsFindImage:People_AddNewContact_PhoneTypeHomeSelected.png
+12:30:47	IsFindImage:FOUND
+12:30:48	WaitHighlight:Found
+12:30:48	ClickVerify:Click
+12:30:48	ClickHighlight:
+12:30:49	ClickImage:
+12:30:50	WaitHighlight:People_AddNewContact_pickMobile.png
+12:30:50	IsFindImage:People_AddNewContact_pickMobile.png
+12:30:51	IsFindImage:FOUND
+12:30:52	WaitHighlight:Found
+12:30:52	ClickVerify:Found
+12:30:52	ClickVerify::People_AddNewContact_pickMobile.png:people_AddNewMobile.png
+12:30:52	WaitHighlight:People_AddNewContact_pickMobile.png
+12:30:52	IsFindImage:People_AddNewContact_pickMobile.png
+12:30:52	IsFindImage:FOUND
+12:30:53	WaitHighlight:Found
+12:30:53	ClickVerify:Click
+12:30:53	ClickHighlight:
+12:30:54	ClickImage:
+12:30:55	WaitHighlight:people_AddNewMobile.png
+12:30:55	IsFindImage:people_AddNewMobile.png
+12:30:56	IsFindImage:FOUND
+12:30:57	WaitHighlight:Found
+12:30:57	ClickVerify:Found
+12:30:57	FieldInputSelectItem:Selected
+12:30:57	FieldInput:email1@email1.com
+12:30:57	TabScroll:People_AddNewContact_Email-1.png
+12:30:57	WaitHighlight:People_AddNewContact_Email-1.png
+12:30:57	IsFindImage:People_AddNewContact_Email-1.png
+12:30:57	IsFindImage:FOUND
+12:30:58	WaitHighlight:Found
+12:30:58	TabScroll: FOUND
+12:31:00	TabFields:
+12:31:00	switchAppVNC:
+12:31:00	FieldInput: Found
+12:31:00	TabScroll:People_AddNewContact_PhoneTypeHomeSelected.png
+12:31:00	WaitHighlight:People_AddNewContact_PhoneTypeHomeSelected.png
+12:31:00	IsFindImage:People_AddNewContact_PhoneTypeHomeSelected.png
+12:31:00	IsFindImage:FOUND
+12:31:01	WaitHighlight:Found
+12:31:01	TabScroll: FOUND
+12:31:01	FieldInputSelectItem:
+12:31:01	TabScroll:people_AddContact_Address.png
+12:31:01	WaitHighlight:people_AddContact_Address.png
+12:31:01	IsFindImage:people_AddContact_Address.png
+12:31:02	IsFindImage:NOT FOUND
+12:31:02	WaitHighlight:Not Found
+12:31:02	TabScroll: 0
+12:31:02	TabFields:
+12:31:02	switchAppVNC:
+12:31:02	WaitHighlight:people_AddContact_Address.png
+12:31:02	IsFindImage:people_AddContact_Address.png
+12:31:03	IsFindImage:NOT FOUND
+12:31:03	WaitHighlight:Not Found
+12:31:03	TabScroll: 1
+12:31:03	TabFields:
+12:31:03	switchAppVNC:
+12:31:04	WaitHighlight:people_AddContact_Address.png
+12:31:04	IsFindImage:people_AddContact_Address.png
+12:31:04	IsFindImage:FOUND
+12:31:05	WaitHighlight:Found
+12:31:05	TabScroll: FOUND
+12:31:05	ClickVerify::People_AddNewContact_PhoneTypeHomeSelected.png:people_NewContact_SelectItem_Work.png
+12:31:05	WaitHighlight:People_AddNewContact_PhoneTypeHomeSelected.png
+12:31:05	IsFindImage:People_AddNewContact_PhoneTypeHomeSelected.png
+12:31:05	IsFindImage:FOUND
+12:31:06	WaitHighlight:Found
+12:31:06	ClickVerify:Click
+12:31:06	ClickHighlight:
+12:31:08	ClickImage:
+12:31:08	WaitHighlight:people_NewContact_SelectItem_Work.png
+12:31:08	IsFindImage:people_NewContact_SelectItem_Work.png
+12:31:09	IsFindImage:FOUND
+12:31:10	WaitHighlight:Found
+12:31:10	ClickVerify:Found
+12:31:10	ClickVerify::people_NewContact_SelectItem_Work.png:People_AddNewContact_SelectedWork.png
+12:31:10	WaitHighlight:people_NewContact_SelectItem_Work.png
+12:31:10	IsFindImage:people_NewContact_SelectItem_Work.png
+12:31:10	IsFindImage:FOUND
+12:31:11	WaitHighlight:Found
+12:31:11	ClickVerify:Click
+12:31:11	ClickHighlight:
+12:31:12	ClickImage:
+12:31:13	WaitHighlight:People_AddNewContact_SelectedWork.png
+12:31:13	IsFindImage:People_AddNewContact_SelectedWork.png
+12:31:14	IsFindImage:FOUND
+12:31:15	WaitHighlight:Found
+12:31:15	ClickVerify:Found
+12:31:15	FieldInputSelectItem:Selected
+12:31:15	FieldInput:123 street, city state zip
+12:31:15	TabScroll:people_AddContact_AddressEdit.png
+12:31:15	WaitHighlight:people_AddContact_AddressEdit.png
+12:31:15	IsFindImage:people_AddContact_AddressEdit.png
+12:31:15	IsFindImage:FOUND
+12:31:16	WaitHighlight:Found
+12:31:16	TabScroll: FOUND
+12:31:19	TabFields:
+12:31:19	switchAppVNC:
+12:31:19	FieldInput: Found
+12:31:19	FieldInputSelectItem:
+12:31:19	TabScroll:people_NewContactSelectGroupName.png
+12:31:19	WaitHighlight:people_NewContactSelectGroupName.png
+12:31:19	IsFindImage:people_NewContactSelectGroupName.png
+12:31:20	IsFindImage:NOT FOUND
+12:31:20	WaitHighlight:Not Found
+12:31:20	TabScroll: 0
+12:31:20	TabFields:
+12:31:20	switchAppVNC:
+12:31:20	WaitHighlight:people_NewContactSelectGroupName.png
+12:31:20	IsFindImage:people_NewContactSelectGroupName.png
+12:31:21	IsFindImage:NOT FOUND
+12:31:21	WaitHighlight:Not Found
+12:31:21	TabScroll: 1
+12:31:21	TabFields:
+12:31:21	switchAppVNC:
+12:31:21	WaitHighlight:people_NewContactSelectGroupName.png
+12:31:21	IsFindImage:people_NewContactSelectGroupName.png
+12:31:22	IsFindImage:NOT FOUND
+12:31:22	WaitHighlight:Not Found
+12:31:22	TabScroll: 2
+12:31:22	TabFields:
+12:31:22	switchAppVNC:
+12:31:22	WaitHighlight:people_NewContactSelectGroupName.png
+12:31:22	IsFindImage:people_NewContactSelectGroupName.png
+12:31:24	IsFindImage:NOT FOUND
+12:31:24	WaitHighlight:Not Found
+12:31:24	TabScroll: 3
+12:31:24	TabFields:
+12:31:24	switchAppVNC:
+12:31:24	WaitHighlight:people_NewContactSelectGroupName.png
+12:31:24	IsFindImage:people_NewContactSelectGroupName.png
+12:31:25	IsFindImage:FOUND
+12:31:26	WaitHighlight:Found
+12:31:26	TabScroll: FOUND
+12:31:26	ClickVerify::people_NewContactSelectGroupName.png:people_NewContactSelectGrpName_Work.png
+12:31:26	WaitHighlight:people_NewContactSelectGroupName.png
+12:31:26	IsFindImage:people_NewContactSelectGroupName.png
+12:31:26	IsFindImage:FOUND
+12:31:27	WaitHighlight:Found
+12:31:27	ClickVerify:Click
+12:31:27	ClickHighlight:
+12:31:28	ClickImage:
+12:31:29	WaitHighlight:people_NewContactSelectGrpName_Work.png
+12:31:29	IsFindImage:people_NewContactSelectGrpName_Work.png
+12:31:29	IsFindImage:FOUND
+12:31:31	WaitHighlight:Found
+12:31:31	ClickVerify:Found
+12:31:31	ClickVerify::people_NewContactSelectGrpName_Work.png:people_SelectedGrpNameWork.png
+12:31:31	WaitHighlight:people_NewContactSelectGrpName_Work.png
+12:31:31	IsFindImage:people_NewContactSelectGrpName_Work.png
+12:31:31	IsFindImage:FOUND
+12:31:32	WaitHighlight:Found
+12:31:32	ClickVerify:Click
+12:31:32	ClickHighlight:
+12:31:33	ClickImage:
+12:31:34	WaitHighlight:people_SelectedGrpNameWork.png
+12:31:34	IsFindImage:people_SelectedGrpNameWork.png
+12:31:34	IsFindImage:FOUND
+12:31:35	WaitHighlight:Found
+12:31:35	ClickVerify:Found
+12:31:35	FieldInputSelectItem:Selected
+12:31:35	ClickVerify::people_GroupNameItemFieldSeleted_Work.png:people_GroupNameItemFieldSeleted_Work.png
+12:31:35	WaitHighlight:people_GroupNameItemFieldSeleted_Work.png
+12:31:35	IsFindImage:people_GroupNameItemFieldSeleted_Work.png
+12:31:35	IsFindImage:FOUND
+12:31:36	WaitHighlight:Found
+12:31:36	ClickVerify:Click
+12:31:36	ClickHighlight:
+12:31:37	ClickImage:
+12:31:38	WaitHighlight:people_GroupNameItemFieldSeleted_Work.png
+12:31:38	IsFindImage:people_GroupNameItemFieldSeleted_Work.png
+12:31:38	IsFindImage:FOUND
+12:31:40	WaitHighlight:Found
+12:31:40	ClickVerify:Found
+12:31:40	ClickVerify::global_menu.png:Apps_ExitContacts_Cancel.png
+12:31:40	WaitHighlight:global_menu.png
+12:31:40	IsFindImage:global_menu.png
+12:31:40	IsFindImage:FOUND
+12:31:41	WaitHighlight:Found
+12:31:41	ClickVerify:Click
+12:31:41	ClickHighlight:
+12:31:42	ClickImage:
+12:31:43	WaitHighlight:Apps_ExitContacts_Cancel.png
+12:31:43	IsFindImage:Apps_ExitContacts_Cancel.png
+12:31:53	IsFindImage:NOT FOUND
+12:31:53	WaitHighlight:Not Found
+12:31:53	ClickVerify:NOT Found
+12:31:53	WaitHighlight:global_menu.png
+12:31:53	IsFindImage:global_menu.png
+12:31:53	IsFindImage:FOUND
+12:31:54	WaitHighlight:Found
+12:31:54	ClickVerify:Click
+12:31:54	ClickHighlight:
+12:31:55	ClickImage:
+12:31:56	WaitHighlight:Apps_ExitContacts_Cancel.png
+12:31:56	IsFindImage:Apps_ExitContacts_Cancel.png
+12:32:06	IsFindImage:NOT FOUND
+12:32:06	WaitHighlight:Not Found
+12:32:06	ClickVerify:NOT Found
+12:32:06	FAILED:ClickVerifyglobal_menu.png

@@ -1,0 +1,230 @@
+15:16:46	Start Framework Environment
+15:16:46	getEnvironment
+15:16:46	SetVNCAppRegion:Find HUAWEI
+15:16:46	SetApp
+15:16:46	SetAppRegionExitOnNull
+15:16:46	SetAppRegion: Find W=496 - H=914
+15:16:47	0 - SetAppRegion - W=1440 - H=833
+15:16:50	1 - SetAppRegion - W=700 - H=20
+15:16:50	2 - SetAppRegion - W=514 - H=931
+15:16:56	SetAppRegion:Found by Size: X=1403,Y=125,W=514,H=931,CX=1660.0,CY=590.0,
+15:16:56	****Script Start *****
+15:16:56	
+-------------------------------------
+15:16:56	START: TestVoiceMail 
+15:16:56	ClickVerify::App_PeopleTab.png:Apps_PeopleTab.png
+15:16:56	WaitHighlight:App_PeopleTab.png
+15:16:56	IsFindImage:App_PeopleTab.png
+15:16:56	IsFindImage:FOUND
+15:16:57	WaitHighlight:Found
+15:16:57	ClickVerify:Click
+15:16:57	ClickHighlight:
+15:16:58	ClickImage:
+15:16:59	WaitHighlight:Apps_PeopleTab.png
+15:16:59	IsFindImage:Apps_PeopleTab.png
+15:17:00	IsFindImage:FOUND
+15:17:01	WaitHighlight:Found
+15:17:01	ClickVerify:Found
+15:17:01	ClickVerify::Apps_AppsTab.png:Apps_verifyAppsPeopleTabs.png
+15:17:01	WaitHighlight:Apps_AppsTab.png
+15:17:01	IsFindImage:Apps_AppsTab.png
+15:17:01	IsFindImage:FOUND
+15:17:02	WaitHighlight:Found
+15:17:02	ClickVerify:Click
+15:17:02	ClickHighlight:
+15:17:03	ClickImage:
+15:17:04	WaitHighlight:Apps_verifyAppsPeopleTabs.png
+15:17:04	IsFindImage:Apps_verifyAppsPeopleTabs.png
+15:17:04	IsFindImage:FOUND
+15:17:05	WaitHighlight:Found
+15:17:05	ClickVerify:Found
+15:17:05	ClickVerify::Home_Voicemail.png:Home_headVoicemail.png
+15:17:05	WaitHighlight:Home_Voicemail.png
+15:17:05	IsFindImage:Home_Voicemail.png
+15:17:05	IsFindImage:FOUND
+15:17:07	WaitHighlight:Found
+15:17:07	ClickVerify:Click
+15:17:07	ClickHighlight:
+15:17:08	ClickImage:
+15:17:08	WaitHighlight:Home_headVoicemail.png
+15:17:08	IsFindImage:Home_headVoicemail.png
+15:17:10	IsFindImage:FOUND
+15:17:11	WaitHighlight:Found
+15:17:11	ClickVerify:Found
+15:17:11	ClickVerify::Home_VoicemailHangup.png:Home_Voicemail.png
+15:17:11	WaitHighlight:Home_VoicemailHangup.png
+15:17:11	IsFindImage:Home_VoicemailHangup.png
+15:17:11	IsFindImage:FOUND
+15:17:12	WaitHighlight:Found
+15:17:12	ClickVerify:Click
+15:17:12	ClickHighlight:
+15:17:13	ClickImage:
+15:17:14	WaitHighlight:Home_Voicemail.png
+15:17:14	IsFindImage:Home_Voicemail.png
+15:17:16	IsFindImage:FOUND
+15:17:17	WaitHighlight:Found
+15:17:17	ClickVerify:Found
+15:17:17	PASSED: TestVoiceMail
+15:17:17	
+-------------------------------------
+15:17:17	START: SelectFavoriteApps
+15:17:17	ClickScrollVerify:Apps_LiveNurse.png:Apps_LiveNurse_headLiveNurse.png
+15:17:17	ClickScroll:Apps_LiveNurse.png
+15:17:17	FindScroll:Apps_LiveNurse.png
+15:17:17	switchAppVNC:
+15:17:17	WaitHighlight:Apps_LiveNurse.png
+15:17:17	IsFindImage:Apps_LiveNurse.png
+15:17:17	IsFindImage:FOUND
+15:17:19	WaitHighlight:Found
+15:17:19	FindScroll: FOUND
+15:17:19	ClickHighlight:
+15:17:20	ClickImage:
+15:17:20	ClickScroll: Clicked
+15:17:20	ClickScrollVerify:Clicked
+15:17:20	WaitHighlight:Apps_LiveNurse_headLiveNurse.png
+15:17:20	IsFindImage:Apps_LiveNurse_headLiveNurse.png
+15:17:24	IsFindImage:FOUND
+15:17:25	WaitHighlight:Found
+15:17:25	ClickScrollVerify:Found
+15:17:25	ClickVerify::Global_BackButton.png:Apps_verifyAppsPeopleTabs.png
+15:17:25	WaitHighlight:Global_BackButton.png
+15:17:25	IsFindImage:Global_BackButton.png
+15:17:25	IsFindImage:FOUND
+15:17:26	WaitHighlight:Found
+15:17:26	ClickVerify:Click
+15:17:26	ClickHighlight:
+15:17:27	ClickImage:
+15:17:28	WaitHighlight:Apps_verifyAppsPeopleTabs.png
+15:17:28	IsFindImage:Apps_verifyAppsPeopleTabs.png
+15:17:29	IsFindImage:FOUND
+15:17:30	WaitHighlight:Found
+15:17:30	ClickVerify:Found
+15:17:30	ClickScrollVerify:Apps_MedCoach.png:Apps_MedCoach_headMedCoach.png
+15:17:30	ClickScroll:Apps_MedCoach.png
+15:17:30	FindScroll:Apps_MedCoach.png
+15:17:30	switchAppVNC:
+15:17:30	WaitHighlight:Apps_MedCoach.png
+15:17:30	IsFindImage:Apps_MedCoach.png
+15:17:31	IsFindImage:FOUND
+15:17:32	WaitHighlight:Found
+15:17:32	FindScroll: FOUND
+15:17:32	ClickHighlight:
+15:17:33	ClickImage:
+15:17:33	ClickScroll: Clicked
+15:17:33	ClickScrollVerify:Clicked
+15:17:33	WaitHighlight:Apps_MedCoach_headMedCoach.png
+15:17:33	IsFindImage:Apps_MedCoach_headMedCoach.png
+15:17:35	IsFindImage:FOUND
+15:17:36	WaitHighlight:Found
+15:17:36	ClickScrollVerify:Found
+15:17:36	ClickVerify::Global_BackButton.png:Apps_verifyAppsPeopleTabs.png
+15:17:36	WaitHighlight:Global_BackButton.png
+15:17:36	IsFindImage:Global_BackButton.png
+15:17:36	IsFindImage:FOUND
+15:17:37	WaitHighlight:Found
+15:17:37	ClickVerify:Click
+15:17:37	ClickHighlight:
+15:17:38	ClickImage:
+15:17:39	WaitHighlight:Apps_verifyAppsPeopleTabs.png
+15:17:39	IsFindImage:Apps_verifyAppsPeopleTabs.png
+15:17:41	IsFindImage:FOUND
+15:17:42	WaitHighlight:Found
+15:17:42	ClickVerify:Found
+15:17:42	PASSED: SelectFavoriteApps
+15:17:42	
+-------------------------------------
+15:17:42	START: TestContactUs 
+15:17:42	ClickVerify::Home_GreatCall.png:Home_Head-GreatCall.png
+15:17:42	WaitHighlight:Home_GreatCall.png
+15:17:42	IsFindImage:Home_GreatCall.png
+15:17:42	IsFindImage:FOUND
+15:17:43	WaitHighlight:Found
+15:17:43	ClickVerify:Click
+15:17:43	ClickHighlight:
+15:17:44	ClickImage:
+15:17:45	WaitHighlight:Home_Head-GreatCall.png
+15:17:45	IsFindImage:Home_Head-GreatCall.png
+15:17:46	IsFindImage:FOUND
+15:17:47	WaitHighlight:Found
+15:17:47	ClickVerify:Found
+15:17:47	ClickVerify::Home_ContactUs.png:Home_ContactUs_verifyNeedHelpAccount.png
+15:17:47	WaitHighlight:Home_ContactUs.png
+15:17:47	IsFindImage:Home_ContactUs.png
+15:17:48	IsFindImage:FOUND
+15:17:49	WaitHighlight:Found
+15:17:49	ClickVerify:Click
+15:17:49	ClickHighlight:
+15:17:50	ClickImage:
+15:17:51	WaitHighlight:Home_ContactUs_verifyNeedHelpAccount.png
+15:17:51	IsFindImage:Home_ContactUs_verifyNeedHelpAccount.png
+15:17:52	IsFindImage:FOUND
+15:17:53	WaitHighlight:Found
+15:17:53	ClickVerify:Found
+15:17:53	ClickVerify::Global_BackButton.png:Home_Head-GreatCall.png
+15:17:53	WaitHighlight:Global_BackButton.png
+15:17:53	IsFindImage:Global_BackButton.png
+15:17:53	IsFindImage:FOUND
+15:17:54	WaitHighlight:Found
+15:17:54	ClickVerify:Click
+15:17:54	ClickHighlight:
+15:17:55	ClickImage:
+15:17:56	WaitHighlight:Home_Head-GreatCall.png
+15:17:56	IsFindImage:Home_Head-GreatCall.png
+15:17:57	IsFindImage:FOUND
+15:17:58	WaitHighlight:Found
+15:17:58	ClickVerify:Found
+15:17:58	ClickVerify::Global_BackButton.png:Home_GreatCall.png
+15:17:58	WaitHighlight:Global_BackButton.png
+15:17:58	IsFindImage:Global_BackButton.png
+15:17:58	IsFindImage:FOUND
+15:17:59	WaitHighlight:Found
+15:17:59	ClickVerify:Click
+15:17:59	ClickHighlight:
+15:18:01	ClickImage:
+15:18:01	WaitHighlight:Home_GreatCall.png
+15:18:01	IsFindImage:Home_GreatCall.png
+15:18:02	IsFindImage:FOUND
+15:18:03	WaitHighlight:Found
+15:18:03	ClickVerify:Found
+15:18:03	PASSED: TestContactUs
+15:18:03	
+-------------------------------------
+15:18:03	START: TestFeaturedApps 
+15:18:03	ClickVerify::Home_GreatCall.png:Home_Head-GreatCall.png
+15:18:03	WaitHighlight:Home_GreatCall.png
+15:18:03	IsFindImage:Home_GreatCall.png
+15:18:04	IsFindImage:FOUND
+15:18:05	WaitHighlight:Found
+15:18:05	ClickVerify:Click
+15:18:05	ClickHighlight:
+15:18:06	ClickImage:
+15:18:07	WaitHighlight:Home_Head-GreatCall.png
+15:18:07	IsFindImage:Home_Head-GreatCall.png
+15:18:08	IsFindImage:FOUND
+15:18:09	WaitHighlight:Found
+15:18:09	ClickVerify:Found
+15:18:09	ClickVerify::Home_FeaturedApps.png:Home_FeaturedApps_headFeaturedApps.png
+15:18:09	WaitHighlight:Home_FeaturedApps.png
+15:18:09	IsFindImage:Home_FeaturedApps.png
+15:18:09	IsFindImage:FOUND
+15:18:10	WaitHighlight:Found
+15:18:10	ClickVerify:Click
+15:18:10	ClickHighlight:
+15:18:11	ClickImage:
+15:18:12	WaitHighlight:Home_FeaturedApps_headFeaturedApps.png
+15:18:12	IsFindImage:Home_FeaturedApps_headFeaturedApps.png
+15:18:12	IsFindImage:FOUND
+15:18:13	WaitHighlight:Found
+15:18:13	ClickVerify:Found
+15:18:13	ClickVerify::FeaturedApps_5Star.png:FeaturedApps_PlayStore.png
+15:18:13	WaitHighlight:FeaturedApps_5Star.png
+15:18:13	IsFindImage:FeaturedApps_5Star.png
+15:18:24	IsFindImage:NOT FOUND
+15:18:24	WaitHighlight:Not Found
+15:18:24	ClickVerify:0
+15:18:24	WaitHighlight:FeaturedApps_5Star.png
+15:18:24	IsFindImage:FeaturedApps_5Star.png
+15:18:34	IsFindImage:NOT FOUND
+15:18:34	WaitHighlight:Not Found
+15:18:34	ClickVerify:1
+15:18:34	FAILED:ClickVerifyFeaturedApps_5Star.png

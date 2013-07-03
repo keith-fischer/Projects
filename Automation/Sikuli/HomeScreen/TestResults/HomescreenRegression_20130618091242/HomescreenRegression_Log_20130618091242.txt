@@ -1,0 +1,40 @@
+09:12:42	Start Framework Environment
+09:12:42	getEnvironment
+09:12:42	SetVNCAppRegion:Find HUAWEI
+09:12:42	SetApp
+09:12:42	SetAppRegionExitOnNull
+09:12:42	SetAppRegion: Find W=496 - H=914
+09:12:43	0 - SetAppRegion - W=1440 - H=833
+09:12:46	1 - SetAppRegion - W=700 - H=20
+09:12:46	2 - SetAppRegion - W=496 - H=914
+09:12:53	SetAppRegion:Found by Size: X=1416,Y=124,W=496,H=914,CX=1664.0,CY=581.0,
+09:12:53	****Script Start *****
+09:12:53	
+-------------------------------------
+09:12:53	START: TestVoiceMail 
+09:12:53	ClickVerify::App_PeopleTab.png:Apps_PeopleTab.png
+09:12:53	WaitHighlight:App_PeopleTab.png
+09:12:53	IsFindImage:App_PeopleTab.png
+09:12:53	IsFindImage:FOUND
+09:12:54	WaitHighlight:Found
+09:12:54	ClickVerify:Click
+09:12:54	ClickHighlight:
+09:12:55	ClickImage:
+09:12:56	WaitHighlight:Apps_PeopleTab.png
+09:12:56	IsFindImage:Apps_PeopleTab.png
+09:13:06	IsFindImage:NOT FOUND
+09:13:06	WaitHighlight:Not Found
+09:13:06	ClickVerify:NOT Found
+09:13:06	WaitHighlight:App_PeopleTab.png
+09:13:06	IsFindImage:App_PeopleTab.png
+09:13:06	IsFindImage:FOUND
+09:13:07	WaitHighlight:Found
+09:13:07	ClickVerify:Click
+09:13:07	ClickHighlight:
+09:13:08	ClickImage:
+09:13:09	WaitHighlight:Apps_PeopleTab.png
+09:13:09	IsFindImage:Apps_PeopleTab.png
+09:13:19	IsFindImage:NOT FOUND
+09:13:19	WaitHighlight:Not Found
+09:13:19	ClickVerify:NOT Found
+09:13:19	FAILED:ClickVerifyApp_PeopleTab.png

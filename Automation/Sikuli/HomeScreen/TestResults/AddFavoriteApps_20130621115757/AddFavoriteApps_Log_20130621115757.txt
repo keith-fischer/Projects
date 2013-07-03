@@ -1,0 +1,97 @@
+11:57:57	getEnvironment
+11:57:57	SetVNCAppRegion:Find HUAWEI
+11:57:57	SetApp
+11:57:57	SetAppRegionExitOnNull
+11:57:57	SetAppRegion: Find W=496 - H=914
+11:57:58	0 - SetAppRegion - W=126 - H=20
+11:58:01	1 - SetAppRegion - W=700 - H=20
+11:58:01	2 - SetAppRegion - W=496 - H=914
+11:58:08	SetAppRegion:Found by Size: X=-526,Y=45,W=496,H=914,CX=-278.0,CY=502.0,
+11:58:08	****Script Start *****
+11:58:08	TakeScreenShot: Test_Start.png
+11:58:08	switchAppVNC:
+11:58:08	ScreenShot:Test_Start.png:C:\Users\KEITH~1.FIS\AppData\Local\Temp\sikuli-7197534731904058074.png
+11:58:08	ScreenShot:path - C:\Automation\Sikuli\HomeScreen\TestResults\AddFavoriteApps_20130621115757\Test_Start.png
+11:58:08	ScreenShot:Moved - Test_Start.png
+11:58:08	
+-------------------------------------
+11:58:08	START: AddFavoriteApps
+11:58:08	ClickVerify::global_menu.png:Home_Favorites_Menu.png
+11:58:08	WaitHighlight:global_menu.png
+11:58:08	IsFindImage:global_menu.png
+11:58:08	IsFindImage:FOUND
+11:58:09	WaitHighlight:Found
+11:58:09	ClickVerify:Click
+11:58:09	ClickHighlight:
+11:58:10	*******ClickImage:M[-343,901 214x45]@S(1)[-1680,0 1680x1050] S:1.00 Center:-236,923
+11:58:11	WaitHighlight:Home_Favorites_Menu.png
+11:58:11	IsFindImage:Home_Favorites_Menu.png
+11:58:11	IsFindImage:FOUND
+11:58:13	WaitHighlight:Found
+11:58:13	ClickVerify:Found
+11:58:13	ClickVerify::Home_Favories_Menu_AddFavorites.png:AddFavoritesTitle.png
+11:58:13	WaitHighlight:Home_Favories_Menu_AddFavorites.png
+11:58:13	IsFindImage:Home_Favories_Menu_AddFavorites.png
+11:58:13	IsFindImage:FOUND
+11:58:14	WaitHighlight:Found
+11:58:14	ClickVerify:Click
+11:58:14	ClickHighlight:
+11:58:15	*******ClickImage:M[-496,801 202x143]@S(1)[-1680,0 1680x1050] S:1.00 Center:-395,872
+11:58:15	WaitHighlight:AddFavoritesTitle.png
+11:58:15	IsFindImage:AddFavoritesTitle.png
+11:58:16	IsFindImage:FOUND
+11:58:17	WaitHighlight:Found
+11:58:17	ClickVerify:Found
+11:58:17	ClickScrollVerify:app_nav-1.png:app_nav.png
+11:58:17	ClickScroll:app_nav-1.png
+11:58:17	FindScroll:app_nav-1.png
+11:58:17	switchAppVNC:
+11:58:17	WaitHighlight:app_nav-1.png
+11:58:17	IsFindImage:app_nav-1.png
+11:58:20	IsFindImage:NOT FOUND
+11:58:20	WaitHighlight:Not Found
+11:58:20	FindScroll: WheelDown0
+11:58:20	WheelDown:
+11:58:20	switchAppVNC:
+11:58:23	WaitHighlight:app_nav-1.png
+11:58:23	IsFindImage:app_nav-1.png
+11:58:24	IsFindImage:NOT FOUND
+11:58:24	WaitHighlight:Not Found
+11:58:24	WaitHighlight:app_nav-1.png
+11:58:24	IsFindImage:app_nav-1.png
+11:58:27	IsFindImage:NOT FOUND
+11:58:27	WaitHighlight:Not Found
+11:58:27	FindScroll: WheelDown1
+11:58:27	WheelDown:
+11:58:27	switchAppVNC:
+11:58:30	WaitHighlight:app_nav-1.png
+11:58:30	IsFindImage:app_nav-1.png
+11:58:30	IsFindImage:FOUND
+11:58:31	WaitHighlight:Found
+11:58:31	FindScroll: FOUND
+11:58:31	ClickHighlight:
+11:58:32	*******ClickImage:M[-504,624 463x77]@S(1)[-1680,0 1680x1050] S:1.00 Center:-273,662
+11:58:33	ClickScroll: Clicked
+11:58:33	ClickScrollVerify:Clicked
+11:58:33	WaitHighlight:app_nav.png
+11:58:33	IsFindImage:app_nav.png
+11:58:33	IsFindImage:FOUND
+11:58:34	WaitHighlight:Found
+11:58:34	ClickScrollVerify:Found
+11:58:34	ClickVerify::app_calculator-1.png:app_calculator_checked.png
+11:58:34	WaitHighlight:app_calculator-1.png
+11:58:34	IsFindImage:app_calculator-1.png
+11:58:35	IsFindImage:NOT FOUND
+11:58:35	WaitHighlight:Not Found
+11:58:35	ClickVerify:0
+11:58:35	WaitHighlight:app_calculator-1.png
+11:58:35	IsFindImage:app_calculator-1.png
+11:58:37	IsFindImage:NOT FOUND
+11:58:37	WaitHighlight:Not Found
+11:58:37	ClickVerify:1
+11:58:37	FAILED:ClickVerifyapp_calculator-1.png
+11:58:37	TakeScreenShot: FAILED_AddFavoriteApps.png
+11:58:37	switchAppVNC:
+11:58:37	ScreenShot:FAILED_AddFavoriteApps.png:C:\Users\KEITH~1.FIS\AppData\Local\Temp\sikuli-6029266984975037530.png
+11:58:37	ScreenShot:path - C:\Automation\Sikuli\HomeScreen\TestResults\AddFavoriteApps_20130621115757\FAILED_AddFavoriteApps.png
+11:58:37	ScreenShot:Moved - FAILED_AddFavoriteApps.png

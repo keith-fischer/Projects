@@ -1,0 +1,690 @@
+13:46:09	Start Framework Environment
+13:46:09	getEnvironment
+13:46:09	SetVNCAppRegion:Find HUAWEI
+13:46:09	SetApp
+13:46:09	SetAppRegionExitOnNull
+13:46:09	SetAppRegion: Find W=496 - H=914
+13:46:10	0 - SetAppRegion - W=700 - H=20
+13:46:10	1 - SetAppRegion - W=496 - H=914
+13:46:16	SetAppRegion:Found by Size: X=1422,Y=125,W=496,H=914,CX=1670.0,CY=582.0,
+13:46:16	****Script Start *****
+13:46:16	
+-------------------------------------
+13:46:16	START: TestVoiceMail 
+13:46:16	ClickVerify::App_PeopleTab.png:Apps_PeopleTab.png
+13:46:16	WaitHighlight:App_PeopleTab.png
+13:46:16	IsFindImage:App_PeopleTab.png
+13:46:16	IsFindImage:FOUND
+13:46:18	WaitHighlight:Found
+13:46:18	ClickVerify:Click
+13:46:18	ClickHighlight:
+13:46:19	ClickImage:
+13:46:19	WaitHighlight:Apps_PeopleTab.png
+13:46:19	IsFindImage:Apps_PeopleTab.png
+13:46:20	IsFindImage:FOUND
+13:46:21	WaitHighlight:Found
+13:46:21	ClickVerify:Found
+13:46:21	ClickVerify::Apps_AppsTab.png:Apps_verifyAppsPeopleTabs.png
+13:46:21	WaitHighlight:Apps_AppsTab.png
+13:46:21	IsFindImage:Apps_AppsTab.png
+13:46:21	IsFindImage:FOUND
+13:46:22	WaitHighlight:Found
+13:46:22	ClickVerify:Click
+13:46:22	ClickHighlight:
+13:46:23	ClickImage:
+13:46:24	WaitHighlight:Apps_verifyAppsPeopleTabs.png
+13:46:24	IsFindImage:Apps_verifyAppsPeopleTabs.png
+13:46:24	IsFindImage:FOUND
+13:46:25	WaitHighlight:Found
+13:46:25	ClickVerify:Found
+13:46:25	ClickVerify::Home_Voicemail.png:Home_headVoicemail.png
+13:46:25	WaitHighlight:Home_Voicemail.png
+13:46:25	IsFindImage:Home_Voicemail.png
+13:46:25	IsFindImage:FOUND
+13:46:26	WaitHighlight:Found
+13:46:26	ClickVerify:Click
+13:46:26	ClickHighlight:
+13:46:28	ClickImage:
+13:46:28	WaitHighlight:Home_headVoicemail.png
+13:46:28	IsFindImage:Home_headVoicemail.png
+13:46:29	IsFindImage:FOUND
+13:46:31	WaitHighlight:Found
+13:46:31	ClickVerify:Found
+13:46:31	ClickVerify::Home_VoicemailHangup.png:Home_Voicemail.png
+13:46:31	WaitHighlight:Home_VoicemailHangup.png
+13:46:31	IsFindImage:Home_VoicemailHangup.png
+13:46:31	IsFindImage:FOUND
+13:46:32	WaitHighlight:Found
+13:46:32	ClickVerify:Click
+13:46:32	ClickHighlight:
+13:46:33	ClickImage:
+13:46:34	WaitHighlight:Home_Voicemail.png
+13:46:34	IsFindImage:Home_Voicemail.png
+13:46:36	IsFindImage:FOUND
+13:46:37	WaitHighlight:Found
+13:46:37	ClickVerify:Found
+13:46:37	PASSED: TestVoiceMail
+13:46:37	
+-------------------------------------
+13:46:37	START: SelectFavoriteApps
+13:46:37	ClickScrollVerify:Apps_LiveNurse.png:Apps_LiveNurse_headLiveNurse.png
+13:46:37	ClickScroll:Apps_LiveNurse.png
+13:46:37	FindScroll:Apps_LiveNurse.png
+13:46:37	switchAppVNC:
+13:46:37	WaitHighlight:Apps_LiveNurse.png
+13:46:37	IsFindImage:Apps_LiveNurse.png
+13:46:38	IsFindImage:FOUND
+13:46:39	WaitHighlight:Found
+13:46:39	FindScroll: FOUND
+13:46:39	ClickHighlight:
+13:46:40	ClickImage:
+13:46:40	ClickScroll: Clicked
+13:46:40	ClickScrollVerify:Clicked
+13:46:40	WaitHighlight:Apps_LiveNurse_headLiveNurse.png
+13:46:40	IsFindImage:Apps_LiveNurse_headLiveNurse.png
+13:46:43	IsFindImage:FOUND
+13:46:44	WaitHighlight:Found
+13:46:44	ClickScrollVerify:Found
+13:46:44	ClickVerify::Global_BackButton.png:Apps_verifyAppsPeopleTabs.png
+13:46:44	WaitHighlight:Global_BackButton.png
+13:46:44	IsFindImage:Global_BackButton.png
+13:46:45	IsFindImage:FOUND
+13:46:46	WaitHighlight:Found
+13:46:46	ClickVerify:Click
+13:46:46	ClickHighlight:
+13:46:47	ClickImage:
+13:46:47	WaitHighlight:Apps_verifyAppsPeopleTabs.png
+13:46:47	IsFindImage:Apps_verifyAppsPeopleTabs.png
+13:46:49	IsFindImage:FOUND
+13:46:50	WaitHighlight:Found
+13:46:50	ClickVerify:Found
+13:46:50	ClickScrollVerify:Apps_MedCoach.png:Apps_MedCoach_headMedCoach.png
+13:46:50	ClickScroll:Apps_MedCoach.png
+13:46:50	FindScroll:Apps_MedCoach.png
+13:46:50	switchAppVNC:
+13:46:50	WaitHighlight:Apps_MedCoach.png
+13:46:50	IsFindImage:Apps_MedCoach.png
+13:46:50	IsFindImage:FOUND
+13:46:51	WaitHighlight:Found
+13:46:51	FindScroll: FOUND
+13:46:51	ClickHighlight:
+13:46:53	ClickImage:
+13:46:53	ClickScroll: Clicked
+13:46:53	ClickScrollVerify:Clicked
+13:46:53	WaitHighlight:Apps_MedCoach_headMedCoach.png
+13:46:53	IsFindImage:Apps_MedCoach_headMedCoach.png
+13:46:54	IsFindImage:FOUND
+13:46:56	WaitHighlight:Found
+13:46:56	ClickScrollVerify:Found
+13:46:56	ClickVerify::Global_BackButton.png:Apps_verifyAppsPeopleTabs.png
+13:46:56	WaitHighlight:Global_BackButton.png
+13:46:56	IsFindImage:Global_BackButton.png
+13:46:56	IsFindImage:FOUND
+13:46:57	WaitHighlight:Found
+13:46:57	ClickVerify:Click
+13:46:57	ClickHighlight:
+13:46:58	ClickImage:
+13:46:59	WaitHighlight:Apps_verifyAppsPeopleTabs.png
+13:46:59	IsFindImage:Apps_verifyAppsPeopleTabs.png
+13:47:00	IsFindImage:FOUND
+13:47:01	WaitHighlight:Found
+13:47:01	ClickVerify:Found
+13:47:01	PASSED: SelectFavoriteApps
+13:47:01	
+-------------------------------------
+13:47:01	START: TestContactUs 
+13:47:01	ClickVerify::Home_GreatCall.png:Home_Head-GreatCall.png
+13:47:01	WaitHighlight:Home_GreatCall.png
+13:47:01	IsFindImage:Home_GreatCall.png
+13:47:02	IsFindImage:FOUND
+13:47:03	WaitHighlight:Found
+13:47:03	ClickVerify:Click
+13:47:03	ClickHighlight:
+13:47:04	ClickImage:
+13:47:04	WaitHighlight:Home_Head-GreatCall.png
+13:47:04	IsFindImage:Home_Head-GreatCall.png
+13:47:06	IsFindImage:FOUND
+13:47:07	WaitHighlight:Found
+13:47:07	ClickVerify:Found
+13:47:07	ClickVerify::Home_ContactUs.png:Home_ContactUs_verifyNeedHelpAccount.png
+13:47:07	WaitHighlight:Home_ContactUs.png
+13:47:07	IsFindImage:Home_ContactUs.png
+13:47:07	IsFindImage:FOUND
+13:47:08	WaitHighlight:Found
+13:47:08	ClickVerify:Click
+13:47:08	ClickHighlight:
+13:47:09	ClickImage:
+13:47:10	WaitHighlight:Home_ContactUs_verifyNeedHelpAccount.png
+13:47:10	IsFindImage:Home_ContactUs_verifyNeedHelpAccount.png
+13:47:12	IsFindImage:FOUND
+13:47:13	WaitHighlight:Found
+13:47:13	ClickVerify:Found
+13:47:13	ClickVerify::Global_BackButton.png:Home_Head-GreatCall.png
+13:47:13	WaitHighlight:Global_BackButton.png
+13:47:13	IsFindImage:Global_BackButton.png
+13:47:13	IsFindImage:FOUND
+13:47:14	WaitHighlight:Found
+13:47:14	ClickVerify:Click
+13:47:14	ClickHighlight:
+13:47:15	ClickImage:
+13:47:16	WaitHighlight:Home_Head-GreatCall.png
+13:47:16	IsFindImage:Home_Head-GreatCall.png
+13:47:17	IsFindImage:FOUND
+13:47:18	WaitHighlight:Found
+13:47:18	ClickVerify:Found
+13:47:18	ClickVerify::Global_BackButton.png:Home_GreatCall.png
+13:47:18	WaitHighlight:Global_BackButton.png
+13:47:18	IsFindImage:Global_BackButton.png
+13:47:18	IsFindImage:FOUND
+13:47:19	WaitHighlight:Found
+13:47:19	ClickVerify:Click
+13:47:19	ClickHighlight:
+13:47:20	ClickImage:
+13:47:21	WaitHighlight:Home_GreatCall.png
+13:47:21	IsFindImage:Home_GreatCall.png
+13:47:22	IsFindImage:FOUND
+13:47:24	WaitHighlight:Found
+13:47:24	ClickVerify:Found
+13:47:24	PASSED: TestContactUs
+13:47:24	
+-------------------------------------
+13:47:24	START: TestFeaturedApps 
+13:47:24	ClickVerify::Home_GreatCall.png:Home_Head-GreatCall.png
+13:47:24	WaitHighlight:Home_GreatCall.png
+13:47:24	IsFindImage:Home_GreatCall.png
+13:47:24	IsFindImage:FOUND
+13:47:25	WaitHighlight:Found
+13:47:25	ClickVerify:Click
+13:47:25	ClickHighlight:
+13:47:26	ClickImage:
+13:47:27	WaitHighlight:Home_Head-GreatCall.png
+13:47:27	IsFindImage:Home_Head-GreatCall.png
+13:47:28	IsFindImage:FOUND
+13:47:29	WaitHighlight:Found
+13:47:29	ClickVerify:Found
+13:47:29	ClickVerify::Home_FeaturedApps.png:Home_FeaturedApps_headFeaturedApps.png
+13:47:29	WaitHighlight:Home_FeaturedApps.png
+13:47:29	IsFindImage:Home_FeaturedApps.png
+13:47:29	IsFindImage:FOUND
+13:47:30	WaitHighlight:Found
+13:47:30	ClickVerify:Click
+13:47:30	ClickHighlight:
+13:47:31	ClickImage:
+13:47:32	WaitHighlight:Home_FeaturedApps_headFeaturedApps.png
+13:47:32	IsFindImage:Home_FeaturedApps_headFeaturedApps.png
+13:47:32	IsFindImage:FOUND
+13:47:33	WaitHighlight:Found
+13:47:33	ClickVerify:Found
+13:47:33	ClickVerify::FeaturedApps_5Star.png:FeaturedApps_PlayStore.png
+13:47:33	WaitHighlight:FeaturedApps_5Star.png
+13:47:33	IsFindImage:FeaturedApps_5Star.png
+13:47:37	IsFindImage:FOUND
+13:47:38	WaitHighlight:Found
+13:47:38	ClickVerify:Click
+13:47:38	ClickHighlight:
+13:47:39	ClickImage:
+13:47:40	WaitHighlight:FeaturedApps_PlayStore.png
+13:47:40	IsFindImage:FeaturedApps_PlayStore.png
+13:47:43	IsFindImage:FOUND
+13:47:44	WaitHighlight:Found
+13:47:44	ClickVerify:Found
+13:47:44	ClickVerify::Global_BackButton.png:Home_FeaturedApps_headFeaturedApps.png
+13:47:44	WaitHighlight:Global_BackButton.png
+13:47:44	IsFindImage:Global_BackButton.png
+13:47:44	IsFindImage:FOUND
+13:47:45	WaitHighlight:Found
+13:47:45	ClickVerify:Click
+13:47:45	ClickHighlight:
+13:47:46	ClickImage:
+13:47:47	WaitHighlight:Home_FeaturedApps_headFeaturedApps.png
+13:47:47	IsFindImage:Home_FeaturedApps_headFeaturedApps.png
+13:47:48	IsFindImage:FOUND
+13:47:49	WaitHighlight:Found
+13:47:49	ClickVerify:Found
+13:47:49	ClickVerify::Global_BackButton.png:Home_Head-GreatCall.png
+13:47:49	WaitHighlight:Global_BackButton.png
+13:47:49	IsFindImage:Global_BackButton.png
+13:47:50	IsFindImage:FOUND
+13:47:51	WaitHighlight:Found
+13:47:51	ClickVerify:Click
+13:47:51	ClickHighlight:
+13:47:52	ClickImage:
+13:47:52	WaitHighlight:Home_Head-GreatCall.png
+13:47:52	IsFindImage:Home_Head-GreatCall.png
+13:47:53	IsFindImage:FOUND
+13:47:54	WaitHighlight:Found
+13:47:54	ClickVerify:Found
+13:47:54	ClickVerify::Global_BackButton.png:Apps_verifyAppsPeopleTabs.png
+13:47:54	WaitHighlight:Global_BackButton.png
+13:47:54	IsFindImage:Global_BackButton.png
+13:47:55	IsFindImage:FOUND
+13:47:56	WaitHighlight:Found
+13:47:56	ClickVerify:Click
+13:47:56	ClickHighlight:
+13:47:57	ClickImage:
+13:47:58	WaitHighlight:Apps_verifyAppsPeopleTabs.png
+13:47:58	IsFindImage:Apps_verifyAppsPeopleTabs.png
+13:47:59	IsFindImage:FOUND
+13:48:00	WaitHighlight:Found
+13:48:00	ClickVerify:Found
+13:48:00	PASSED: TestFeaturedApps
+13:48:00	
+-------------------------------------
+13:48:00	START: TestHelp 
+13:48:00	ClickVerify::App_HomeGreatCall.png:Home_Head-GreatCall.png
+13:48:00	WaitHighlight:App_HomeGreatCall.png
+13:48:00	IsFindImage:App_HomeGreatCall.png
+13:48:00	IsFindImage:FOUND
+13:48:01	WaitHighlight:Found
+13:48:01	ClickVerify:Click
+13:48:01	ClickHighlight:
+13:48:02	ClickImage:
+13:48:03	WaitHighlight:Home_Head-GreatCall.png
+13:48:03	IsFindImage:Home_Head-GreatCall.png
+13:48:04	IsFindImage:FOUND
+13:48:05	WaitHighlight:Found
+13:48:05	ClickVerify:Found
+13:48:05	ClickVerify::Home_Help.png:Home_Help_headHelp.png
+13:48:05	WaitHighlight:Home_Help.png
+13:48:05	IsFindImage:Home_Help.png
+13:48:06	IsFindImage:FOUND
+13:48:07	WaitHighlight:Found
+13:48:07	ClickVerify:Click
+13:48:07	ClickHighlight:
+13:48:08	ClickImage:
+13:48:08	WaitHighlight:Home_Help_headHelp.png
+13:48:08	IsFindImage:Home_Help_headHelp.png
+13:48:09	IsFindImage:FOUND
+13:48:10	WaitHighlight:Found
+13:48:10	ClickVerify:Found
+13:48:10	ClickVerify::Home_Help_gettingStarted.png:Home_help_headGettingStarted.png
+13:48:10	WaitHighlight:Home_Help_gettingStarted.png
+13:48:10	IsFindImage:Home_Help_gettingStarted.png
+13:48:10	IsFindImage:FOUND
+13:48:11	WaitHighlight:Found
+13:48:11	ClickVerify:Click
+13:48:11	ClickHighlight:
+13:48:12	ClickImage:
+13:48:13	WaitHighlight:Home_help_headGettingStarted.png
+13:48:13	IsFindImage:Home_help_headGettingStarted.png
+13:48:14	IsFindImage:FOUND
+13:48:15	WaitHighlight:Found
+13:48:15	ClickVerify:Found
+13:48:15	ClickVerify::Home_Help_button-Help-list.png:Home_Help_gettingStarted.png
+13:48:15	WaitHighlight:Home_Help_button-Help-list.png
+13:48:15	IsFindImage:Home_Help_button-Help-list.png
+13:48:16	IsFindImage:FOUND
+13:48:17	WaitHighlight:Found
+13:48:17	ClickVerify:Click
+13:48:17	ClickHighlight:
+13:48:18	ClickImage:
+13:48:18	WaitHighlight:Home_Help_gettingStarted.png
+13:48:18	IsFindImage:Home_Help_gettingStarted.png
+13:48:19	IsFindImage:FOUND
+13:48:20	WaitHighlight:Found
+13:48:20	ClickVerify:Found
+13:48:20	ClickVerify::Home_Help_UsingTouchScreen.png:Home_Help_head-Using-Touch-Screen.png
+13:48:20	WaitHighlight:Home_Help_UsingTouchScreen.png
+13:48:20	IsFindImage:Home_Help_UsingTouchScreen.png
+13:48:21	IsFindImage:FOUND
+13:48:22	WaitHighlight:Found
+13:48:22	ClickVerify:Click
+13:48:22	ClickHighlight:
+13:48:23	ClickImage:
+13:48:23	WaitHighlight:Home_Help_head-Using-Touch-Screen.png
+13:48:23	IsFindImage:Home_Help_head-Using-Touch-Screen.png
+13:48:25	IsFindImage:FOUND
+13:48:26	WaitHighlight:Found
+13:48:26	ClickVerify:Found
+13:48:26	ClickVerify::Home_Help_button-Help-list.png:Home_Help_gettingStarted.png
+13:48:26	WaitHighlight:Home_Help_button-Help-list.png
+13:48:26	IsFindImage:Home_Help_button-Help-list.png
+13:48:26	IsFindImage:FOUND
+13:48:27	WaitHighlight:Found
+13:48:27	ClickVerify:Click
+13:48:27	ClickHighlight:
+13:48:28	ClickImage:
+13:48:29	WaitHighlight:Home_Help_gettingStarted.png
+13:48:29	IsFindImage:Home_Help_gettingStarted.png
+13:48:29	IsFindImage:FOUND
+13:48:31	WaitHighlight:Found
+13:48:31	ClickVerify:Found
+13:48:31	ClickVerify::Home_Help_PhoneButtons.png:Home_Help_head-PhoneButtons.png
+13:48:31	WaitHighlight:Home_Help_PhoneButtons.png
+13:48:31	IsFindImage:Home_Help_PhoneButtons.png
+13:48:31	IsFindImage:FOUND
+13:48:32	WaitHighlight:Found
+13:48:32	ClickVerify:Click
+13:48:32	ClickHighlight:
+13:48:33	ClickImage:
+13:48:34	WaitHighlight:Home_Help_head-PhoneButtons.png
+13:48:34	IsFindImage:Home_Help_head-PhoneButtons.png
+13:48:35	IsFindImage:FOUND
+13:48:36	WaitHighlight:Found
+13:48:36	ClickVerify:Found
+13:48:36	ClickVerify::Home_Help_button-Help-list.png:Home_Help_gettingStarted.png
+13:48:36	WaitHighlight:Home_Help_button-Help-list.png
+13:48:36	IsFindImage:Home_Help_button-Help-list.png
+13:48:36	IsFindImage:FOUND
+13:48:37	WaitHighlight:Found
+13:48:37	ClickVerify:Click
+13:48:37	ClickHighlight:
+13:48:38	ClickImage:
+13:48:39	WaitHighlight:Home_Help_gettingStarted.png
+13:48:39	IsFindImage:Home_Help_gettingStarted.png
+13:48:40	IsFindImage:FOUND
+13:48:41	WaitHighlight:Found
+13:48:41	ClickVerify:Found
+13:48:41	ClickVerify::Home_Help_AppsTab.png:Home_Help_head-AppsTab.png
+13:48:41	WaitHighlight:Home_Help_AppsTab.png
+13:48:41	IsFindImage:Home_Help_AppsTab.png
+13:48:41	IsFindImage:FOUND
+13:48:42	WaitHighlight:Found
+13:48:42	ClickVerify:Click
+13:48:42	ClickHighlight:
+13:48:43	ClickImage:
+13:48:44	WaitHighlight:Home_Help_head-AppsTab.png
+13:48:44	IsFindImage:Home_Help_head-AppsTab.png
+13:48:45	IsFindImage:FOUND
+13:48:46	WaitHighlight:Found
+13:48:46	ClickVerify:Found
+13:48:46	ClickVerify::Home_Help_button-Help-list.png:Home_Help_gettingStarted.png
+13:48:46	WaitHighlight:Home_Help_button-Help-list.png
+13:48:46	IsFindImage:Home_Help_button-Help-list.png
+13:48:46	IsFindImage:FOUND
+13:48:47	WaitHighlight:Found
+13:48:47	ClickVerify:Click
+13:48:47	ClickHighlight:
+13:48:48	ClickImage:
+13:48:49	WaitHighlight:Home_Help_gettingStarted.png
+13:48:49	IsFindImage:Home_Help_gettingStarted.png
+13:48:50	IsFindImage:FOUND
+13:48:51	WaitHighlight:Found
+13:48:51	ClickVerify:Found
+13:48:51	ClickVerify::Home_Help_PeopleTab.png:Home_Help_head-PeopleTab.png
+13:48:51	WaitHighlight:Home_Help_PeopleTab.png
+13:48:51	IsFindImage:Home_Help_PeopleTab.png
+13:48:51	IsFindImage:FOUND
+13:48:52	WaitHighlight:Found
+13:48:52	ClickVerify:Click
+13:48:52	ClickHighlight:
+13:48:53	ClickImage:
+13:48:54	WaitHighlight:Home_Help_head-PeopleTab.png
+13:48:54	IsFindImage:Home_Help_head-PeopleTab.png
+13:48:55	IsFindImage:FOUND
+13:48:56	WaitHighlight:Found
+13:48:56	ClickVerify:Found
+13:48:56	ClickVerify::Home_Help_button-Help-list.png:Home_Help_gettingStarted.png
+13:48:56	WaitHighlight:Home_Help_button-Help-list.png
+13:48:56	IsFindImage:Home_Help_button-Help-list.png
+13:48:57	IsFindImage:FOUND
+13:48:58	WaitHighlight:Found
+13:48:58	ClickVerify:Click
+13:48:58	ClickHighlight:
+13:48:59	ClickImage:
+13:48:59	WaitHighlight:Home_Help_gettingStarted.png
+13:48:59	IsFindImage:Home_Help_gettingStarted.png
+13:49:00	IsFindImage:FOUND
+13:49:01	WaitHighlight:Found
+13:49:01	ClickVerify:Found
+13:49:01	ClickVerify::Home_Help_AddNewPeople.png:Home_Help_head-AddNewPeople.png
+13:49:01	WaitHighlight:Home_Help_AddNewPeople.png
+13:49:01	IsFindImage:Home_Help_AddNewPeople.png
+13:49:02	IsFindImage:FOUND
+13:49:03	WaitHighlight:Found
+13:49:03	ClickVerify:Click
+13:49:03	ClickHighlight:
+13:49:04	ClickImage:
+13:49:04	WaitHighlight:Home_Help_head-AddNewPeople.png
+13:49:04	IsFindImage:Home_Help_head-AddNewPeople.png
+13:49:06	IsFindImage:FOUND
+13:49:07	WaitHighlight:Found
+13:49:07	ClickVerify:Found
+13:49:07	ClickVerify::Home_Help_button-Help-list.png:Home_Help_gettingStarted.png
+13:49:07	WaitHighlight:Home_Help_button-Help-list.png
+13:49:07	IsFindImage:Home_Help_button-Help-list.png
+13:49:07	IsFindImage:FOUND
+13:49:08	WaitHighlight:Found
+13:49:08	ClickVerify:Click
+13:49:08	ClickHighlight:
+13:49:09	ClickImage:
+13:49:10	WaitHighlight:Home_Help_gettingStarted.png
+13:49:10	IsFindImage:Home_Help_gettingStarted.png
+13:49:11	IsFindImage:FOUND
+13:49:12	WaitHighlight:Found
+13:49:12	ClickVerify:Found
+13:49:12	ClickVerify::Home_Help_MakeCall.png:Home_Help_head-MakeACall.png
+13:49:12	WaitHighlight:Home_Help_MakeCall.png
+13:49:12	IsFindImage:Home_Help_MakeCall.png
+13:49:12	IsFindImage:FOUND
+13:49:13	WaitHighlight:Found
+13:49:13	ClickVerify:Click
+13:49:13	ClickHighlight:
+13:49:14	ClickImage:
+13:49:15	WaitHighlight:Home_Help_head-MakeACall.png
+13:49:15	IsFindImage:Home_Help_head-MakeACall.png
+13:49:16	IsFindImage:FOUND
+13:49:17	WaitHighlight:Found
+13:49:17	ClickVerify:Found
+13:49:17	ClickVerify::Home_Help_button-Help-list.png:Home_Help_gettingStarted.png
+13:49:17	WaitHighlight:Home_Help_button-Help-list.png
+13:49:17	IsFindImage:Home_Help_button-Help-list.png
+13:49:17	IsFindImage:FOUND
+13:49:19	WaitHighlight:Found
+13:49:19	ClickVerify:Click
+13:49:19	ClickHighlight:
+13:49:20	ClickImage:
+13:49:20	WaitHighlight:Home_Help_gettingStarted.png
+13:49:20	IsFindImage:Home_Help_gettingStarted.png
+13:49:21	IsFindImage:FOUND
+13:49:22	WaitHighlight:Found
+13:49:22	ClickVerify:Found
+13:49:22	ClickVerify::Home_Help_ReceivePhoneCalls.png:Home_Help_head-ReceivePhoneCalls.png
+13:49:22	WaitHighlight:Home_Help_ReceivePhoneCalls.png
+13:49:22	IsFindImage:Home_Help_ReceivePhoneCalls.png
+13:49:22	IsFindImage:FOUND
+13:49:24	WaitHighlight:Found
+13:49:24	ClickVerify:Click
+13:49:24	ClickHighlight:
+13:49:25	ClickImage:
+13:49:25	WaitHighlight:Home_Help_head-ReceivePhoneCalls.png
+13:49:25	IsFindImage:Home_Help_head-ReceivePhoneCalls.png
+13:49:27	IsFindImage:FOUND
+13:49:28	WaitHighlight:Found
+13:49:28	ClickVerify:Found
+13:49:28	ClickVerify::Home_Help_button-Help-list.png:Home_Help_gettingStarted.png
+13:49:28	WaitHighlight:Home_Help_button-Help-list.png
+13:49:28	IsFindImage:Home_Help_button-Help-list.png
+13:49:28	IsFindImage:FOUND
+13:49:29	WaitHighlight:Found
+13:49:29	ClickVerify:Click
+13:49:29	ClickHighlight:
+13:49:30	ClickImage:
+13:49:31	WaitHighlight:Home_Help_gettingStarted.png
+13:49:31	IsFindImage:Home_Help_gettingStarted.png
+13:49:32	IsFindImage:FOUND
+13:49:33	WaitHighlight:Found
+13:49:33	ClickVerify:Found
+13:49:33	ClickScrollVerify:Home_Help_StatusBar.png:Home_Help_head-StatusBar.png
+13:49:33	ClickScroll:Home_Help_StatusBar.png
+13:49:33	FindScroll:Home_Help_StatusBar.png
+13:49:33	switchAppVNC:
+13:49:33	WaitHighlight:Home_Help_StatusBar.png
+13:49:33	IsFindImage:Home_Help_StatusBar.png
+13:49:35	IsFindImage:NOT FOUND
+13:49:35	WaitHighlight:Not Found
+13:49:35	FindScroll: SWIPEUP0
+13:49:35	SwipeUp:
+13:49:35	switchAppVNC:
+13:49:37	WaitHighlight:Home_Help_StatusBar.png
+13:49:37	IsFindImage:Home_Help_StatusBar.png
+13:49:38	IsFindImage:NOT FOUND
+13:49:38	WaitHighlight:Not Found
+13:49:38	WheelUp:
+13:49:38	switchAppVNC:
+13:49:38	WaitHighlight:Home_Help_StatusBar.png
+13:49:38	IsFindImage:Home_Help_StatusBar.png
+13:49:40	IsFindImage:NOT FOUND
+13:49:40	WaitHighlight:Not Found
+13:49:40	FindScroll: SWIPEUP1
+13:49:40	SwipeUp:
+13:49:40	switchAppVNC:
+13:49:42	WaitHighlight:Home_Help_StatusBar.png
+13:49:42	IsFindImage:Home_Help_StatusBar.png
+13:49:43	IsFindImage:NOT FOUND
+13:49:43	WaitHighlight:Not Found
+13:49:43	WheelUp:
+13:49:43	switchAppVNC:
+13:49:43	WaitHighlight:Home_Help_StatusBar.png
+13:49:43	IsFindImage:Home_Help_StatusBar.png
+13:49:45	IsFindImage:NOT FOUND
+13:49:45	WaitHighlight:Not Found
+13:49:45	FindScroll: SWIPEDOWN0
+13:49:45	SwipeDown:
+13:49:45	switchAppVNC:
+13:49:47	WaitHighlight:Home_Help_StatusBar.png
+13:49:47	IsFindImage:Home_Help_StatusBar.png
+13:49:48	IsFindImage:NOT FOUND
+13:49:48	WaitHighlight:Not Found
+13:49:48	WheelDown:
+13:49:48	switchAppVNC:
+13:49:49	WaitHighlight:Home_Help_StatusBar.png
+13:49:49	IsFindImage:Home_Help_StatusBar.png
+13:49:49	IsFindImage:FOUND
+13:49:50	WaitHighlight:Found
+13:49:50	FindScroll: FOUND
+13:49:50	ClickHighlight:
+13:49:52	ClickImage:
+13:49:52	ClickScroll: Clicked
+13:49:52	ClickScrollVerify:Clicked
+13:49:52	WaitHighlight:Home_Help_head-StatusBar.png
+13:49:52	IsFindImage:Home_Help_head-StatusBar.png
+13:49:53	IsFindImage:FOUND
+13:49:54	WaitHighlight:Found
+13:49:54	ClickScrollVerify:Found
+13:49:54	ClickVerify::Home_Help_button-Help-list.png:Home_Help_gettingStarted.png
+13:49:54	WaitHighlight:Home_Help_button-Help-list.png
+13:49:54	IsFindImage:Home_Help_button-Help-list.png
+13:49:55	IsFindImage:FOUND
+13:49:56	WaitHighlight:Found
+13:49:56	ClickVerify:Click
+13:49:56	ClickHighlight:
+13:49:57	ClickImage:
+13:49:58	WaitHighlight:Home_Help_gettingStarted.png
+13:49:58	IsFindImage:Home_Help_gettingStarted.png
+13:49:58	IsFindImage:FOUND
+13:49:59	WaitHighlight:Found
+13:49:59	ClickVerify:Found
+13:49:59	ClickScrollVerify:Home_Help_Keyboard.png:Home_Help_head-Keyboard.png
+13:49:59	ClickScroll:Home_Help_Keyboard.png
+13:49:59	FindScroll:Home_Help_Keyboard.png
+13:49:59	switchAppVNC:
+13:49:59	WaitHighlight:Home_Help_Keyboard.png
+13:49:59	IsFindImage:Home_Help_Keyboard.png
+13:50:01	IsFindImage:NOT FOUND
+13:50:01	WaitHighlight:Not Found
+13:50:01	FindScroll: SWIPEUP0
+13:50:01	SwipeUp:
+13:50:01	switchAppVNC:
+13:50:03	WaitHighlight:Home_Help_Keyboard.png
+13:50:03	IsFindImage:Home_Help_Keyboard.png
+13:50:04	IsFindImage:NOT FOUND
+13:50:04	WaitHighlight:Not Found
+13:50:04	WheelUp:
+13:50:04	switchAppVNC:
+13:50:04	WaitHighlight:Home_Help_Keyboard.png
+13:50:04	IsFindImage:Home_Help_Keyboard.png
+13:50:06	IsFindImage:NOT FOUND
+13:50:06	WaitHighlight:Not Found
+13:50:06	FindScroll: SWIPEUP1
+13:50:06	SwipeUp:
+13:50:06	switchAppVNC:
+13:50:08	WaitHighlight:Home_Help_Keyboard.png
+13:50:08	IsFindImage:Home_Help_Keyboard.png
+13:50:09	IsFindImage:NOT FOUND
+13:50:09	WaitHighlight:Not Found
+13:50:09	WheelUp:
+13:50:09	switchAppVNC:
+13:50:09	WaitHighlight:Home_Help_Keyboard.png
+13:50:09	IsFindImage:Home_Help_Keyboard.png
+13:50:12	IsFindImage:NOT FOUND
+13:50:12	WaitHighlight:Not Found
+13:50:12	FindScroll: SWIPEDOWN0
+13:50:12	SwipeDown:
+13:50:12	switchAppVNC:
+13:50:13	WaitHighlight:Home_Help_Keyboard.png
+13:50:13	IsFindImage:Home_Help_Keyboard.png
+13:50:14	IsFindImage:NOT FOUND
+13:50:14	WaitHighlight:Not Found
+13:50:14	WheelDown:
+13:50:14	switchAppVNC:
+13:50:14	WaitHighlight:Home_Help_Keyboard.png
+13:50:14	IsFindImage:Home_Help_Keyboard.png
+13:50:15	IsFindImage:FOUND
+13:50:16	WaitHighlight:Found
+13:50:16	FindScroll: FOUND
+13:50:16	ClickHighlight:
+13:50:17	ClickImage:
+13:50:18	ClickScroll: Clicked
+13:50:18	ClickScrollVerify:Clicked
+13:50:18	WaitHighlight:Home_Help_head-Keyboard.png
+13:50:18	IsFindImage:Home_Help_head-Keyboard.png
+13:50:28	IsFindImage:NOT FOUND
+13:50:28	WaitHighlight:Not Found
+13:50:28	FAILED:ClickScrollVerify:Verify:Home_Help_head-Keyboard.png
+13:50:28	ClickScroll:Home_Help_Keyboard.png
+13:50:28	FindScroll:Home_Help_Keyboard.png
+13:50:28	switchAppVNC:
+13:50:28	WaitHighlight:Home_Help_Keyboard.png
+13:50:28	IsFindImage:Home_Help_Keyboard.png
+13:50:30	IsFindImage:NOT FOUND
+13:50:30	WaitHighlight:Not Found
+13:50:30	FindScroll: SWIPEUP0
+13:50:30	SwipeUp:
+13:50:30	switchAppVNC:
+13:50:32	WaitHighlight:Home_Help_Keyboard.png
+13:50:32	IsFindImage:Home_Help_Keyboard.png
+13:50:33	IsFindImage:NOT FOUND
+13:50:33	WaitHighlight:Not Found
+13:50:33	WheelUp:
+13:50:33	switchAppVNC:
+13:50:34	WaitHighlight:Home_Help_Keyboard.png
+13:50:34	IsFindImage:Home_Help_Keyboard.png
+13:50:36	IsFindImage:NOT FOUND
+13:50:36	WaitHighlight:Not Found
+13:50:36	FindScroll: SWIPEUP1
+13:50:36	SwipeUp:
+13:50:36	switchAppVNC:
+13:50:37	WaitHighlight:Home_Help_Keyboard.png
+13:50:37	IsFindImage:Home_Help_Keyboard.png
+13:50:38	IsFindImage:NOT FOUND
+13:50:38	WaitHighlight:Not Found
+13:50:38	WheelUp:
+13:50:38	switchAppVNC:
+13:50:39	WaitHighlight:Home_Help_Keyboard.png
+13:50:39	IsFindImage:Home_Help_Keyboard.png
+13:50:41	IsFindImage:NOT FOUND
+13:50:41	WaitHighlight:Not Found
+13:50:41	FindScroll: SWIPEDOWN0
+13:50:41	SwipeDown:
+13:50:41	switchAppVNC:
+13:50:42	WaitHighlight:Home_Help_Keyboard.png
+13:50:42	IsFindImage:Home_Help_Keyboard.png
+13:50:43	IsFindImage:NOT FOUND
+13:50:43	WaitHighlight:Not Found
+13:50:43	WheelDown:
+13:50:43	switchAppVNC:
+13:50:44	WaitHighlight:Home_Help_Keyboard.png
+13:50:44	IsFindImage:Home_Help_Keyboard.png
+13:50:46	IsFindImage:NOT FOUND
+13:50:46	WaitHighlight:Not Found
+13:50:46	FindScroll: SWIPEDOWN1
+13:50:46	SwipeDown:
+13:50:46	switchAppVNC:
+13:50:48	WaitHighlight:Home_Help_Keyboard.png
+13:50:48	IsFindImage:Home_Help_Keyboard.png
+13:50:49	IsFindImage:NOT FOUND
+13:50:49	WaitHighlight:Not Found
+13:50:49	WheelDown:
+13:50:49	switchAppVNC:
+13:50:49	FAILED:FindScroll:Home_Help_Keyboard.png
